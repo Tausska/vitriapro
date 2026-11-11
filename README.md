@@ -19,7 +19,7 @@ Connecter le dépôt GitHub `Tausska/vitriapro` à Cloudflare Pages, branche `ma
 
 ## À finaliser avant publication commerciale
 
-- Créer et tester l'adresse e-mail `contact@vitriapro.com` (le bouton de contact l'utilise actuellement).
+- Tester la réception des messages sur `contact@vitriapro.com` (le bouton de contact utilise déjà cette adresse).
 - Rédiger et publier les mentions légales et la politique de confidentialité avec les informations exactes de l'entité qui exploite le site.
 - Vérifier les obligations légales et fiscales applicables à l'activité.
 - Vérifier les prestations réellement incluses et les conditions tarifaires avant de prendre des commandes.
