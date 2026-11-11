@@ -24,7 +24,7 @@ section{padding:104px 0}.section-head{max-width:650px;margin-bottom:48px}.sectio
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero{padding:75px 0}.visual{min-height:360px}.split-grid{grid-template-columns:1fr;gap:45px}.split-visual{max-width:560px;width:100%}.faq-grid{grid-template-columns:1fr;gap:35px}.services-grid{grid-template-columns:repeat(2,1fr)}.audience-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{align-items:flex-start;flex-direction:column}.trust-inner{padding:20px 0;align-items:flex-start;flex-direction:column;justify-content:center}.trust-items{gap:15px 25px}}
 @media(max-width:640px){.wrap{width:min(100% - 36px,1160px)}.nav{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:18px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.nav-links.open{display:flex}.nav-actions .btn{display:none}.hero{padding:62px 0 72px}.hero h1{font-size:43px}.hero-copy{font-size:15px}.visual{min-height:320px}.orbit{width:290px;height:290px}.site-card{width:min(88%,350px)}.tag-one{left:0;top:24px}.tag-two{right:0;bottom:25px}.floating-tag{padding:10px 12px;font-size:9px}.floating-tag b{width:22px;height:22px}.trust-items span{font-size:11px}section{padding:75px 0}.section-head{margin-bottom:32px}.services-grid{grid-template-columns:1fr}.service{min-height:0;padding:24px}.split-visual{min-height:320px;padding:22px}.audience-grid{grid-template-columns:1fr 1fr;gap:8px}.audience-item{padding:15px 12px;font-size:11px}.process-grid{grid-template-columns:1fr;gap:25px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.contact{padding:70px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-  </style>
+  .offer-section{background:#fff}.offer-card{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center;background:var(--ink);color:#fff;border-radius:26px;padding:42px}.offer-card h3{font:800 clamp(28px,3.4vw,38px)/1.12 Manrope,sans-serif;letter-spacing:-.055em;margin:14px 0}.offer-card p{color:#b8c1d0;font-size:14px;line-height:1.75;margin:0}.offer-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.offer-item{display:flex;align-items:flex-start;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;font-size:12px;line-height:1.5;color:#e8ecf4}.offer-item b{color:#a9b7ff}.offer-note{margin-top:18px!important;font-size:11px!important;color:#8995a8!important}.offer-cta{margin-top:22px}.offer-cta .btn{background:var(--blue);border-color:var(--blue)}@media(max-width:900px){.offer-card{grid-template-columns:1fr;gap:25px;padding:30px}}@media(max-width:640px){.offer-card{padding:22px}.offer-list{grid-template-columns:1fr}}</style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"ProfessionalService","name":"VITRIA PRO","url":"https://vitriapro.com","description":"Création de sites web professionnels pour TPE, PME, artisans et indépendants en France.","areaServed":{"@type":"Country","name":"France"},"serviceType":"Création de sites web vitrines"}
   </script>
@@ -34,7 +34,7 @@ section{padding:104px 0}.section-head{max-width:650px;margin-bottom:48px}.sectio
     <div class="wrap nav">
       <a class="brand" href="#accueil" aria-label="VITRIA PRO, accueil"><span class="brand-mark">V</span><span>VITRIA <span>PRO</span></span></a>
       <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
-        <a href="#services">Nos services</a><a href="#methode">Notre méthode</a><a href="#entreprises">Pour qui ?</a><a href="#faq">FAQ</a>
+        <a href="#offre">Notre offre</a><a href="#services">Nos services</a><a href="#methode">Notre méthode</a><a href="#entreprises">Pour qui ?</a><a href="#faq">FAQ</a>
       </nav>
       <div class="nav-actions"><a class="btn" href="#contact">Parler de mon projet <span class="btn-arrow">↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button></div>
     </div>
@@ -63,6 +63,30 @@ section{padding:104px 0}.section-head{max-width:650px;margin-bottom:48px}.sectio
     </section>
 
     <div class="trust-strip"><div class="wrap trust-inner"><span class="trust-lead">Un site pensé pour votre activité</span><div class="trust-items"><span><b class="check">✓</b> Design professionnel</span><span><b class="check">✓</b> Adapté aux mobiles</span><span><b class="check">✓</b> Structure claire</span><span><b class="check">✓</b> Accompagnement</span></div></div></div>
+
+
+    <section class="offer-section" id="offre">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Notre offre principale</span><h2>Un site professionnel, avec un périmètre clair.</h2><p>Une formule conçue pour les entreprises qui veulent présenter leur activité sérieusement sur Internet, sans partir dans un projet technique complexe.</p></div>
+        <div class="offer-card">
+          <div>
+            <span class="eyebrow">Site vitrine VITRIA PRO</span>
+            <h3>Votre entreprise en ligne, de 1 à 5 pages.</h3>
+            <p>Nous concevons un site adapté à votre activité, à votre identité et aux informations que vos clients doivent trouver facilement. Le contenu et la structure sont définis avec vous avant la réalisation.</p>
+            <div class="offer-cta"><a class="btn" href="#contact">Demander un devis <span class="btn-arrow">↗</span></a></div>
+            <p class="offer-note">Tarif établi après échange selon le contenu et les besoins. Les fonctionnalités spécifiques font l’objet d’un devis complémentaire.</p>
+          </div>
+          <div class="offer-list">
+            <div class="offer-item"><b>✓</b><span>Jusqu’à 5 pages de présentation</span></div>
+            <div class="offer-item"><b>✓</b><span>Design personnalisé à votre entreprise</span></div>
+            <div class="offer-item"><b>✓</b><span>Affichage adapté aux mobiles, tablettes et ordinateurs</span></div>
+            <div class="offer-item"><b>✓</b><span>Formulaire de contact pour vos prospects</span></div>
+            <div class="offer-item"><b>✓</b><span>Référencement naturel de base</span></div>
+            <div class="offer-item"><b>✓</b><span>Préparation et mise en ligne du site</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="services">
       <div class="wrap">
@@ -113,7 +137,7 @@ section{padding:104px 0}.section-head{max-width:650px;margin-bottom:48px}.sectio
           <details><summary>À qui s'adressent vos sites web ?</summary><p>Nos prestations s'adressent principalement aux TPE, PME, artisans, commerçants, indépendants et entreprises de services qui souhaitent présenter leur activité sur Internet.</p></details>
           <details><summary>Le site sera-t-il adapté aux téléphones ?</summary><p>Oui. La conception prend en compte les écrans mobiles, les tablettes et les ordinateurs afin de faciliter la navigation sur chaque appareil.</p></details>
           <details><summary>Dois-je fournir les textes et les photos ?</summary><p>Les éléments nécessaires sont définis ensemble au démarrage. Nous vous indiquons les contenus à préparer pour présenter correctement votre activité.</p></details>
-          <details><summary>Combien coûte la création d'un site ?</summary><p>Le tarif dépend du contenu, du nombre de pages et des fonctionnalités nécessaires. Après avoir compris votre besoin, nous pouvons vous proposer une offre adaptée.</p></details>
+          <details><summary>Que comprend votre offre de site vitrine ?</summary><p>L’offre standard comprend un site de 1 à 5 pages, un design personnalisé, une version adaptée aux mobiles, un formulaire de contact, le référencement naturel de base et la mise en ligne. Les fonctionnalités ou besoins supplémentaires sont chiffrés séparément.</p></details><details><summary>Combien coûte la création d'un site ?</summary><p>Le tarif est établi sur devis selon le contenu, le nombre de pages et les fonctionnalités nécessaires. Après avoir compris votre besoin, nous vous présentons une proposition précise avant tout démarrage.</p></details>
           <details><summary>Combien de temps faut-il pour créer le site ?</summary><p>Le délai dépend de la complexité du site et de la réception des contenus. Le calendrier est précisé lors de la définition de votre projet.</p></details>
         </div>
       </div>
@@ -131,7 +155,7 @@ section{padding:104px 0}.section-head{max-width:650px;margin-bottom:48px}.sectio
             <label>Adresse e-mail<input name="email" type="email" autocomplete="email" required placeholder="vous@entreprise.fr"></label>
             <label>Téléphone <span>(facultatif)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+33…"></label>
             <label>Votre activité<input name="activity" required placeholder="Ex. : artisan, restaurant, conseil…"></label>
-            <label>Type de site souhaité<select name="siteType" required><option value="">Sélectionnez</option><option>Site vitrine simple</option><option>Site vitrine multi-pages</option><option>Refonte d'un site existant</option><option>Je ne sais pas encore</option></select></label>
+            <label>Type de site souhaité<select name="siteType" required><option value="">Sélectionnez</option><option>Site vitrine professionnel (1 à 5 pages)</option><option>Site vitrine avec besoins supplémentaires</option><option>Refonte d'un site existant</option><option>Je ne sais pas encore</option></select></label>
             <label class="form-wide">Décrivez votre besoin<textarea name="message" rows="4" required placeholder="Vos services, le nombre de pages envisagé, vos objectifs…"></textarea></label>
           </div>
           <div class="form-submit"><button class="btn btn-light" type="submit">Envoyer ma demande <span class="btn-arrow">↗</span></button><p>Le bouton prépare un e-mail dans votre application de messagerie. Aucun paiement ni engagement n'est demandé à cette étape.</p></div>
