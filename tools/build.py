@@ -223,16 +223,12 @@ open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA 
 
 # ---------- Rendez-vous ----------
 body = hero("Prise de rendez-vous · Premier échange gratuit", "Présentons votre projet <em>ensemble.</em>",
-            "Choisissez le format adapté à votre besoin. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
-body += """<section class="section" style="padding-top:0"><div class="wrap">
- <div class="book">
-  <article class="feat rv"><div class="tag"><span>Format court · recommandé</span></div><div class="dur">15 min</div><h2>Rendez-vous découverte</h2><p>Présentez votre entreprise et votre besoin. Un premier échange pour identifier les enjeux et vérifier comment VITRIA PRO peut vous accompagner.</p><a class="btn" href="https://cal.com/d/6KKNofKR3qQMgGjeWjsBcF/15min" target="_blank" rel="noopener">Choisir ce rendez-vous <span class="ar">→</span></a></article>
-  <article class="rv"><div class="tag"><span>Pour un besoin à cadrer</span></div><div class="dur">30 min</div><h2>Rendez-vous projet</h2><p>Approfondissez votre besoin, vos objectifs, les fonctionnalités attendues, les contraintes techniques et les prochaines étapes.</p><a class="btn btn-dark" href="#calendar">Choisir un créneau <span class="ar">↓</span></a></article>
- </div>
- <div id="calendar" style="padding-top:110px">
-  <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Agenda</span><h2 class="mid">Sélectionnez une date et une heure</h2></div><p>Les disponibilités s’affichent dans votre fuseau horaire local. Sélectionnez le créneau qui vous convient.</p></div>
+            "Réservez un appel gratuit de 30 minutes. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
+body += """<section class="section" style="padding-top:60px"><div class="wrap">
+ <div id="calendar">
+  <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Agenda</span><h2 class="mid">Choisissez une date et une heure</h2></div><p>Les disponibilités s’affichent dans votre fuseau horaire local. Sélectionnez le créneau qui vous convient.</p></div>
   <div class="calendar"><div id="my-cal-inline-vitriapro30" style="width:100%;height:100%;overflow:scroll"></div></div>
-  <p class="fine-note">Rendez-vous projet · 30 minutes. Un problème pour choisir votre créneau ? Écrivez-nous à <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a>.</p>
+  <p class="fine-note">Un problème pour choisir votre créneau ? Écrivez-nous à <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a>.</p>
  </div>
 </div></section>
 """
@@ -242,7 +238,7 @@ Cal("init", "vitriapro30", { origin: "https://app.cal.com" });
 Cal.ns.vitriapro30("inline", { elementOrSelector: "#my-cal-inline-vitriapro30", calLink: "vitriapro/30min", config: { layout: "month_view", theme: "light" } });
 Cal.ns.vitriapro30("ui", { styles: { branding: { brandColor: "#0a1533" } } });
 </script>"""
-open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : rendez-vous découverte de 15 minutes ou rendez-vous projet de 30 minutes.", body, CAL))
+open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : appel gratuit de 30 minutes.", body, CAL))
 
 # ---------- Réalisations ----------
 def proj(tag, h3, p, lis, mock, link="", alt=""):
