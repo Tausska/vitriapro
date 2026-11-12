@@ -6,7 +6,7 @@ Les deux textes à intégrer sur la page d’accueil de Vitria Pro.
 
 « Le site donne immédiatement une image sérieuse et professionnelle de l'entreprise. La présentation est soignée, l'ensemble inspire confiance et donne envie d'en découvrir davantage. »
 
-**Marc — Midi-Pyrénées**
+**Marc — Toulouse**
 
 ## Commentaire 2
 
