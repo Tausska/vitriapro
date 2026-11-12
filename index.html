@@ -108,6 +108,25 @@ body.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
   .hero-visual img{animation:none;transform:none}
 }
 \n.form-honeypot{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}.form button:disabled{opacity:.6;cursor:wait}.form-status.success{color:#7dc9a4}
+
+/* Footer redesign — institutional four-column layout */
+.footer{padding:68px 0 24px!important;background:#102A37!important;color:#F4F6F7!important}
+.footer-main{display:grid;grid-template-columns:minmax(220px,.9fr) minmax(0,2fr);gap:clamp(38px,7vw,110px);padding-bottom:48px;border-bottom:1px solid rgba(220,226,229,.2)}
+.footer-about{max-width:340px}
+.footer-brand{display:inline-block!important;color:#fff!important;font-family:"Manrope",Arial,sans-serif!important;font-size:25px!important;font-weight:800!important;letter-spacing:-1.4px!important;line-height:1.1!important;text-decoration:none!important}
+.footer-brand span{color:#8DA9B3!important}
+.footer-blurb{max-width:310px!important;margin:20px 0 25px!important;color:#C1CDD2!important;font-size:13px!important;line-height:1.85!important}
+.footer-contact-link{display:inline-flex;align-items:center;gap:18px;padding-bottom:8px;border-bottom:1px solid #8DA9B3;color:#fff!important;font-size:12px;font-weight:700;letter-spacing:.01em}
+.footer-contact-link span{color:#AFC4CC;font-size:17px}
+.footer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.footer-col{display:flex;flex-direction:column;align-items:flex-start;gap:13px}
+.footer-col h3{margin:2px 0 10px;color:#8DA9B3;font-family:"Manrope",Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.footer-col a{color:#E0E7EA!important;font-size:12px;line-height:1.5;text-decoration:none;transition:color .2s ease}
+.footer-col a:hover{color:#fff!important;text-decoration:underline;text-underline-offset:4px}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;color:#AFC0C7!important;font-size:10px!important;line-height:1.6}
+.footer-bottom span:last-child{text-align:right}
+@media(max-width:900px){.footer-main{grid-template-columns:1fr;gap:42px}.footer-about{max-width:560px}.footer-grid{gap:22px}}
+@media(max-width:650px){.footer{padding:50px 0 22px!important}.footer-main{gap:36px;padding-bottom:34px}.footer-grid{grid-template-columns:1fr 1fr;gap:32px 18px}.footer-col{gap:11px}.footer-col h3{margin-bottom:5px}.footer-bottom{flex-direction:column;gap:7px}.footer-bottom span:last-child{text-align:left}}
 </style>
 </head>
 <body>
@@ -179,7 +198,7 @@ body.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
 </div><div class="form-honeypot" aria-hidden="true"><label>Ne pas remplir<input name="website" tabindex="-1" autocomplete="off"></label></div><div class="form-bottom"><button type="submit">Envoyer une demande ↗</button><span class="form-note">Votre demande est envoyée directement depuis cette page. Aucune application e-mail ne s’ouvrira.</span></div><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></form>
 </div></section>
 </main>
-<footer class="footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#accueil"><img class="footer-logo" src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO"></a><p class="footer-blurb">Conception de sites internet et expériences digitales pour les entreprises, commerces, artisans et indépendants.</p><nav class="footer-links"><a href="#expertises">Expertises</a><a href="#approche">Approche</a><a href="/realisations.html">Réalisations</a><a href="/artisans.html">Artisans</a><a href="/restaurants.html">Restaurants</a><a href="/coiffeurs.html">Coiffeurs</a><a href="#offres">Offres</a><a href="/rendez-vous.html">Calendrier</a><a href="/recrutement-commercial.html">Recrutement</a><a href="/realisations.html">Réalisations</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><span><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a> · <a href="https://wa.me/595992666002" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></div></div></footer>
+<footer class="footer" aria-label="Pied de page"><div class="wrap"><div class="footer-main"><div class="footer-about"><a class="footer-brand" href="#accueil" aria-label="VITRIA PRO, accueil">VITRIA<span> PRO</span></a><p class="footer-blurb">Création de sites internet professionnels pour les entreprises, artisans, commerces et indépendants. Une présence en ligne claire, crédible et conçue pour votre activité.</p><a class="footer-contact-link" href="mailto:contact@vitriapro.com">Parlons de votre site <span aria-hidden="true">↗</span></a></div><div class="footer-grid"><nav class="footer-col" aria-label="L’agence"><h3>L’agence</h3><a href="#expertises">Expertises</a><a href="#approche">Notre approche</a><a href="/realisations.html">Réalisations</a><a href="/recrutement-commercial.html">Rejoindre l’agence</a></nav><nav class="footer-col" aria-label="Nos secteurs"><h3>Nos secteurs</h3><a href="/artisans.html">Artisans & bâtiment</a><a href="/restaurants.html">Restaurants</a><a href="/coiffeurs.html">Coiffeurs & beauté</a><a href="#offres">Offres & tarifs</a></nav><nav class="footer-col" aria-label="Informations et contact"><h3>Informations</h3><a href="/garantie.html">Garantie 14 jours</a><a href="/rendez-vous.html">Prendre rendez-vous</a><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a><a href="https://wa.me/595992666002" target="_blank" rel="noopener noreferrer">WhatsApp</a></nav></div></div><div class="footer-bottom"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><span>Création de sites internet · Marché français</span></div></div></footer>
 <script>
 const toggle=document.getElementById('menuToggle'),nav=document.getElementById('navLinks');
 toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Fermer':'Menu'});
