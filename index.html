@@ -95,7 +95,19 @@ body.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
 @media(max-width:900px){.guarantee-grid{grid-template-columns:1fr;gap:34px}}
 @media(max-width:650px){.guarantee{padding:70px 0}.guarantee h2{font-size:39px}.guarantee-card{padding:22px}}
 
-</style>
+
+/* Hero motion — mouvement cinématique léger, sans lecture automatique de vidéo */
+@keyframes vp-hero-drift{
+  0%{transform:scale(1.015) translate3d(0,0,0)}
+  100%{transform:scale(1.075) translate3d(-1.2%,.7%,0)}
+}
+@media(prefers-reduced-motion:no-preference){
+  .hero-visual img{animation:vp-image-settle 1.7s cubic-bezier(.2,.7,.2,1) both,vp-hero-drift 16s 1.7s ease-in-out infinite alternate}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-visual img{animation:none;transform:none}
+}
+\n</style>
 </head>
 <body>
 <header class="header"><div class="wrap nav">
@@ -107,7 +119,7 @@ body.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
 <section class="hero" id="accueil"><div class="wrap">
 <div class="hero-top"><span>VITRIA PRO / Agence web</span><span>Création de sites internet · Design · Développement</span></div>
 <div class="hero-grid"><div class="hero-copy"><span class="kicker">Agence de création de sites internet</span><h1>Votre site internet.<br>Votre entreprise.<br><em>Une image forte.</em></h1><p class="hero-text">VITRIA PRO crée des sites internet professionnels pour les artisans, commerces, restaurants et PME. Nous concevons des sites vitrines sur mesure, adaptés à votre activité, à vos clients et à vos objectifs : présenter vos services, inspirer confiance et recevoir des demandes.</p><div class="hero-cta"><a class="button-dark" href="/rendez-vous.html">Créer mon site internet <span>↗</span></a><a class="button-line" href="#offres">Voir les offres et tarifs</a><a class="button-line" href="/realisations.html">Voir nos réalisations</a></div></div>
-<div class="hero-visual"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1500&q=90" alt="Architecture intérieure contemporaine aux lignes épurées"><div class="hero-caption"><span>Expériences digitales / 2026</span><span>Le design au service du sens</span></div></div></div>
+<div class="hero-visual"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=85" alt="Environnement de travail numérique et conception web"><div class="hero-caption"><span>Expériences digitales / 2026</span><span>Le design au service du sens</span></div></div></div>
 <div class="hero-meta"><div class="meta"><strong>Site vitrine sur mesure</strong><small>Un site professionnel adapté à votre activité.</small></div><div class="meta"><strong>Design adapté à votre image</strong><small>Des pages claires, soignées et faciles à parcourir.</small></div><div class="meta"><strong>Adapté au mobile</strong><small>Une expérience pensée pour téléphone, tablette et ordinateur.</small></div></div>
 </div></section>
 <section class="intro"><div class="wrap"><div class="intro-grid"><div class="intro-label"><span class="kicker">Notre vision / 01</span></div><h2>Un site internet professionnel doit présenter votre activité, rassurer vos visiteurs et les aider à <em>passer à l’action.</em></h2></div><div class="intro-bottom"><span></span><p>Nous créons des sites vitrines pour les entreprises qui veulent être visibles, expliquer clairement leurs services et faciliter la prise de contact. Chaque projet comprend une structure adaptée, un design personnalisé et une version optimisée pour les mobiles.</p></div></div></section>
