@@ -1,35 +1,31 @@
 # VITRIA PRO
 
-Site vitrine de l'agence VITRIA PRO, spécialisée dans la création de sites web professionnels pour les TPE et PME françaises.
+Site commercial de VITRIA PRO, marque de création de sites vitrines professionnels pour TPE et PME françaises.
 
-## Pages publiées dans le dépôt
+## Pages du site
+- `index.html` : accueil et offre.
+- `restaurants.html` : restaurants et cafés.
+- `coiffeurs.html` : coiffeurs et instituts.
+- `artisans.html` : artisans et entreprises du bâtiment.
+- `robots.txt` et `sitemap.xml` : indexation.
+- `favicon.svg` : icône.
 
-- `index.html` : page d'accueil responsive et présentation de l'offre.
-- `restaurants.html` : page dédiée aux restaurants et cafés.
-- `coiffeurs.html` : page dédiée aux coiffeurs et instituts.
-- `artisans.html` : page dédiée aux artisans et entreprises du bâtiment.
-- `robots.txt` et `sitemap.xml` : fichiers d'indexation du site.
-- `favicon.svg` : icône du site.
-
-## Offre affichée
-
-Site vitrine standard de 1 à 5 pages, à partir de 1 490 €.
+## Offre de référence
+Site vitrine de 1 à 5 pages à partir de **1 490 € TTC**, avec périmètre et traitement fiscal à confirmer dans chaque devis.
 
 ## Contact
+`contact@vitriapro.com`. Le formulaire actuel prépare un e-mail via `mailto:`; il ne transmet pas automatiquement les données à un serveur. Réception et comportement à tester.
 
-Le formulaire de la page d'accueil prépare un e-mail à destination de `contact@vitriapro.com`. Il faut vérifier que cette adresse reçoit bien les demandes.
+## Documentation opérationnelle
+- `docs/kit-commercial.md` : offre, qualification, scripts et objections.
+- `docs/recrutement-commercial.md` : annonce de recrutement.
+- `docs/contrat-commercial-independant-projet.md` : projet de contrat commercial, non signable avant validation juridique.
+- `docs/contrat-client-et-devis-modele.md` : modèles de devis et conditions de prestation, à adapter.
+- `docs/crm-prospection-modele.md` : pipeline, script et règles de prospection.
+- `docs/processus-production-livraison.md` : étapes de production, contrôle qualité et livraison.
+- `docs/mentions-legales-brouillon.md` : brouillon non publiable avant vérification des données légales.
+- `docs/politique-confidentialite-brouillon.md` : brouillon non publiable avant audit des traitements.
+- `docs/checklist-lancement.md` : état des lieux et points bloquants.
 
-## Avant toute commande commerciale
-
-- Publier les mentions légales et la politique de confidentialité avec les informations exactes de l'entité exploitante.
-- Vérifier les obligations légales et fiscales applicables.
-- Confirmer précisément le périmètre des prestations et les conditions tarifaires.
-- Ne publier aucun témoignage, résultat chiffré ou référence client sans preuve réelle.
-
-## Documentation commerciale interne
-
-- `docs/kit-commercial.md` : positionnement, offre, script de vente, objections et règles de transmission.
-- `docs/recrutement-commercial.md` : annonce pour recruter un commercial indépendant à la commission.
-- `docs/checklist-lancement.md` : points à vérifier avant toute commande et avant le lancement commercial.
-
-Ces documents sont des supports de travail. Les taux de commission, conditions contractuelles, informations légales et modalités de paiement doivent être validés avant publication ou signature.
+## Important
+Les modèles sont des documents de travail, pas des avis juridiques ou fiscaux. Ne pas publier les brouillons légaux ni signer les contrats sans compléter l'identité exacte de l'entité exploitante et faire vérifier le traitement fiscal, la qualification du commercial et les règles applicables aux clients français. Ne publier aucun témoignage, résultat chiffré ou référence client sans preuve réelle.
