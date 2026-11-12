@@ -107,7 +107,8 @@ body.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){
   .hero-visual img{animation:none;transform:none}
 }
-\n</style>
+\n.form-honeypot{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}.form button:disabled{opacity:.6;cursor:wait}.form-status.success{color:#7dc9a4}
+</style>
 </head>
 <body>
 <header class="header"><div class="wrap nav">
@@ -175,7 +176,7 @@ body.motion-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
 <label>Votre activité *<input name="activity" required placeholder="Ex. : artisan, restaurant…"></label>
 <label>Votre besoin *<select name="need" required><option value="">Sélectionner</option><option>Créer un site vitrine</option><option>Refondre un site existant</option><option>Ajouter une fonctionnalité</option><option>Être conseillé</option></select></label>
 <label class="wide">Votre projet <span style="font-weight:400;color:#899397">Facultatif</span><textarea name="message" placeholder="Votre activité, vos objectifs, vos attentes…"></textarea></label>
-</div><div class="form-bottom"><button type="submit">Envoyer une demande ↗</button><span class="form-note">Votre application e-mail s'ouvrira avec le message prérempli. Vous devrez confirmer son envoi.</span></div><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></form>
+</div><div class="form-honeypot" aria-hidden="true"><label>Ne pas remplir<input name="website" tabindex="-1" autocomplete="off"></label></div><div class="form-bottom"><button type="submit">Envoyer une demande ↗</button><span class="form-note">Votre demande est envoyée directement depuis cette page. Aucune application e-mail ne s’ouvrira.</span></div><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></form>
 </div></section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#accueil"><img class="footer-logo" src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO"></a><p class="footer-blurb">Conception de sites internet et expériences digitales pour les entreprises, commerces, artisans et indépendants.</p><nav class="footer-links"><a href="#expertises">Expertises</a><a href="#approche">Approche</a><a href="/realisations.html">Réalisations</a><a href="/artisans.html">Artisans</a><a href="/restaurants.html">Restaurants</a><a href="/coiffeurs.html">Coiffeurs</a><a href="#offres">Offres</a><a href="/rendez-vous.html">Calendrier</a><a href="/recrutement-commercial.html">Recrutement</a><a href="/realisations.html">Réalisations</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><span><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a> · <a href="https://wa.me/595992666002" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></div></div></footer>
@@ -184,7 +185,27 @@ const toggle=document.getElementById('menuToggle'),nav=document.getElementById('
 toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Fermer':'Menu'});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu'}));
 document.getElementById('year').textContent=new Date().getFullYear();
-document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget),labels={name:'Nom',company:'Entreprise',email:'E-mail',phone:'Téléphone',activity:'Activité',need:'Besoin',message:'Description du projet'};const body=[...data.entries()].map(([k,v])=>(labels[k]||k)+': '+v).join('\n\n');document.getElementById('formStatus').textContent='Votre application e-mail va s’ouvrir. Vérifiez le message puis confirmez son envoi.';location.href='mailto:contact@vitriapro.com?subject='+encodeURIComponent('Demande de projet - VITRIA PRO')+'&body='+encodeURIComponent(body)});
+const leadForm=document.getElementById('leadForm'),leadStatus=document.getElementById('formStatus');
+leadForm.addEventListener('submit',async e=>{
+ e.preventDefault();
+ if(!leadForm.reportValidity()) return;
+ const submit=leadForm.querySelector('button[type="submit"]');
+ submit.disabled=true;submit.textContent='Envoi en cours…';leadStatus.textContent='';
+ const payload=Object.fromEntries(new FormData(leadForm).entries());
+ try{
+  const response=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  const result=await response.json();
+  if(!response.ok||!result.success) throw new Error(result.error||'Envoi impossible');
+  leadStatus.textContent='Votre demande a bien été enregistrée. VITRIA PRO pourra revenir vers vous à l’adresse indiquée.';
+  leadStatus.classList.add('success');
+  leadForm.reset();
+ }catch(error){
+  leadStatus.textContent='L’envoi n’a pas abouti. Réessayez dans quelques instants ou contactez-nous directement à contact@vitriapro.com.';
+  leadStatus.classList.remove('success');
+ }finally{
+  submit.disabled=false;submit.textContent='Envoyer une demande ↗';
+ }
+});
 </script>
 <button class="vp-chat-launch" id="vpChatLaunch" type="button" aria-expanded="false">Assistant VITRIA PRO</button>
 <section class="vp-chat-panel" id="vpChatPanel" aria-label="Assistant VITRIA PRO" aria-hidden="true"><header class="vp-chat-head"><div><strong>Assistant VITRIA PRO</strong><small>Informations et orientation de votre projet</small></div><button class="vp-chat-close" id="vpChatClose" aria-label="Fermer">×</button></header><div class="vp-chat-messages" id="vpChatMessages" aria-live="polite"><div class="vp-chat-msg bot">Bonjour ! Je peux vous renseigner sur la création de votre site internet. Quel est votre métier et quel type de site recherchez-vous ?</div></div><form class="vp-chat-form" id="vpChatForm"><input id="vpChatInput" maxlength="1000" autocomplete="off" placeholder="Écrivez votre message…" aria-label="Votre message" required><button type="submit">Envoyer</button></form><div class="vp-chat-actions"><a class="vp-chat-wa" id="vpChatWhatsApp" href="https://wa.me/595992666002" target="_blank" rel="noopener noreferrer">Continuer sur WhatsApp</a><p class="vp-chat-note">Assistant automatisé. Vous pouvez demander un échange humain à tout moment.</p></div></section>
