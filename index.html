@@ -1,317 +1,134 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#183746">
-  <meta name="description" content="VITRIA PRO conçoit des sites internet professionnels pour les TPE, PME, artisans et indépendants. Design sur mesure, expérience mobile et mise en ligne à partir de 990 €. Prix indicatifs, confirmés sur devis.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="VITRIA PRO — Création de sites web professionnels">
-  <meta property="og:description" content="Des sites internet clairs, soignés et conçus pour faire avancer votre activité.">
-  <meta property="og:url" content="https://vitriapro.com/">
-  <meta property="og:image" content="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png">
-  <title>VITRIA PRO — Création de sites web professionnels</title>
-  <link rel="icon" type="image/png" href="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{--paper:#f3f1eb;--white:#fffefa;--ink:#171916;--muted:#666b63;--line:#dcded5;--accent:#e45735;--accent-dark:#bd3e25;--olive:#a9b58a;--dark:#20251f;--serif:Georgia,"Times New Roman",serif;--sans:"DM Sans",Arial,sans-serif;--display:"Manrope",Arial,sans-serif;--max:1200px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}img{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 64px));margin-inline:auto}
-    .topline{height:5px;background:var(--accent)}.header{position:sticky;top:0;z-index:30;background:rgba(243,241,235,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(23,25,22,.1)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{display:flex;align-items:center;gap:10px}.brand-logo{display:block;width:112px;height:auto;object-fit:contain;max-height:42px}.footer-wordmark{font-family:"Manrope",sans-serif;font-size:19px;font-weight:800;letter-spacing:-.8px;color:#fff;text-decoration:none}.footer-wordmark span{color:var(--accent)}.nav-links{display:flex;align-items:center;gap:30px;color:#555a52;font-size:12px;font-weight:600}.nav-links a:hover{color:var(--accent-dark)}.nav-cta{display:inline-flex;align-items:center;gap:12px;padding:14px 18px;background:var(--ink);color:white;font-size:11px;font-weight:700;transition:background .2s,transform .2s}.nav-cta:hover{background:var(--accent);transform:translateY(-2px)}.menu-toggle{display:none;border:1px solid var(--line);background:transparent;padding:9px 12px;font-size:19px}
-    .hero{position:relative;overflow:hidden;padding:82px 0 76px}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:50px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--accent-dark);font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:1px;background:currentColor}.hero h1{max-width:720px;margin:24px 0 22px;font:700 clamp(49px,6.2vw,83px)/.99 var(--display);letter-spacing:-6px}.hero h1 em{font-family:var(--serif);font-weight:400;letter-spacing:-4px;color:var(--accent)}.hero-copy{max-width:520px;margin:0;color:#62675e;font-size:15px;line-height:1.85}.hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:31px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:15px;min-height:54px;padding:0 21px;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.2px;transition:transform .2s,background .2s}.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}.text-link{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:800;border-bottom:1px solid #a7aaa1;padding:8px 0}.text-link:hover{color:var(--accent-dark);border-color:var(--accent)}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;padding-top:20px;border-top:1px solid var(--line);color:#777c73;font-size:10px}.hero-meta span{display:flex;align-items:center;gap:8px}.meta-dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}
-    .hero-visual{position:relative;min-height:510px;background:#d9d8cc;overflow:hidden}.hero-photo{position:absolute;inset:0;background:linear-gradient(145deg,rgba(20,25,19,.08),rgba(20,25,19,.42)),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85") center/cover}.hero-stamp{position:absolute;left:26px;top:25px;padding:10px 13px;background:var(--white);font-size:9px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.hero-caption{position:absolute;left:27px;right:27px;bottom:25px;display:flex;justify-content:space-between;align-items:end;color:#fff}.hero-caption strong{display:block;max-width:260px;font:600 27px/1.08 var(--display);letter-spacing:-1.4px}.hero-caption small{font-size:9px;letter-spacing:1.4px;text-transform:uppercase}.hero-index{position:absolute;right:24px;top:23px;color:#fff;font:italic 13px var(--serif)}
-    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#e9e8df}.ticker-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}.ticker-label{color:#767b70;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.ticker-list{display:flex;gap:28px;flex-wrap:wrap}.ticker-list span{font:600 12px var(--display);letter-spacing:-.2px}.ticker-list span:before{content:"✳";color:var(--accent);margin-right:9px}
-    section.section{padding:106px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:42px}.section-title{max-width:680px}.section-title h2{margin:16px 0 0;font:700 clamp(35px,4.5vw,57px)/1.04 var(--display);letter-spacing:-3.5px}.section-title h2 em{font:400 1.02em var(--serif);color:var(--accent)}.section-intro{max-width:355px;margin:0;color:#6a6f66;font-size:13px;line-height:1.8}
-    .work{background:var(--white)}.work-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:18px}.work-card{position:relative;min-height:390px;overflow:hidden;background:#d8d6ca}.work-card.small{min-height:390px}.work-img{position:absolute;inset:0;transition:transform .5s}.work-card:hover .work-img{transform:scale(1.035)}.work-img.restaurant{background:linear-gradient(0deg,rgba(12,18,14,.72),transparent 65%),url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1300&q=85") center/cover}.work-img.artisan{background:linear-gradient(0deg,rgba(12,18,14,.72),transparent 65%),url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85") center/cover}.work-img.salon{background:linear-gradient(0deg,rgba(12,18,14,.72),transparent 65%),url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1100&q=85") center/cover}.work-card-content{position:absolute;left:27px;right:27px;bottom:25px;color:#fff}.work-tag{font-size:9px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:#f0c5b7}.work-card h3{margin:9px 0 0;font:600 clamp(24px,3vw,37px)/1.05 var(--display);letter-spacing:-1.8px}.work-side{display:grid;grid-template-rows:1fr 1fr;gap:18px}.work-card.small h3{font-size:27px}.work-note{margin-top:18px;color:#888d83;font-size:10px;line-height:1.6}
-    .offer{background:var(--dark);color:#fff}.offer .eyebrow{color:#ef9a82}.offer-grid{display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:center}.offer h2{max-width:600px;margin:17px 0;font:700 clamp(38px,4.5vw,58px)/1.04 var(--display);letter-spacing:-3.6px}.offer h2 em{font:400 1.03em var(--serif);color:#f18b70}.offer-copy{max-width:510px;color:#b8beb2;font-size:13px;line-height:1.85}.offer-price{display:flex;align-items:baseline;gap:10px;margin-top:30px}.offer-price strong{font:700 54px/1 var(--display);letter-spacing:-3px}.offer-price span{color:#b9bfb4;font-size:11px}.offer-sub{margin-top:8px;color:#969e91;font-size:10px}.offer-list{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin:0;padding:0;list-style:none;border-top:1px solid #454b42}.offer-list li{padding:17px 0;border-bottom:1px solid #454b42;color:#e5e8e0;font-size:11px;line-height:1.5}.offer-list li:before{content:"↗";color:#ef9a82;margin-right:10px}
-    .pricing{background:var(--dark);color:#fff}.pricing-intro{max-width:760px;margin:0 auto 42px;text-align:center}.pricing-intro .eyebrow{color:#ef9a82}.pricing-intro h2{font:700 clamp(38px,4.5vw,58px)/1.04 var(--display);letter-spacing:-3px;margin:16px 0}.pricing-intro h2 em{font:400 1.03em var(--serif);color:#f18b70}.pricing-intro p{max-width:620px;margin:0 auto;color:#b8beb2;font-size:13px;line-height:1.8}.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}.pricing-card{display:flex;flex-direction:column;padding:28px 25px;background:#292f28;border:1px solid #454b42;min-width:0}.pricing-card.featured{background:#f3f1eb;color:#171916;border:2px solid #e45735;transform:translateY(-9px)}.pricing-kicker{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ef9a82}.featured .pricing-kicker{color:#bd3e25}.pricing-card h3{min-height:58px;margin:17px 0 12px;font:700 21px/1.2 var(--display);letter-spacing:-.8px}.pricing-amount{font:800 39px/1 var(--display);letter-spacing:-2px}.pricing-amount small{font:600 11px var(--sans);letter-spacing:0;color:#aeb5aa}.featured .pricing-amount small{color:#666b63}.pricing-desc{min-height:64px;color:#b8beb2;font-size:11px;line-height:1.7}.featured .pricing-desc{color:#666b63}.pricing-card ul{margin:14px 0 24px;padding:17px 0 0;list-style:none;border-top:1px solid #454b42;flex:1}.featured ul{border-color:#dcded5}.pricing-card li{position:relative;padding:8px 0 8px 17px;color:#e5e8e0;font-size:11px;line-height:1.5}.featured li{color:#353a33}.pricing-card li:before{content:"✓";position:absolute;left:0;color:#ef9a82}.featured li:before{color:#bd3e25}.pricing-link{display:block;padding:14px 15px;text-align:center;background:#e45735;color:white;font-size:11px;font-weight:700}.pricing-link:hover{background:#bd3e25}.pricing-footnote{max-width:850px;margin:28px auto 0;color:#969e91;text-align:center;font-size:10px;line-height:1.7}
-    .services{background:#e9e8df}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cfd1c7;border-left:1px solid #cfd1c7}.service{min-height:205px;padding:26px 25px;border-right:1px solid #cfd1c7;border-bottom:1px solid #cfd1c7;transition:background .2s}.service:hover{background:#f8f7f1}.service-no{color:var(--accent);font:italic 13px var(--serif)}.service h3{margin:24px 0 10px;font:700 17px var(--display);letter-spacing:-.6px}.service p{margin:0;color:#70756c;font-size:11px;line-height:1.8}
-    .method{background:var(--paper)}.method-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:85px}.method-aside{position:relative;min-height:360px;padding:30px;background:var(--accent);color:#fff;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.method-aside:after{content:"V";position:absolute;right:-15px;bottom:-120px;color:rgba(255,255,255,.12);font:800 380px/.8 var(--display);letter-spacing:-35px}.method-aside small{position:relative;z-index:1;font-size:9px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}.method-aside strong{position:relative;z-index:1;max-width:280px;font:600 34px/1.08 var(--display);letter-spacing:-1.8px}.method-aside span{position:relative;z-index:1;font:italic 15px var(--serif)}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:60px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}.step-no{color:var(--accent);font:italic 15px var(--serif)}.step h3{margin:0 0 8px;font:700 17px var(--display);letter-spacing:-.5px}.step p{max-width:490px;margin:0;color:#70756c;font-size:11px;line-height:1.8}
-    .sectors{background:var(--white)}.sector-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.sector{min-height:140px;padding:20px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;transition:border .2s,transform .2s}.sector:hover{border-color:var(--accent);transform:translateY(-3px)}.sector span{color:var(--accent);font:italic 14px var(--serif)}.sector strong{font:700 14px var(--display);letter-spacing:-.4px}.sector small{color:#777d72;font-size:10px}
-    .faq{background:var(--paper)}.faq-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:80px}.faq-list{border-top:1px solid var(--line)}details{padding:19px 0;border-bottom:1px solid var(--line)}summary{display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;font:700 13px var(--display)}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--accent);font:400 21px var(--sans)}details[open] summary:after{content:"−"}details p{max-width:620px;margin:12px 35px 0 0;color:#6b7168;font-size:11px;line-height:1.8}
-    .contact{background:#dcded4;padding:95px 0}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}.contact h2{max-width:490px;margin:17px 0;font:700 clamp(38px,4.5vw,57px)/1.02 var(--display);letter-spacing:-3.5px}.contact-copy{max-width:410px;color:#62685e;font-size:13px;line-height:1.85}.contact-direct{margin-top:28px;padding-top:20px;border-top:1px solid #c3c7bb}.contact-direct small{display:block;margin-bottom:7px;color:#777d72;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.contact-direct a{font:700 15px var(--display);border-bottom:1px solid #8c9286;padding-bottom:3px}.form{padding:29px;background:var(--white);border:1px solid #d8dbd1}.form-head{margin:0 0 20px;font:700 19px var(--display);letter-spacing:-.6px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form label{display:grid;gap:7px;color:#555b52;font-size:10px;font-weight:700}.form .wide{grid-column:1/-1}.form input,.form select,.form textarea{width:100%;min-height:44px;padding:11px 12px;border:1px solid #d8dbd1;background:#fffefa;color:var(--ink);font-size:11px;outline:none}.form textarea{min-height:92px;resize:vertical}.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(228,87,53,.1)}.form-bottom{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:17px}.form-bottom .btn{border:0;cursor:pointer}.form-note{max-width:245px;color:#858a80;font-size:9px;line-height:1.6}.form-status{margin:12px 0 0;color:#555b52;font-size:10px}
-    .footer{padding:30px 0;background:#171b16;color:#c1c6bb}.footer-top{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;padding-bottom:28px;border-bottom:1px solid #3a4038}.footer .logo{color:#fff}.footer .logo-mark{background:var(--accent)}.footer-blurb{max-width:270px;color:#9ca396;font-size:10px;line-height:1.7}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:10px}.footer-links a:hover{color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;color:#8e9688;font-size:9px}.footer-bottom a{text-decoration:underline;text-underline-offset:3px}
-    @media(max-width:900px){.pricing-grid{grid-template-columns:1fr}.pricing-card.featured{transform:none}.pricing-card h3,.pricing-desc{min-height:0}.wrap{width:min(var(--max),calc(100% - 44px))}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-visual{min-height:420px}.offer-grid{grid-template-columns:1fr;gap:38px}.method-layout{grid-template-columns:1fr;gap:35px}.method-aside{min-height:280px}.faq-layout{grid-template-columns:1fr;gap:28px}.contact-grid{grid-template-columns:1fr;gap:32px}.sector-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:650px){.wrap{width:calc(100% - 36px)}.nav{height:70px}.brand-logo{width:94px;max-height:36px}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;padding:20px 22px 24px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:19px}.nav-links.open{display:flex}.nav-cta{display:none}.menu-toggle{display:block}.hero{padding:58px 0 48px}.hero h1{font-size:clamp(46px,13vw,66px);letter-spacing:-3.8px}.hero h1 em{letter-spacing:-2px}.hero-copy{font-size:13px}.hero-visual{min-height:340px}.hero-caption strong{font-size:23px}.hero-meta{gap:12px 17px}.ticker-inner{align-items:flex-start;flex-direction:column;padding:19px 0}.ticker-list{gap:12px 18px}.ticker-list span{font-size:10px}section.section{padding:72px 0}.section-head{display:block;margin-bottom:28px}.section-title h2{font-size:39px;letter-spacing:-2.4px}.section-intro{margin-top:17px}.work-grid{grid-template-columns:1fr}.work-card{min-height:300px}.work-card.small{min-height:250px}.work-side{grid-template-rows:auto}.offer h2,.contact h2{font-size:42px;letter-spacing:-2.6px}.offer-price strong{font-size:47px}.offer-list{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}.service{min-height:190px;padding:20px 16px}.service h3{font-size:15px}.method-aside{min-height:260px;padding:23px}.method-aside strong{font-size:29px}.step{grid-template-columns:38px 1fr;gap:10px}.sector-grid{gap:8px}.sector{min-height:126px;padding:15px}.sector strong{font-size:12px}.form{padding:20px}.form-grid{grid-template-columns:1fr}.form .wide{grid-column:auto}.footer-top,.footer-bottom{flex-direction:column}.footer-links{gap:15px}.hero-actions{gap:15px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
-  
-/* WhatsApp contact shortcut */
-.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:9999;display:inline-flex;align-items:center;gap:10px;padding:14px 19px;border-radius:999px;background:#167b55;color:#fff!important;text-decoration:none!important;font:700 14px/1.1 Manrope,Arial,sans-serif;box-shadow:0 10px 30px rgba(18,52,38,.24);transition:transform .2s ease,box-shadow .2s ease}
-.whatsapp-float:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(18,52,38,.3)}
-.whatsapp-float svg{width:21px;height:21px;flex:none}
-.contact-direct a.whatsapp-contact{display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:14px;padding:12px 17px;border:0!important;border-bottom:0!important;border-radius:8px;background:#167b55;color:#fff!important;text-decoration:none!important;font:700 13px/1.2 Manrope,Arial,sans-serif;box-shadow:none;transition:background .2s ease}.contact-direct a.whatsapp-contact:hover{background:#126846}
-.whatsapp-contact svg{width:19px;height:19px;flex:none}
-@media(max-width:600px){.whatsapp-float{right:14px;bottom:14px;padding:13px 16px;font-size:13px}.whatsapp-float svg{width:20px;height:20px}}
-
-
-/* VITRIA PRO — refined scroll motion */
-html.vp-motion{scroll-behavior:smooth}
-@media (prefers-reduced-motion:no-preference){
-  .vp-reveal{opacity:0;transform:translate3d(0,26px,0) scale(.985);transition:opacity .78s cubic-bezier(.2,.7,.2,1),transform .78s cubic-bezier(.2,.7,.2,1);transition-delay:var(--vp-delay,0ms);will-change:opacity,transform}
-  .vp-reveal.vp-visible{opacity:1;transform:translate3d(0,0,0) scale(1);will-change:auto}
-  .hero-grid > .vp-reveal:first-child{transform:translate3d(-18px,18px,0);}
-  .hero-grid > .vp-reveal:last-child{transform:translate3d(18px,24px,0) scale(.985)}
-  .hero-grid > .vp-reveal.vp-visible{transform:translate3d(0,0,0) scale(1)}
-  .work-card,.card,.pricing-card,.step,.footer-col{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
-  .work-card:hover,.card:hover,.pricing-card:not(.featured):hover,.step:hover{transform:translateY(-5px)}
-  .work-card .work-img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
-  .work-card:hover .work-img{transform:scale(1.045)}
-}
-@media (prefers-reduced-motion:reduce){.vp-reveal{opacity:1!important;transform:none!important;transition:none!important}}
-
-    .founder{background:var(--white)}
-    .founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:64px;align-items:center}
-    .founder-portrait{position:relative;max-width:430px;aspect-ratio:4/5;background:transparent;overflow:hidden}
-    .founder-portrait img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 38%;display:block;transform:scale(1.08)}
-    .founder-copy h2{margin:16px 0 20px;font:700 clamp(35px,4.5vw,57px)/1.04 var(--display);letter-spacing:-3.5px}
-    .founder-copy h2 em{font:400 1.02em var(--serif);color:var(--accent)}
-    .founder-copy p{max-width:590px;color:#666b63;font-size:13px;line-height:1.9}
-    .founder-signature{margin-top:25px;padding-top:18px;border-top:1px solid var(--line);font:600 14px var(--display)}
-    .founder-signature small{display:block;margin-top:5px;color:#858a80;font:500 10px var(--sans);letter-spacing:1px;text-transform:uppercase}
-    @media(max-width:900px){.founder-grid{grid-template-columns:1fr;gap:30px}.founder-portrait{max-width:360px}}
-
-  </style>
-
-  <link rel="stylesheet" href="/agency.css?v=2">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102d3a">
+<meta name="description" content="VITRIA PRO conçoit des sites internet professionnels pour les entreprises, commerces, artisans et indépendants. Création, refonte et expérience digitale. À partir de 990 €.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VITRIA PRO — Digital, conçu pour les entreprises">
+<meta property="og:description" content="Des expériences digitales structurées pour les entreprises qui veulent avancer.">
+<meta property="og:url" content="https://vitriapro.com/">
+<meta property="og:image" content="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png">
+<title>VITRIA PRO — Agence digitale & création web</title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102d3a;--navy2:#183f50;--blue:#456b7a;--ice:#eaf0f2;--paper:#f6f8f8;--white:#fff;--ink:#17252c;--muted:#65747b;--line:#d6e0e4;--max:1240px;--sans:"DM Sans",Arial,sans-serif;--display:"Manrope",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(var(--max),calc(100% - 72px));margin:auto}.micro{font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--blue)}.micro:before{content:"";display:inline-block;width:23px;height:1px;background:currentColor;vertical-align:middle;margin:0 11px 3px 0}
+.topline{height:4px;background:var(--navy)}.header{position:sticky;top:0;z-index:50;background:rgba(246,248,248,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{font:800 22px var(--display);letter-spacing:-1.2px;color:var(--navy)}.brand span{color:#7895a1}.nav-links{display:flex;align-items:center;gap:32px;color:#53636b;font-size:12px;font-weight:600}.nav-links a:hover{color:var(--navy)}.nav-cta{display:inline-flex;align-items:center;gap:20px;background:var(--navy);color:white;padding:15px 18px;font-size:11px;font-weight:700;letter-spacing:.2px}.nav-cta:hover,.button:hover{background:#254e60}.menu-toggle{display:none;border:1px solid var(--line);background:none;padding:9px 12px;color:var(--navy)}
+.hero{background:var(--navy);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:650px;height:650px;border:1px solid #ffffff14;border-radius:50%;right:-150px;top:-290px;box-shadow:0 0 0 70px #ffffff08,0 0 0 140px #ffffff05;pointer-events:none}.hero-inner{position:relative;z-index:1;padding:94px 0 72px}.hero-top{display:flex;justify-content:space-between;align-items:center;gap:25px;border-bottom:1px solid #ffffff30;padding-bottom:22px}.hero-top .micro{color:#b8cbd2}.hero-top-note{color:#b9cbd1;font-size:11px}.hero-main{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:end;padding:65px 0 60px}.hero h1{max-width:800px;margin:0;font:700 clamp(54px,7.2vw,98px)/.99 var(--display);letter-spacing:-.075em}.hero h1 span{display:block;color:#9eb7c1}.hero-copy{max-width:410px;margin:0 0 8px;color:#d0dce0;font-size:14px;line-height:1.9}.hero-actions{display:flex;align-items:center;gap:24px;margin-top:32px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:0 20px;background:#fff;color:var(--navy);font-size:11px;font-weight:800}.button:hover{color:white}.button-light{background:#fff;color:var(--navy)}.button-outline{color:white;border-bottom:1px solid #8fa8b2;padding:9px 0;font-size:11px;font-weight:700}.hero-bottom{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #ffffff30}.hero-stat{padding:20px 22px 0 0;border-right:1px solid #ffffff30}.hero-stat:not(:first-child){padding-left:22px}.hero-stat:last-child{border:0}.hero-stat strong{display:block;font:700 13px var(--display);color:#fff}.hero-stat span{display:block;margin-top:5px;color:#b6c8ce;font-size:10px}
+.section{padding:100px 0}.section-head{display:grid;grid-template-columns:1fr .7fr;gap:70px;align-items:end;margin-bottom:48px}.section-title{max-width:720px}.section-title h2{margin:17px 0 0;font:700 clamp(38px,5vw,64px)/1.02 var(--display);letter-spacing:-.07em}.section-title h2 span{color:#6c8a97}.section-intro{max-width:390px;margin:0;color:var(--muted);font-size:13px;line-height:1.9}.intro-strip{background:var(--ice);border-block:1px solid var(--line)}.strip-grid{display:grid;grid-template-columns:repeat(4,1fr)}.strip-item{padding:25px 22px;border-right:1px solid var(--line)}.strip-item:first-child{padding-left:0}.strip-item:last-child{border:0}.strip-item small{display:block;color:var(--blue);font-size:9px;font-weight:800;letter-spacing:1.5px}.strip-item strong{display:block;margin-top:8px;font:700 14px var(--display)}
+.capabilities{background:#fff}.cap-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.cap{min-height:245px;padding:30px 32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.cap-top{display:flex;justify-content:space-between;color:#75909b;font:italic 14px Georgia,serif}.cap h3{margin:25px 0 10px;font:700 23px var(--display);letter-spacing:-.8px}.cap p{max-width:440px;margin:0;color:var(--muted);font-size:12px;line-height:1.8}.cap-link{margin-top:22px;color:var(--navy);font-size:10px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+.approach{background:var(--ice)}.approach-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px}.approach-aside{background:var(--navy);color:white;padding:35px;min-height:380px;display:flex;flex-direction:column;justify-content:space-between}.approach-aside .micro{color:#b5c9d0}.approach-aside strong{display:block;max-width:370px;font:700 38px/1.08 var(--display);letter-spacing:-1.8px}.approach-aside small{color:#b8cbd2;font-size:10px;line-height:1.7}.steps{border-top:1px solid #cbd7dc}.step{display:grid;grid-template-columns:55px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid #cbd7dc}.step-no{color:#6f8c98;font:italic 15px Georgia,serif}.step h3{margin:0 0 8px;font:700 17px var(--display)}.step p{max-width:520px;margin:0;color:var(--muted);font-size:12px;line-height:1.8}
+.sectors{background:#fff}.sector-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.sector{min-height:150px;padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.sector small{color:#79929d;font:italic 14px Georgia,serif}.sector strong{font:700 15px var(--display)}.sector span{color:var(--muted);font-size:10px}
+.pricing{background:var(--navy);color:white}.pricing .micro{color:#b8cbd2}.pricing .section-title h2 span{color:#a9c0c9}.pricing .section-intro{color:#c1d0d5}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #ffffff35;margin-top:48px}.price-card{padding:30px 28px 26px;border-right:1px solid #ffffff35;display:flex;flex-direction:column;min-height:400px}.price-card:last-child{border:0}.price-card.featured{background:#eaf0f2;color:var(--navy)}.price-label{font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#9eb8c2}.featured .price-label{color:#527483}.price-card h3{margin:18px 0 12px;font:700 24px var(--display);letter-spacing:-.8px}.price-desc{min-height:58px;color:#c2d1d6;font-size:11px;line-height:1.8}.featured .price-desc{color:#62747b}.price{margin:24px 0 8px;font:800 43px var(--display);letter-spacing:-2px}.price small{font:500 11px var(--sans);letter-spacing:0;opacity:.7}.price-list{list-style:none;margin:14px 0 28px;padding:18px 0 0;border-top:1px solid #ffffff35;flex:1}.featured .price-list{border-color:var(--line)}.price-list li{padding:7px 0;color:#e0e9ec;font-size:11px}.featured .price-list li{color:#35464d}.price-list li:before{content:"—";margin-right:10px;color:#9eb8c2}.price-action{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-top:1px solid #ffffff45;font-size:11px;font-weight:800}.featured .price-action{border-color:#c7d4d9}.price-note{margin:22px 0 0;color:#b8cbd2;font-size:10px;line-height:1.8}
+.examples{background:var(--paper)}.example-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.example{position:relative;min-height:350px;background:#dce4e7;overflow:hidden}.example img{width:100%;height:100%;min-height:350px;object-fit:cover;filter:saturate(.65)}.example:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#102d3ad9)}.example-label{position:absolute;z-index:1;left:25px;right:25px;bottom:24px;color:white}.example-label small{font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#c4d5db}.example-label strong{display:block;margin-top:8px;font:700 24px var(--display)}.example-side{display:grid;grid-template-rows:1fr 1fr;gap:16px}.example-side .example{min-height:167px}.example-side .example img{min-height:167px}.example-disclaimer{margin-top:16px;color:#78868c;font-size:10px;line-height:1.7}
+.faq{background:#fff}.faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:85px}.faq-list{border-top:1px solid var(--line)}details{padding:21px 0;border-bottom:1px solid var(--line)}summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font:700 13px var(--display)}summary::-webkit-details-marker{display:none}summary:after{content:"+";font-size:20px;font-weight:400;color:#6f8c98}details[open] summary:after{content:"−"}details p{max-width:620px;margin:13px 25px 0 0;color:var(--muted);font-size:11px;line-height:1.85}
+.contact{background:var(--ice);padding:95px 0}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:start}.contact h2{margin:17px 0;font:700 clamp(40px,5vw,61px)/1.02 var(--display);letter-spacing:-.07em}.contact-copy{max-width:400px;color:var(--muted);font-size:13px;line-height:1.9}.contact-direct{margin-top:30px;padding-top:20px;border-top:1px solid #cbd7dc}.contact-direct small{display:block;margin-bottom:8px;color:#70828a;font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.contact-direct a{font:700 15px var(--display);border-bottom:1px solid #8fa5ae;padding-bottom:4px}.form{background:#fff;border:1px solid var(--line);padding:30px}.form-head{margin:0 0 22px;font:700 20px var(--display)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.form label{display:grid;gap:7px;color:#53636b;font-size:10px;font-weight:700}.form .wide{grid-column:1/-1}.form input,.form select,.form textarea{width:100%;min-height:45px;padding:11px 12px;border:1px solid var(--line);background:#fff;color:var(--ink);font:12px var(--sans);outline:none}.form textarea{min-height:90px;resize:vertical}.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--blue)}.form-bottom{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:18px}.form-bottom .button{border:0;cursor:pointer}.form-note{max-width:250px;color:#829097;font-size:9px;line-height:1.6}.form-status{font-size:10px;color:var(--muted)}
+.footer{background:#0b222d;color:#d4e0e4;padding:34px 0 25px}.footer-top{display:grid;grid-template-columns:.7fr 1fr 1.3fr;gap:40px;padding-bottom:30px;border-bottom:1px solid #ffffff25}.footer-brand{font:800 22px var(--display);letter-spacing:-1px}.footer-brand span{color:#91aab4}.footer-blurb{max-width:300px;margin:0;color:#aabcc3;font-size:11px;line-height:1.8}.footer-links{display:flex;flex-wrap:wrap;gap:14px 22px;align-content:start;font-size:10px;color:#c2d0d5}.footer-links a:hover{color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;color:#9db0b8;font-size:9px}.footer-bottom a{text-decoration:underline;text-underline-offset:3px}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:40;background:var(--navy);color:white;padding:14px 18px;font-size:11px;font-weight:700;box-shadow:0 8px 25px #102d3a25}.whatsapp-float:hover{background:var(--navy2)}
+@media(max-width:900px){.wrap{width:calc(100% - 48px)}.hero-main{grid-template-columns:1fr;gap:30px}.hero-copy{max-width:600px}.section-head{grid-template-columns:1fr;gap:20px}.approach-grid,.faq-layout,.contact-grid{grid-template-columns:1fr;gap:35px}.price-grid{grid-template-columns:1fr}.price-card{border-right:0;border-bottom:1px solid #ffffff35;min-height:0}.price-card:last-child{border-bottom:0}.price-desc{min-height:0}.footer-top{grid-template-columns:1fr 1fr}.footer-links{grid-column:1/-1}.sector-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.wrap{width:calc(100% - 36px)}.nav{height:68px}.brand{font-size:20px}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:20px 22px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.nav-cta{display:none}.menu-toggle{display:block}.hero-inner{padding:55px 0 40px}.hero-top{align-items:flex-start;flex-direction:column;gap:10px}.hero-main{padding:42px 0 45px;gap:24px}.hero h1{font-size:clamp(48px,13vw,68px);letter-spacing:-.075em}.hero-copy{font-size:13px}.hero-bottom{grid-template-columns:1fr}.hero-stat,.hero-stat:not(:first-child){padding:14px 0;border-right:0;border-bottom:1px solid #ffffff30}.hero-stat:last-child{border-bottom:0}.section{padding:70px 0}.section-title h2{font-size:42px}.strip-grid{grid-template-columns:1fr 1fr}.strip-item{padding:18px 12px;border-bottom:1px solid var(--line)}.strip-item:first-child{padding-left:12px}.cap-grid{grid-template-columns:1fr}.cap{min-height:205px;padding:24px}.approach-aside{min-height:290px;padding:25px}.approach-aside strong{font-size:32px}.step{grid-template-columns:35px 1fr;gap:10px}.sector-grid{grid-template-columns:1fr 1fr}.sector{min-height:125px;padding:15px}.sector strong{font-size:13px}.price-card{padding:25px 22px}.example-grid{grid-template-columns:1fr}.example,.example img{min-height:280px}.example-side{grid-template-rows:auto}.example-side .example,.example-side .example img{min-height:220px}.form{padding:20px}.form-grid{grid-template-columns:1fr}.form .wide{grid-column:auto}.footer-top{grid-template-columns:1fr;gap:20px}.footer-links{grid-column:auto}.footer-bottom{flex-direction:column;gap:10px}.contact h2{font-size:43px}.whatsapp-float{right:14px;bottom:14px}}
+@media(prefers-reduced-motion:no-preference){.button,.nav-cta,.cap,.sector,.price-action{transition:background .2s,border-color .2s,color .2s,transform .2s}.cap:hover,.sector:hover{transform:translateY(-2px)}}
+</style>
 </head>
 <body>
-  <div class="topline"></div>
-  <header class="header">
-    <div class="wrap nav">
-      <a class="logo" href="#accueil" aria-label="VITRIA PRO, accueil"><img class="brand-logo" src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO"></a>
-      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
-        <a href="#fondateur">À propos</a>
-        <a href="#realisations">Nos exemples</a><a href="#services">Expertises</a><a href="#methode">Méthode</a><a href="#offre">Tarif</a><a href="/recrutement-commercial.html">Recrutement</a><a href="/rendez-vous.html">Appel gratuit</a>
-      </nav>
-      <a class="nav-cta" href="/rendez-vous.html">Réserver un appel <span>↗</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    </div>
-  </header>
-  <main>
-    <section class="hero" id="accueil">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow">Création de sites internet · France</span>
-          <h1>Votre activité mérite un site <em>remarquable.</em></h1>
-          <p class="hero-copy">Nous concevons des sites web professionnels qui présentent votre savoir-faire, renforcent votre crédibilité et facilitent la prise de contact. Une création soignée, pensée pour votre entreprise et vos clients.</p>
-          <div class="hero-actions"><a class="btn" href="/rendez-vous.html">Réserver un appel gratuit <span>↗</span></a><a class="text-link" href="#realisations">Voir des exemples <span>↓</span></a></div>
-          <div class="hero-meta"><span><i class="meta-dot"></i> Design adapté à votre activité</span><span><i class="meta-dot"></i> Pensé pour le mobile</span><span><i class="meta-dot"></i> Devis avant démarrage</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Aperçu d'un univers de site web professionnel">
-          <div class="hero-photo"></div><span class="hero-stamp">VITRIA PRO · Création web</span><span class="hero-index">01 / 04</span>
-          <div class="hero-caption"><div><small>Design · Structure · Développement</small><strong>Une présence en ligne qui vous ressemble.</strong></div><span>↗</span></div>
-        </div>
-      </div>
-    </section>
-    <div class="ticker"><div class="wrap ticker-inner"><span class="ticker-label">Pour les professionnels</span><div class="ticker-list"><span>Artisans</span><span>Commerces</span><span>Restaurants</span><span>Indépendants</span><span>TPE & PME</span></div></div></div>
-
-    <section class="section work" id="realisations">
-      <div class="wrap">
-        <div class="section-head"><div class="section-title"><span class="eyebrow">Inspirations par secteur</span><h2>Un site qui parle le langage de <em>votre métier.</em></h2></div><p class="section-intro">Chaque activité a ses codes, ses clients et ses priorités. Voici trois univers de démonstration pour illustrer les directions que nous pouvons concevoir.</p></div>
-        <div class="work-grid">
-          <a class="work-card" href="/restaurants.html"><div class="work-img restaurant"></div><div class="work-card-content"><span class="work-tag">01 · Restauration</span><h3>Donner envie avant la première visite.</h3></div></a>
-          <div class="work-side">
-            <a class="work-card small" href="/artisans.html"><div class="work-img artisan"></div><div class="work-card-content"><span class="work-tag">02 · Artisanat & bâtiment</span><h3>Faire voir la qualité du travail.</h3></div></a>
-            <a class="work-card small" href="/coiffeurs.html"><div class="work-img salon"></div><div class="work-card-content"><span class="work-tag">03 · Beauté & bien-être</span><h3>Révéler votre univers.</h3></div></a>
-          </div>
-        </div>
-        <p class="work-note">Ces visuels illustrent des univers sectoriels et ne constituent pas des références de sites clients livrés.</p>
-      </div>
-    </section>
-
-    <section class="section offer pricing" id="offre">
-      <div class="wrap">
-        <div class="pricing-intro">
-          <span class="eyebrow">Des formules claires</span>
-          <h2>La bonne formule pour <em>votre ambition.</em></h2>
-          <p>Choisissez le niveau d'accompagnement adapté à votre activité. Chaque projet fait l'objet d'un périmètre écrit et d'un devis avant démarrage.</p>
-        </div>
-        <div class="pricing-grid">
-          <article class="pricing-card">
-            <span class="pricing-kicker">01 · Essentiel</span>
-            <h3>Une présence web claire.</h3>
-            <div class="pricing-amount">990 €</div>
-            <p class="pricing-desc">Pour présenter l'essentiel de votre activité dans une page professionnelle.</p>
-            <ul><li>Site vitrine one-page</li><li>Design adapté à votre identité</li><li>Adaptation mobile et tablette</li><li>Présentation des services et coordonnées</li><li>Boutons de contact</li><li>Fondations SEO essentielles</li></ul>
-            <a class="pricing-link" href="#contact">Demander cette formule ↗</a>
-          </article>
-          <article class="pricing-card featured">
-            <span class="pricing-kicker">02 · Business · La plus complète</span>
-            <h3>Un site complet pour développer votre activité.</h3>
-            <div class="pricing-amount">1 490 €</div>
-            <p class="pricing-desc">Pour présenter vos offres, rassurer vos prospects et faciliter les demandes de contact.</p>
-            <ul><li>Jusqu'à 5 pages</li><li>Design personnalisé</li><li>Adaptation mobile et tablette</li><li>Présentation détaillée des prestations</li><li>Parcours de contact défini au devis</li><li>Structure SEO de base</li><li>Préparation à la mise en ligne et vérifications</li></ul>
-            <a class="pricing-link" href="#contact">Choisir Business ↗</a>
-          </article>
-          <article class="pricing-card">
-            <span class="pricing-kicker">03 · Premium</span>
-            <h3>Une présence plus ambitieuse.</h3>
-            <div class="pricing-amount">2 490 €</div>
-            <p class="pricing-desc">Pour les entreprises qui ont davantage de contenus et des besoins plus avancés.</p>
-            <ul><li>Jusqu'à 10 pages</li><li>Direction artistique personnalisée</li><li>Pages dédiées aux services</li><li>Galerie ou portfolio</li><li>Optimisation SEO approfondie des pages</li><li>Intégrations définies au devis</li><li>Accompagnement au lancement</li></ul>
-            <a class="pricing-link" href="#contact">Parler d'un projet Premium ↗</a>
-          </article>
-        </div>
-        <p class="pricing-footnote">E-commerce, réservation avancée, espace client, fonctionnalités spécifiques, rédaction complète et prestations récurrentes : sur devis. Les contenus, délais, options et éventuels frais tiers sont précisés avant validation.</p>
-      </div>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="wrap">
-        <div class="section-head"><div class="section-title"><span class="eyebrow">Ce que nous réalisons</span><h2>Tout ce qu'il faut pour une présence en ligne <em>solide.</em></h2></div><p class="section-intro">Du premier écran jusqu'au formulaire de contact, chaque élément a un rôle : expliquer votre activité et guider vos futurs clients.</p></div>
-        <div class="service-grid">
-          <article class="service"><span class="service-no">01</span><h3>Site vitrine</h3><p>Présentez votre entreprise, vos services, vos réalisations et vos coordonnées dans un site clair et professionnel.</p></article>
-          <article class="service"><span class="service-no">02</span><h3>Refonte de site</h3><p>Modernisez votre image, clarifiez votre message et améliorez l'expérience de vos visiteurs.</p></article>
-          <article class="service"><span class="service-no">03</span><h3>Design personnalisé</h3><p>Une direction visuelle cohérente avec votre métier, votre identité et les attentes de vos clients.</p></article>
-          <article class="service"><span class="service-no">04</span><h3>Expérience mobile</h3><p>Une navigation conçue pour les smartphones, tablettes et ordinateurs, sans sacrifier la lisibilité.</p></article>
-          <article class="service"><span class="service-no">05</span><h3>Fondations SEO</h3><p>Des pages structurées, des titres pertinents et les réglages techniques essentiels au référencement naturel.</p></article>
-          <article class="service"><span class="service-no">06</span><h3>Fonctionnalités utiles</h3><p>Formulaires, liens de contact et intégrations adaptées au besoin, définis clairement avant le projet.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section method" id="methode">
-      <div class="wrap">
-        <div class="section-head"><div class="section-title"><span class="eyebrow">Une méthode simple</span><h2>Du premier échange à la mise en ligne. <em>En toute clarté.</em></h2></div><p class="section-intro">Vous connaissez votre métier. Nous vous aidons à le présenter en ligne, sans vous demander de maîtriser la technique.</p></div>
-        <div class="method-layout">
-          <div class="method-aside"><small>VITRIA PRO · Notre approche</small><strong>Le bon site commence par les bonnes questions.</strong><span>Comprendre avant de concevoir.</span></div>
-          <div class="steps">
-            <article class="step"><span class="step-no">01</span><div><h3>Échanger & comprendre</h3><p>Nous découvrons votre entreprise, votre clientèle, vos services et ce que votre futur site doit accomplir.</p></div></article>
-            <article class="step"><span class="step-no">02</span><div><h3>Cadrer & proposer</h3><p>Vous recevez une proposition claire : pages, fonctionnalités, contenus attendus, tarif et calendrier prévisionnel.</p></div></article>
-            <article class="step"><span class="step-no">03</span><div><h3>Concevoir & réaliser</h3><p>Nous construisons un site adapté à votre identité, avec une attention particulière portée à la navigation mobile.</p></div></article>
-            <article class="step"><span class="step-no">04</span><div><h3>Valider & publier</h3><p>Vous vérifiez le rendu et les contenus avant la mise en ligne, selon les conditions définies au devis.</p></div></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section sectors" id="secteurs">
-      <div class="wrap">
-        <div class="section-head"><div class="section-title"><span class="eyebrow">À qui s'adresse VITRIA PRO</span><h2>Des entreprises différentes. Le même besoin de <em>clarté.</em></h2></div><p class="section-intro">Nous travaillons sur des sites vitrines pour les professionnels qui veulent présenter leur activité avec sérieux.</p></div>
-        <div class="sector-grid">
-          <a class="sector" href="/artisans.html"><span>01 /</span><strong>Artisans & bâtiment</strong><small>Services · Réalisations · Devis ↗</small></a>
-          <a class="sector" href="/restaurants.html"><span>02 /</span><strong>Restaurants & cafés</strong><small>Carte · Ambiance · Réservation ↗</small></a>
-          <a class="sector" href="/coiffeurs.html"><span>03 /</span><strong>Coiffeurs & instituts</strong><small>Prestations · Galerie · Contact ↗</small></a>
-          <a class="sector" href="#contact"><span>04 /</span><strong>TPE, PME & indépendants</strong><small>Présentation · Expertise · Contact ↗</small></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section founder" id="fondateur">
-      <div class="wrap founder-grid">
-        <div class="founder-portrait">
-          <img src="https://i.postimg.cc/W4vzrQvs/896804462-4365250200359133-6396821778612066393-n.webp" alt="Portrait du fondateur de VITRIA PRO" loading="lazy">
-        </div>
-        <div class="founder-copy">
-          <span class="eyebrow">Derrière VITRIA PRO</span>
-          <h2>Un interlocuteur direct. <em>Un projet bien cadré.</em></h2>
-          <p>VITRIA PRO accompagne les petites entreprises, indépendants et professionnels dans la création de leur présence en ligne. Chaque collaboration commence par un échange pour comprendre votre activité, vos clients et vos objectifs, puis définir un site adapté à votre besoin.</p>
-          <p>Vous échangez directement avec la personne qui pilote votre demande, du cadrage initial jusqu'à la préparation de la mise en ligne. Le périmètre, le tarif et les délais sont clarifiés avant tout démarrage.</p>
-          <div class="founder-signature">VITRIA PRO<small>Création de sites web professionnels</small></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq">
-      <div class="wrap faq-layout">
-        <div class="section-title"><span class="eyebrow">Questions fréquentes</span><h2>Les réponses avant de <em>se lancer.</em></h2><p class="section-intro" style="margin-top:18px">Un projet particulier ? Le premier échange permet de vérifier si notre offre correspond à votre besoin.</p></div>
-        <div class="faq-list">
-          <details><summary>Que comprend le tarif indicatif à partir de 1 490 € ?</summary><p>Le tarif indicatif concerne un site vitrine jusqu'à 5 pages, avec design personnalisé, adaptation mobile, formulaire de contact, structure SEO de base et préparation de la mise en ligne. Le devis confirme le périmètre exact, le prix final, la devise, le traitement des taxes éventuellement applicables, les contenus, les fonctionnalités et les éventuels frais tiers.</p></details>
-          <details><summary>Combien de temps faut-il pour créer mon site ?</summary><p>Le délai dépend du nombre de pages, des fonctionnalités et de la réception des contenus. Un calendrier prévisionnel est indiqué dans la proposition avant le démarrage.</p></details>
-          <details><summary>Dois-je fournir les textes et les photos ?</summary><p>Les éléments nécessaires sont définis au départ. Nous vous indiquons ce qu'il faut préparer. La rédaction ou la production de photos spécifiques peut faire l'objet d'une prestation complémentaire.</p></details>
-          <details><summary>Le site sera-t-il adapté aux téléphones ?</summary><p>Oui. La conception prévoit une navigation adaptée aux smartphones, tablettes et ordinateurs.</p></details>
-          <details><summary>Le référencement Google est-il inclus ?</summary><p>Une structure SEO de base est prévue : hiérarchie des titres, métadonnées essentielles et structure des pages. Cela ne constitue pas une garantie de positionnement ni une prestation complète de référencement.</p></details>
-          <details><summary>Y a-t-il des frais mensuels ?</summary><p>Les éventuels frais liés au nom de domaine, à l'hébergement, aux services tiers ou à la maintenance sont identifiés dans la proposition avant validation. Aucun coût récurrent ne doit être implicite.</p></details>
-          <details><summary>Est-ce que je m'engage en demandant un devis ?</summary><p>Non. Le premier échange sert à comprendre votre projet. Le périmètre, le prix et les conditions sont présentés avant toute commande.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="wrap contact-grid">
-        <div><span class="eyebrow">Parlons de votre projet</span><h2>Et si votre prochain site commençait ici ?</h2><p class="contact-copy">Décrivez-nous votre activité et ce que vous souhaitez améliorer. Nous pourrons échanger sur le besoin et définir une proposition adaptée.</p><div class="contact-direct"><small>Vous préférez échanger directement ?</small><a href="/rendez-vous.html">Réserver un appel découverte gratuit ↗</a><small style="margin-top:22px">Contact e-mail</small><a href="mailto:contact@vitriapro.com">contact@vitriapro.com ↗</a><a class="whatsapp-contact" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet%20de%20site%20web." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.1 11.8a8.1 8.1 0 0 1-12 7.1L4 20l1.1-4a8.1 8.1 0 1 1 15-4.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.7c.2-.5.5-.5.8-.5h.5c.2 0 .3.1.4.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.8-.2-1.8-.7-2.8-1.6-1.2-1-2-2.3-2.2-3.1-.2-.8 0-1.5.2-1.9Z" fill="currentColor"/></svg>Écrire sur WhatsApp</a></div></div>
-        <form class="form" id="leadForm">
-          <p class="form-head">Présentez-nous votre projet.</p>
-          <div class="form-grid">
-            <label>Nom et prénom *<input name="name" autocomplete="name" required placeholder="Votre nom"></label>
-            <label>Entreprise *<input name="company" autocomplete="organization" required placeholder="Nom de l'entreprise"></label>
-            <label>E-mail professionnel *<input name="email" type="email" autocomplete="email" required placeholder="vous@entreprise.fr"></label>
-            <label>Téléphone <span style="font-weight:400;color:#858a80">Facultatif</span><input name="phone" type="tel" autocomplete="tel" placeholder="Votre numéro"></label>
-            <label>Votre activité *<input name="activity" required placeholder="Ex. : artisan, restaurant…"></label>
-            <label>Votre besoin *<select name="need" required><option value="">Sélectionner</option><option>Créer un site vitrine</option><option>Refondre un site existant</option><option>Ajouter une fonctionnalité</option><option>Être conseillé</option></select></label>
-            <label class="wide">Parlez-nous de votre projet <span style="font-weight:400;color:#858a80">Facultatif</span><textarea name="message" placeholder="Votre activité, vos objectifs, vos attentes…"></textarea></label>
-          </div>
-          <div class="form-bottom"><button class="btn" type="submit">Ouvrir ma demande par e-mail <span>↗</span></button><span class="form-note">Le formulaire prépare un e-mail dans votre application. La demande ne sera transmise qu'après votre confirmation d'envoi.</span></div>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-top">
-        <a class="logo footer-wordmark" href="#accueil" aria-label="VITRIA PRO, accueil">VITRIA <span>PRO</span></a>
-        <p class="footer-blurb">Studio digital spécialisé dans la conception de sites web professionnels pour les entreprises, indépendants et commerces.</p>
-        <nav class="footer-links" aria-label="Navigation de pied de page">
-          <a href="#services">Services</a><a href="#secteurs">Secteurs</a><a href="/restaurants.html">Restaurants</a><a href="/coiffeurs.html">Coiffeurs</a><a href="/artisans.html">Artisans</a><a href="#offre">Tarif</a><a href="#contact">Devis</a><a href="/rendez-vous.html">Appel gratuit</a><a href="/recrutement-commercial.html">Recrutement</a>
-        </nav>
-      </div>
-      <div class="footer-bottom"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><span><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a> · <a href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></span></div>
-    </div>
-  </footer>
-  <script>
-    const toggle=document.getElementById('menuToggle');
-    const nav=document.getElementById('navLinks');
-    toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰';toggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');});
-    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';toggle.setAttribute('aria-label','Ouvrir le menu');}));
-    document.getElementById('year').textContent=new Date().getFullYear();
-    document.getElementById('leadForm').addEventListener('submit',event=>{
-      event.preventDefault();
-      const data=new FormData(event.currentTarget);
-      const labels={name:'Nom',company:'Entreprise',email:'E-mail',phone:'Téléphone',activity:'Activité',need:'Besoin',message:'Description du projet'};
-      const body=[...data.entries()].map(([key,value])=>(labels[key]||key)+': '+value).join('\n\n');
-      const subject='Demande de projet - VITRIA PRO';
-      document.getElementById('formStatus').textContent='Votre application e-mail va s’ouvrir. Vérifiez le message puis confirmez son envoi.';
-      window.location.href='mailto:contact@vitriapro.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-    });
-  </script>
-<a class="whatsapp-float" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet%20de%20site%20web." target="_blank" rel="noopener noreferrer" aria-label="Contacter VITRIA PRO sur WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.1 11.8a8.1 8.1 0 0 1-12 7.1L4 20l1.1-4a8.1 8.1 0 1 1 15-4.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.7c.2-.5.5-.5.8-.5h.5c.2 0 .3.1.4.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.8-.2-1.8-.7-2.8-1.6-1.2-1-2-2.3-2.2-3.1-.2-.8 0-1.5.2-1.9Z" fill="currentColor"/></svg><span>WhatsApp</span></a>
-
+<div class="topline"></div>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="#accueil" aria-label="VITRIA PRO, accueil">VITRIA <span>PRO</span></a>
+<nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+<a href="#expertises">Expertises</a><a href="#approche">Notre approche</a><a href="#secteurs">Secteurs</a><a href="#offres">Offres</a>
+</nav>
+<a class="nav-cta" href="#contact">Parler de votre projet <span>↗</span></a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+</div></header>
+<main>
+<section class="hero" id="accueil"><div class="wrap hero-inner">
+<div class="hero-top"><span class="micro">Agence digitale · France</span><span class="hero-top-note">Conception web · Stratégie digitale · Présence en ligne</span></div>
+<div class="hero-main">
+<div><h1>Le digital,<br><span>pensé pour</span><br>faire avancer.</h1>
+<div class="hero-actions"><a class="button button-light" href="#contact">Présenter mon projet <span>↗</span></a><a class="button-outline" href="#expertises">Découvrir nos expertises ↓</a></div></div>
+<div><p class="hero-copy">Nous concevons des sites internet professionnels qui donnent à votre entreprise une présence claire, cohérente et crédible. De la première structure à la mise en ligne, chaque élément répond à un objectif : mieux présenter votre activité et faciliter le contact avec vos futurs clients.</p></div>
+</div>
+<div class="hero-bottom"><div class="hero-stat"><strong>Conception sur mesure</strong><span>Une structure adaptée à votre activité.</span></div><div class="hero-stat"><strong>Approche orientée entreprise</strong><span>Clarté, cohérence et crédibilité.</span></div><div class="hero-stat"><strong>Devis transparent</strong><span>Un périmètre défini avant production.</span></div></div>
+</div></section>
+<section class="intro-strip"><div class="wrap strip-grid"><div class="strip-item"><small>01 / OBJECTIF</small><strong>Présenter votre activité</strong></div><div class="strip-item"><small>02 / STRUCTURE</small><strong>Clarifier votre offre</strong></div><div class="strip-item"><small>03 / EXPÉRIENCE</small><strong>Faciliter la navigation</strong></div><div class="strip-item"><small>04 / ACTION</small><strong>Générer des demandes</strong></div></div></section>
+<section class="section capabilities" id="expertises"><div class="wrap">
+<div class="section-head"><div class="section-title"><span class="micro">01 — Expertises</span><h2>Une présence digitale<br><span>construite avec méthode.</span></h2></div><p class="section-intro">Un site internet doit faire plus que remplir une page. Il doit expliquer rapidement ce que vous faites, à qui vous vous adressez et comment travailler avec vous.</p></div>
+<div class="cap-grid">
+<article class="cap"><div class="cap-top"><span>01</span><span>↗</span></div><div><h3>Création de site internet</h3><p>Conception d'un site vitrine professionnel, organisé autour de votre activité, de vos services et des informations utiles à vos clients.</p><a class="cap-link" href="#offres">Voir les offres ↗</a></div></article>
+<article class="cap"><div class="cap-top"><span>02</span><span>↗</span></div><div><h3>Refonte & repositionnement</h3><p>Repenser un site existant : architecture, hiérarchie de l'information, présentation de l'offre et expérience sur mobile.</p><a class="cap-link" href="#contact">Parler d'une refonte ↗</a></div></article>
+<article class="cap"><div class="cap-top"><span>03</span><span>↗</span></div><div><h3>Design & expérience utilisateur</h3><p>Une interface cohérente, lisible et adaptée à votre identité. Chaque section a un rôle et chaque appel à l'action est explicite.</p><a class="cap-link" href="#contact">Définir votre besoin ↗</a></div></article>
+<article class="cap"><div class="cap-top"><span>04</span><span>↗</span></div><div><h3>Fonctionnalités complémentaires</h3><p>Formulaires avancés, réservation, catalogue ou fonctionnalités spécifiques : les besoins supplémentaires sont étudiés et chiffrés séparément.</p><a class="cap-link" href="#contact">Étudier une fonctionnalité ↗</a></div></article>
+</div></div></section>
+<section class="section approach" id="approche"><div class="wrap"><div class="section-head"><div class="section-title"><span class="micro">02 — Méthode</span><h2>Un processus clair.<br><span>Un projet maîtrisé.</span></h2></div><p class="section-intro">Pas de promesse floue ni de production lancée sans cadrage. Le périmètre, le contenu attendu et les conditions sont définis avant le démarrage.</p></div>
+<div class="approach-grid"><aside class="approach-aside"><span class="micro">Notre engagement</span><strong>Du premier échange à la mise en ligne, chaque étape a sa fonction.</strong><small>Le calendrier et les livrables sont confirmés dans le devis selon le périmètre retenu.</small></aside>
+<div class="steps">
+<div class="step"><span class="step-no">01</span><div><h3>Comprendre votre activité</h3><p>Nous échangeons sur votre entreprise, vos clients, vos services et le rôle attendu de votre futur site.</p></div></div>
+<div class="step"><span class="step-no">02</span><div><h3>Définir le périmètre</h3><p>Pages, contenus, fonctionnalités et éléments à fournir sont précisés. Vous recevez une proposition adaptée au besoin.</p></div></div>
+<div class="step"><span class="step-no">03</span><div><h3>Concevoir & développer</h3><p>La structure et l'interface sont réalisées selon le périmètre validé, avec une attention particulière à l'affichage mobile.</p></div></div>
+<div class="step"><span class="step-no">04</span><div><h3>Vérifier & mettre en ligne</h3><p>Après validation et règlement selon les conditions convenues, le site est préparé pour sa mise en ligne.</p></div></div>
+</div></div></div></section>
+<section class="section sectors" id="secteurs"><div class="wrap"><div class="section-head"><div class="section-title"><span class="micro">03 — Secteurs</span><h2>Au service des<br><span>entreprises de terrain.</span></h2></div><p class="section-intro">Nous travaillons sur des besoins concrets : présenter un savoir-faire, détailler des prestations, montrer un établissement ou permettre à un prospect de prendre contact.</p></div>
+<div class="sector-grid">
+<a class="sector" href="/artisans.html"><small>01 / BÂTIMENT & SAVOIR-FAIRE</small><strong>Artisans & indépendants</strong><span>Prestations, réalisations, contact ↗</span></a>
+<a class="sector" href="/restaurants.html"><small>02 / RESTAURATION</small><strong>Restaurants & cafés</strong><span>Carte, établissement, réservation ↗</span></a>
+<a class="sector" href="/coiffeurs.html"><small>03 / BEAUTÉ & BIEN-ÊTRE</small><strong>Salons & commerces</strong><span>Services, tarifs, rendez-vous ↗</span></a>
+<a class="sector" href="#contact"><small>04 / ENTREPRISES</small><strong>TPE & PME</strong><span>Présentation, expertise, demandes ↗</span></a>
+</div></div></section>
+<section class="section pricing" id="offres"><div class="wrap"><div class="section-head"><div class="section-title"><span class="micro">04 — Offres & budgets</span><h2>Une base claire.<br><span>Un devis adapté.</span></h2></div><p class="section-intro">Trois niveaux de conception pour répondre aux besoins les plus courants. Le tarif final est confirmé après définition du contenu et des fonctionnalités.</p></div>
+<div class="price-grid">
+<article class="price-card"><span class="price-label">Essentiel / 01</span><h3>Une présence claire.</h3><p class="price-desc">Pour présenter une activité et centraliser les informations essentielles sur une seule page.</p><div class="price">990 € <small>à partir de</small></div><ul class="price-list"><li>Site vitrine one-page</li><li>Structure et design adaptés</li><li>Présentation des services</li><li>Contact et affichage mobile</li></ul><a class="price-action" href="#contact">Demander un devis <span>↗</span></a></article>
+<article class="price-card featured"><span class="price-label">Business / 02 — recommandé</span><h3>Une présence structurée.</h3><p class="price-desc">Pour une entreprise qui souhaite détailler ses prestations et organiser son contenu.</p><div class="price">1 490 € <small>à partir de</small></div><ul class="price-list"><li>Jusqu'à 5 pages</li><li>Architecture de contenu</li><li>Design adapté à l'identité</li><li>Formulaire de contact</li><li>Optimisation mobile</li></ul><a class="price-action" href="#contact">Demander un devis <span>↗</span></a></article>
+<article class="price-card"><span class="price-label">Premium / 03</span><h3>Une présence complète.</h3><p class="price-desc">Pour présenter plusieurs offres, expertises ou catégories dans une structure plus détaillée.</p><div class="price">2 490 € <small>à partir de</small></div><ul class="price-list"><li>Jusqu'à 10 pages</li><li>Architecture multi-pages</li><li>Design et sections dédiées</li><li>Formulaire de contact</li><li>Optimisation mobile</li></ul><a class="price-action" href="#contact">Demander un devis <span>↗</span></a></article>
+</div><p class="price-note">Prix indicatifs. Le devis précise le périmètre, les livrables, le calendrier, la devise et les conditions de paiement. Rédaction, photographie, e-commerce, réservation avancée, espace client, maintenance et services tiers ne sont pas inclus par défaut et font l'objet d'un chiffrage distinct.</p>
+</div></section>
+<section class="section examples"><div class="wrap"><div class="section-head"><div class="section-title"><span class="micro">05 — Illustrations</span><h2>Des univers adaptés<br><span>à chaque activité.</span></h2></div><p class="section-intro">Quelques directions visuelles possibles selon le secteur. Ces visuels sont des illustrations de démonstration, pas des références de clients VITRIA PRO.</p></div>
+<div class="example-grid">
+<div class="example"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85" alt="Exemple illustratif d'un intérieur contemporain"><div class="example-label"><small>Exemple de direction visuelle · Habitat</small><strong>Mettre en valeur un savoir-faire.</strong></div></div>
+<div class="example-side"><div class="example"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85" alt="Exemple illustratif de restaurant"><div class="example-label"><small>Exemple de direction visuelle · Restauration</small><strong>Donner envie de découvrir.</strong></div></div><div class="example"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Exemple illustratif de salon"><div class="example-label"><small>Exemple de direction visuelle · Services</small><strong>Présenter une expérience.</strong></div></div></div>
+</div><p class="example-disclaimer">Images utilisées à titre illustratif. Elles ne représentent pas des réalisations livrées à des clients.</p>
+</div></section>
+<section class="section faq"><div class="wrap"><div class="faq-layout"><div class="section-title"><span class="micro">06 — Questions fréquentes</span><h2>Avant de<br><span>commencer.</span></h2><p class="section-intro" style="margin-top:20px">Les points essentiels pour comprendre le fonctionnement d'une collaboration.</p></div><div class="faq-list">
+<details><summary>Comment obtenir un tarif précis ?</summary><p>Présentez votre activité, le nombre de pages souhaité et les fonctionnalités nécessaires. Nous confirmons le périmètre et le tarif dans un devis avant tout démarrage.</p></details>
+<details><summary>Le site sera-t-il adapté aux mobiles ?</summary><p>La conception prévoit une adaptation aux principaux formats d'écran. Les contenus et fonctionnalités sont organisés pour rester lisibles et utilisables sur mobile.</p></details>
+<details><summary>Combien de temps faut-il pour créer un site ?</summary><p>Le délai dépend du nombre de pages, des fonctionnalités et de la disponibilité des contenus. Le calendrier prévisionnel est indiqué dans le devis.</p></details>
+<details><summary>Puis-je demander une fonctionnalité spécifique ?</summary><p>Oui. Les demandes telles que la réservation avancée, le paiement en ligne, l'e-commerce ou un espace client sont étudiées séparément et chiffrées selon leur complexité.</p></details>
+<details><summary>Comment se déroule le paiement ?</summary><p>Les échéances et moyens de paiement applicables sont précisés dans le devis et les documents contractuels avant le lancement de la prestation.</p></details>
+</div></div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><span class="micro">07 — Contact</span><h2>Parlons de votre prochain site.</h2><p class="contact-copy">Décrivez votre entreprise et ce que vous souhaitez améliorer. Nous pourrons déterminer le périmètre pertinent et la formule adaptée.</p><div class="contact-direct"><small>Contact direct</small><a href="mailto:contact@vitriapro.com">contact@vitriapro.com ↗</a></div><div class="contact-direct"><small>Échange sur WhatsApp</small><a href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet." target="_blank" rel="noopener noreferrer">Écrire à l'équipe ↗</a></div></div>
+<form class="form" id="leadForm"><p class="form-head">Présentez votre projet.</p><div class="form-grid">
+<label>Nom et prénom *<input name="name" autocomplete="name" required placeholder="Votre nom"></label>
+<label>Entreprise *<input name="company" autocomplete="organization" required placeholder="Nom de l'entreprise"></label>
+<label>E-mail professionnel *<input name="email" type="email" autocomplete="email" required placeholder="vous@entreprise.fr"></label>
+<label>Téléphone <span style="font-weight:400;color:#829097">Facultatif</span><input name="phone" type="tel" autocomplete="tel" placeholder="Votre numéro"></label>
+<label>Votre activité *<input name="activity" required placeholder="Ex. : artisan, restaurant…"></label>
+<label>Votre besoin *<select name="need" required><option value="">Sélectionner</option><option>Créer un site vitrine</option><option>Refondre un site existant</option><option>Ajouter une fonctionnalité</option><option>Être conseillé</option></select></label>
+<label class="wide">Votre projet <span style="font-weight:400;color:#829097">Facultatif</span><textarea name="message" placeholder="Votre activité, vos objectifs, vos attentes…"></textarea></label>
+</div><div class="form-bottom"><button class="button" type="submit">Préparer ma demande <span>↗</span></button><span class="form-note">Votre application e-mail s'ouvrira avec le message prérempli. Vous devrez confirmer son envoi.</span></div><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></form>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#accueil">VITRIA <span>PRO</span></a><p class="footer-blurb">Conception de sites internet professionnels pour les entreprises, commerces, artisans et indépendants.</p><nav class="footer-links" aria-label="Navigation de pied de page"><a href="#expertises">Expertises</a><a href="#approche">Méthode</a><a href="#secteurs">Secteurs</a><a href="/artisans.html">Artisans</a><a href="/restaurants.html">Restaurants</a><a href="/coiffeurs.html">Coiffeurs</a><a href="#offres">Offres</a><a href="/rendez-vous.html">Rendez-vous</a><a href="/recrutement-commercial.html">Recrutement</a></nav></div><div class="footer-bottom"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><span><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a> · <a href="https://wa.me/595992666002" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></span></div></div></footer>
+<a class="whatsapp-float" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet." target="_blank" rel="noopener noreferrer" aria-label="Contacter VITRIA PRO sur WhatsApp">WhatsApp ↗</a>
 <script>
-(()=>{
-  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduce||!('IntersectionObserver' in window)) return;
-  document.documentElement.classList.add('vp-motion');
-  const targets=document.querySelectorAll('.hero-grid > *, .ticker-inner, .section-head, .work-card, .pricing-card, .service-grid > *, .steps > *, .sector-grid > *, .faq-layout > *, .faq-list details, .contact-grid > *, .footer-top > *');
-  const counts=new Map();
-  targets.forEach(el=>{
-    const parent=el.parentElement;
-    const index=counts.get(parent)||0;
-    counts.set(parent,index+1);
-    el.classList.add('vp-reveal');
-    el.style.setProperty('--vp-delay',Math.min(index*85,340)+'ms');
-  });
-  const observer=new IntersectionObserver((entries,obs)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){entry.target.classList.add('vp-visible');obs.unobserve(entry.target)}
-    });
-  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
-  targets.forEach(el=>observer.observe(el));
-})();
+const toggle=document.getElementById('menuToggle'),nav=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰';toggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu')});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget),labels={name:'Nom',company:'Entreprise',email:'E-mail',phone:'Téléphone',activity:'Activité',need:'Besoin',message:'Description du projet'};const body=[...data.entries()].map(([k,v])=>(labels[k]||k)+': '+v).join('\n\n');document.getElementById('formStatus').textContent='Votre application e-mail va s’ouvrir. Vérifiez le message puis confirmez son envoi.';location.href='mailto:contact@vitriapro.com?subject='+encodeURIComponent('Demande de projet - VITRIA PRO')+'&body='+encodeURIComponent(body)});
 </script>
-
 <button class="vp-chat-launch" id="vpChatLaunch" type="button" aria-expanded="false"><span>✦</span> Une question ? Parlez à notre assistant</button>
 <section class="vp-chat-panel" id="vpChatPanel" aria-label="Assistant VITRIA PRO" aria-hidden="true"><header class="vp-chat-head"><div><strong>Assistant VITRIA PRO</strong><small>Informations et orientation de votre projet</small></div><button class="vp-chat-close" id="vpChatClose" aria-label="Fermer">×</button></header><div class="vp-chat-messages" id="vpChatMessages" aria-live="polite"><div class="vp-chat-msg bot">Bonjour ! Je peux vous renseigner sur la création de votre site internet. Quel est votre métier et quel type de site recherchez-vous ?</div></div><form class="vp-chat-form" id="vpChatForm"><input id="vpChatInput" maxlength="1000" autocomplete="off" placeholder="Écrivez votre message…" aria-label="Votre message" required><button type="submit">Envoyer</button></form><div class="vp-chat-actions"><a class="vp-chat-wa" id="vpChatWhatsApp" href="https://wa.me/595992666002" target="_blank" rel="noopener noreferrer">Continuer sur WhatsApp</a><p class="vp-chat-note">Assistant automatisé. Vous pouvez demander un échange humain à tout moment.</p></div></section>
 <style>
-/* VITRIA PRO AI chat */
-.vp-chat-launch{position:fixed;right:24px;bottom:24px;z-index:10000;border:0;border-radius:999px;background:#183746;color:#fff;padding:15px 20px;font:700 13px Manrope,Arial,sans-serif;box-shadow:0 10px 30px #18374633;cursor:pointer;display:flex;gap:10px;align-items:center}
-.vp-chat-panel{position:fixed;right:24px;bottom:88px;z-index:10001;width:min(380px,calc(100vw - 28px));height:min(560px,calc(100dvh - 120px));background:#fff;border:1px solid #dce2e5;box-shadow:0 18px 55px #142c3830;display:none;flex-direction:column;font-family:'DM Sans',Arial,sans-serif}
-.vp-chat-panel.open{display:flex}.vp-chat-head{background:#183746;color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}.vp-chat-head strong{font:700 14px Manrope,Arial,sans-serif}.vp-chat-head small{display:block;color:#c5d2d8;font-size:10px;margin-top:4px}.vp-chat-close{background:none;border:0;color:white;font-size:23px;cursor:pointer}.vp-chat-messages{padding:16px;overflow:auto;flex:1;background:#f4f6f7;display:flex;flex-direction:column;gap:10px}.vp-chat-msg{max-width:88%;padding:11px 13px;border-radius:12px;font-size:12px;line-height:1.6;white-space:pre-wrap}.vp-chat-msg.bot{background:white;color:#252d33;align-self:flex-start;border:1px solid #e3e8eb}.vp-chat-msg.user{background:#183746;color:white;align-self:flex-end}.vp-chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid #e2e7e9}.vp-chat-form input{min-width:0;flex:1;border:1px solid #dce2e5;padding:12px;font-size:12px}.vp-chat-form button{border:0;background:#183746;color:white;padding:0 15px;font-weight:700;cursor:pointer}.vp-chat-actions{padding:0 12px 12px;background:#fff}.vp-chat-wa{display:block;text-align:center;background:#167b55;color:white!important;padding:11px;text-decoration:none;font-size:12px;font-weight:700}.vp-chat-note{font-size:9px;color:#7b858b;text-align:center;margin:7px 0 0}
+.vp-chat-launch{position:fixed;right:24px;bottom:24px;z-index:10000;border:0;border-radius:2px;background:#183746;color:#fff;padding:15px 20px;font:700 12px Manrope,Arial,sans-serif;box-shadow:0 8px 25px #102d3a35;cursor:pointer;display:flex;gap:10px;align-items:center}
+.vp-chat-panel{position:fixed;right:24px;bottom:88px;z-index:10001;width:min(380px,calc(100vw - 28px));height:min(560px,calc(100dvh - 120px));background:#fff;border:1px solid #d6e0e4;box-shadow:0 18px 55px #102d3a30;display:none;flex-direction:column;font-family:'DM Sans',Arial,sans-serif}
+.vp-chat-panel.open{display:flex}.vp-chat-head{background:#102d3a;color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}.vp-chat-head strong{font:700 14px Manrope,Arial,sans-serif}.vp-chat-head small{display:block;color:#c5d2d8;font-size:10px;margin-top:4px}.vp-chat-close{background:none;border:0;color:white;font-size:23px;cursor:pointer}.vp-chat-messages{padding:16px;overflow:auto;flex:1;background:#f4f6f7;display:flex;flex-direction:column;gap:10px}.vp-chat-msg{max-width:88%;padding:11px 13px;border-radius:2px;font-size:12px;line-height:1.6;white-space:pre-wrap}.vp-chat-msg.bot{background:white;color:#252d33;align-self:flex-start;border:1px solid #e3e8eb}.vp-chat-msg.user{background:#183746;color:white;align-self:flex-end}.vp-chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid #e2e7e9}.vp-chat-form input{min-width:0;flex:1;border:1px solid #dce2e5;padding:12px;font-size:12px}.vp-chat-form button{border:0;background:#183746;color:white;padding:0 15px;font-weight:700;cursor:pointer}.vp-chat-actions{padding:0 12px 12px;background:#fff}.vp-chat-wa{display:block;text-align:center;background:#183746;color:white!important;padding:11px;text-decoration:none;font-size:12px;font-weight:700}.vp-chat-note{font-size:9px;color:#7b858b;text-align:center;margin:7px 0 0}
 @media(max-width:600px){.vp-chat-launch{right:14px;bottom:14px}.vp-chat-panel{right:14px;bottom:78px}}
 </style>
 <script>
-(()=>{const launch=document.getElementById('vpChatLaunch'),panel=document.getElementById('vpChatPanel'),close=document.getElementById('vpChatClose'),form=document.getElementById('vpChatForm'),input=document.getElementById('vpChatInput'),messages=document.getElementById('vpChatMessages'),wa=document.getElementById('vpChatWhatsApp');if(!launch||!panel)return;let history=[];const open=()=>{panel.classList.add('open');panel.setAttribute('aria-hidden','false');launch.setAttribute('aria-expanded','true');input.focus()};const shut=()=>{panel.classList.remove('open');panel.setAttribute('aria-hidden','true');launch.setAttribute('aria-expanded','false')};launch.addEventListener('click',open);close.addEventListener('click',shut);function bubble(text,who){const el=document.createElement('div');el.className='vp-chat-msg '+who;el.textContent=text;messages.appendChild(el);messages.scrollTop=messages.scrollHeight;return el}function updateWa(){const summary=history.map(x=>(x.role==='user'?'Visiteur':'Assistant')+': '+x.content).join('\n');wa.href='https://wa.me/595992666002?text='+encodeURIComponent('Bonjour VITRIA PRO, je souhaite poursuivre ma demande.\n\nRésumé de notre échange :\n'+summary.slice(-2500))}form.addEventListener('submit',async e=>{e.preventDefault();const message=input.value.trim();if(!message)return;input.value='';history.push({role:'user',content:message});bubble(message,'user');updateWa();const wait=bubble('Je recherche une réponse…','bot');try{const res=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history.slice(-12)})});if(!res.ok)throw new Error('Service indisponible');const data=await res.json();const answer=String(data.reply||'Je peux vous orienter vers notre équipe sur WhatsApp.');wait.textContent=answer;history.push({role:'assistant',content:answer});}catch(err){wait.textContent='Notre assistant est momentanément indisponible. Vous pouvez poursuivre directement sur WhatsApp : votre échange sera prérempli.';}updateWa();});})();
+(()=>{const launch=document.getElementById('vpChatLaunch'),panel=document.getElementById('vpChatPanel'),close=document.getElementById('vpChatClose'),form=document.getElementById('vpChatForm'),input=document.getElementById('vpChatInput'),messages=document.getElementById('vpChatMessages'),wa=document.getElementById('vpChatWhatsApp');if(!launch||!panel)return;let history=[];const open=()=>{panel.classList.add('open');panel.setAttribute('aria-hidden','false');launch.setAttribute('aria-expanded','true');input.focus()},shut=()=>{panel.classList.remove('open');panel.setAttribute('aria-hidden','true');launch.setAttribute('aria-expanded','false')};launch.addEventListener('click',open);close.addEventListener('click',shut);function bubble(text,who){const el=document.createElement('div');el.className='vp-chat-msg '+who;el.textContent=text;messages.appendChild(el);messages.scrollTop=messages.scrollHeight;return el}function updateWa(){const summary=history.map(x=>(x.role==='user'?'Visiteur':'Assistant')+': '+x.content).join('\n');wa.href='https://wa.me/595992666002?text='+encodeURIComponent('Bonjour VITRIA PRO, je souhaite poursuivre ma demande.\n\nRésumé de notre échange :\n'+summary.slice(-2500))}form.addEventListener('submit',async e=>{e.preventDefault();const message=input.value.trim();if(!message)return;input.value='';history.push({role:'user',content:message});bubble(message,'user');updateWa();const wait=bubble('Je recherche une réponse…','bot');try{const res=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history.slice(-12)})});if(!res.ok)throw new Error('Service indisponible');const data=await res.json(),answer=String(data.reply||'Je peux vous orienter vers notre équipe sur WhatsApp.');wait.textContent=answer;history.push({role:'assistant',content:answer})}catch(err){wait.textContent='Notre assistant est momentanément indisponible. Vous pouvez poursuivre directement sur WhatsApp : votre échange sera prérempli.'}updateWa()})})();
 </script>
-</body>
-</html>
+</body></html>
