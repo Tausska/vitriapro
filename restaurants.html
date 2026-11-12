@@ -24,6 +24,21 @@
 .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:9999;display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;background:#167b55;color:#fff!important;font:700 13px Manrope,sans-serif;box-shadow:0 10px 30px rgba(18,52,38,.24);transition:transform .2s,box-shadow .2s}.whatsapp-float:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(18,52,38,.3)}.whatsapp-float svg{width:21px;height:21px}
 @media(max-width:800px){.hero-grid,.split,.faq{grid-template-columns:1fr;gap:35px}.hero-art{min-height:290px}.steps{grid-template-columns:repeat(2,1fr)}.offer-panel{grid-template-columns:1fr}.price small{text-align:left}.contact-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr 1fr}.footer-about{grid-column:1/-1}}
 @media(max-width:560px){.wrap{width:min(100% - 34px,1160px)}.site-header{height:70px}.logo{width:130px}.nav-right{gap:12px}.nav-link{font-size:11px}.nav-cta{padding:12px 13px;font-size:11px}.hero{padding:58px 0}.hero h1{font-size:45px}.hero-copy{font-size:14px}.hero-art{min-height:250px;padding:17px}.art-card{padding:20px}.section{padding:60px 0}.cards,.check-list{grid-template-columns:1fr}.card{min-height:auto}.steps{grid-template-columns:1fr 1fr}.offer{padding:38px 0}.offer-panel{padding:25px}.faq{gap:20px}.faq h2{font-size:35px}.footer-grid{grid-template-columns:1fr 1fr;gap:25px}.footer-about{grid-column:1/-1}.footer-bottom{flex-direction:column}.whatsapp-float{right:13px;bottom:13px;padding:12px 15px;font-size:12px}}
+
+/* VITRIA PRO — refined scroll motion */
+html.vp-motion{scroll-behavior:smooth}
+@media (prefers-reduced-motion:no-preference){
+  .vp-reveal{opacity:0;transform:translate3d(0,26px,0) scale(.985);transition:opacity .78s cubic-bezier(.2,.7,.2,1),transform .78s cubic-bezier(.2,.7,.2,1);transition-delay:var(--vp-delay,0ms);will-change:opacity,transform}
+  .vp-reveal.vp-visible{opacity:1;transform:translate3d(0,0,0) scale(1);will-change:auto}
+  .hero-grid > .vp-reveal:first-child{transform:translate3d(-18px,18px,0);}
+  .hero-grid > .vp-reveal:last-child{transform:translate3d(18px,24px,0) scale(.985)}
+  .hero-grid > .vp-reveal.vp-visible{transform:translate3d(0,0,0) scale(1)}
+  .work-card,.card,.pricing-card,.step,.footer-col{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+  .work-card:hover,.card:hover,.pricing-card:not(.featured):hover,.step:hover{transform:translateY(-5px)}
+  .work-card .work-img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  .work-card:hover .work-img{transform:scale(1.045)}
+}
+@media (prefers-reduced-motion:reduce){.vp-reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -46,4 +61,27 @@
 <footer class="site-footer"><div class="wrap"><div class="footer-grid"><div class="footer-about"><a href="/"><img class="footer-logo" src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO"></a><p>Studio digital spécialisé dans la conception de sites web professionnels pour les entreprises, indépendants et commerces.</p></div><div class="footer-col"><h3>Explorer</h3><a href="/#services">Services</a><a href="/#secteurs">Secteurs</a><a href="/restaurants.html">Restaurants & cafés</a><a href="/coiffeurs.html">Coiffeurs & instituts</a><a href="/artisans.html">Artisans & bâtiment</a></div><div class="footer-col"><h3>Contact</h3><a href="/#contact">Demander un devis</a><a href="/recrutement-commercial.html">Rejoindre l'équipe commerciale</a><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a><a href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><a href="/">Retour à l'accueil ↑</a></div></div></footer>
 <a class="whatsapp-float" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet%20de%20site%20web." target="_blank" rel="noopener noreferrer" aria-label="Contacter VITRIA PRO sur WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.1 11.8a8.1 8.1 0 0 1-12 7.1L4 20l1.1-4a8.1 8.1 0 1 1 15-4.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.7c.2-.5.5-.5.8-.5h.5c.2 0 .3.1.4.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-.8-.2-1.8-.7-2.8-1.6-1.2-1-2-2.3-2.2-3.1-.2-.8 0-1.5.2-1.9Z" fill="currentColor"/></svg><span>WhatsApp</span></a>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+<script>
+(()=>{
+  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('vp-motion');
+  const targets=document.querySelectorAll('.hero-grid > *, .trust-inner > *, .section-head, .cards > *, .split > *, .check-list > *, .steps > *, .offer-panel, .faq > *, .faq-list details, .contact-inner > *, .footer-grid > *');
+  const counts=new Map();
+  targets.forEach(el=>{
+    const parent=el.parentElement;
+    const index=counts.get(parent)||0;
+    counts.set(parent,index+1);
+    el.classList.add('vp-reveal');
+    el.style.setProperty('--vp-delay',Math.min(index*85,340)+'ms');
+  });
+  const observer=new IntersectionObserver((entries,obs)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('vp-visible');obs.unobserve(entry.target)}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  targets.forEach(el=>observer.observe(el));
+})();
+</script>
 </body></html>
