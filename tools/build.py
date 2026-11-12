@@ -29,7 +29,7 @@ HEAD = """<!DOCTYPE html>
    <a href="realisations.html">Réalisations</a>
    <a href="garantie.html">Garantie</a>
   </nav>
-  <div class="nav-cta"><a class="wa" href="{wa}">WhatsApp</a><a class="btn" href="index.html#contact">Recevoir ma maquette</a></div>
+  <div class="nav-cta"><a class="wa" href="{wa}">WhatsApp</a><a class="btn" href="rendez-vous.html">Réserver un appel</a></div>
  </div>
 </header>
 <main>
@@ -42,10 +42,10 @@ FOOT = """</main>
    <img src="logo-vitria-pro.png" alt="VITRIA PRO" style="height:64px;width:auto;filter:brightness(0) invert(1)">
    <nav><a href="index.html#secteurs">Secteurs</a><a href="restaurants.html">Restaurants</a><a href="coiffeurs.html">Coiffeurs</a><a href="artisans.html">Artisans</a><a href="realisations.html">Réalisations</a><a href="garantie.html">Garantie</a><a href="rendez-vous.html">Rendez-vous</a><a href="recrutement-commercial.html">Recrutement</a><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a></nav>
   </div>
-  <p class="fine">© 2026 VITRIA PRO. Tous droits réservés.</p>
+  <p class="fine">© 2026 VITRIA PRO. Les sites présentés par secteur sont des démonstrations et les photographies sont des illustrations. Périmètre et conditions précisés dans le devis. Délais comptés à réception du paiement et des éléments nécessaires.</p>
  </div>
 </footer>
-<div class="mbar" id="mbar"><a href="index.html#contact">Recevoir ma maquette</a><a href="{wa}">WhatsApp</a></div>
+<div class="mbar" id="mbar"><a href="rendez-vous.html">Réserver un appel</a><a href="{wa}">WhatsApp</a></div>
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}}),{{threshold:.12}});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
@@ -104,9 +104,9 @@ STEPS = [("01", "Un appel de 30 minutes", "Vous présentez votre activité et vo
 OFFERS = """<section class="section" id="offre"><div class="wrap">
  <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Offres</span><h2 class="mid">Un prix clair. <em>Une seule fois.</em></h2></div><p>Livraison en 5 jours incluse. Besoin d'aller plus vite ? L'Express met votre site en ligne en 48 heures.</p></div>
  <div class="offers">
-  <div class="offer rv"><div class="offer-tag"><span>01</span></div><h3>Essentiel</h3><p class="sub">Pour être trouvé et appelé.</p><div class="price">990 €</div><div class="once">Paiement unique</div><ul><li>Site one-page haut de gamme</li><li>Textes rédigés pour vous</li><li>Appel et contact en un geste</li><li>Référencement local de base</li><li>Fiche Google Business configurée</li><li>7 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="index.html#contact">Recevoir ma maquette</a></div>
-  <div class="offer feat rv"><div class="offer-tag"><span>02</span><span>Le plus choisi</span></div><h3>Business</h3><p class="sub">Pour présenter chaque service.</p><div class="price">1 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 5 pages</li><li>Une page par service, rédigée pour vous</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>14 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn" href="index.html#contact">Recevoir ma maquette</a></div>
-  <div class="offer rv"><div class="offer-tag"><span>03</span></div><h3>Premium</h3><p class="sub">Pour s'imposer dans son secteur.</p><div class="price">2 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 10 pages</li><li>Sections sur mesure et galerie</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>30 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="index.html#contact">Recevoir ma maquette</a></div>
+  <div class="offer rv"><div class="offer-tag"><span>01</span></div><h3>Essentiel</h3><p class="sub">Pour être trouvé et appelé.</p><div class="price">990 €</div><div class="once">Paiement unique</div><ul><li>Site one-page haut de gamme</li><li>Textes rédigés pour vous</li><li>Appel et contact en un geste</li><li>Référencement local de base</li><li>Fiche Google Business configurée</li><li>7 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="rendez-vous.html">Réserver mon appel</a></div>
+  <div class="offer feat rv"><div class="offer-tag"><span>02</span><span>Le plus choisi</span></div><h3>Business</h3><p class="sub">Pour présenter chaque service.</p><div class="price">1 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 5 pages</li><li>Une page par service, rédigée pour vous</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>14 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn" href="rendez-vous.html">Réserver mon appel</a></div>
+  <div class="offer rv"><div class="offer-tag"><span>03</span></div><h3>Premium</h3><p class="sub">Pour s'imposer dans son secteur.</p><div class="price">2 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 10 pages</li><li>Sections sur mesure et galerie</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>30 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="rendez-vous.html">Réserver mon appel</a></div>
  </div>
  <div class="all rv"><h4>Dans toutes les offres</h4><p>Maquette offerte avant engagement · Nom de domaine et hébergement inclus pendant 3 ans · Adresse e-mail professionnelle · Mentions légales et RGPD · Inscription sur Google · Design adapté au mobile · Site qui vous appartient · Garantie satisfait ou remboursé 14 jours</p></div>
 </div></section>
@@ -117,7 +117,7 @@ TRUST = ["Une présence en ligne pensée pour", "Être compris rapidement", "Ins
 
 def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards, checks, faqs):
     body = hero(eyebrow, h1, lead,
-                [btn('Recevoir ma maquette offerte <span class="ar">→</span>', "index.html#contact"), btn("Voir les offres", "#offre", "btn-line")],
+                [btn('Réserver mon appel gratuit <span class="ar">→</span>', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
                 "Maquette offerte · En ligne en 5 jours ou 48 h · Paiement unique · Satisfait ou remboursé 14 jours", photo)
     body += '<div class="trustbar"><div class="wrap">' + "".join(f"<span>{t}</span>" for t in TRUST) + "</div></div>\n"
     body += f'<section class="section"><div class="wrap">{head("Les attentes de vos clients", att_h2, att_p)}{cards(att_cards)}</div></section>\n'
@@ -134,8 +134,8 @@ def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards
     body += f"""<section class="band"><div class="wrap">
  <span class="eyebrow">Parlons de votre activité</span>
  <h2>Votre prochain site commence par <em>un échange.</em></h2>
- <p>Réservez un appel de 30 minutes. Vous recevez ensuite votre maquette, offerte et sans engagement.</p>
- <div class="cta">{btn('Recevoir ma maquette offerte <span class="ar">→</span>', "index.html#contact")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
+ <p>Réservez un appel gratuit. Vous recevez ensuite votre maquette, offerte et sans engagement.</p>
+ <div class="cta">{btn('Réserver mon appel gratuit <span class="ar">→</span>', "rendez-vous.html")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
 </div></section>
 """
     open(file, "w").write(page(title, desc, body))
@@ -189,6 +189,22 @@ sector("artisans.html", "Création de sites web pour artisans et bâtiment | VIT
         ("Le formulaire peut-il recueillir les détails du chantier ?", "Oui. Les champs sont définis avec vous pour recueillir les informations utiles à une première qualification."),
         ("Pouvez-vous intégrer mes avis clients ?", "Des avis authentiques provenant de plateformes ou de témoignages autorisés peuvent être mis en valeur.")])
 
+sector("plomberie.html", "Création de sites web pour plombiers | VITRIA PRO",
+       "Sites vitrines pour plombiers et chauffagistes : urgences, prestations, zone d'intervention et demande de devis.",
+       "photo-1607472586893-edb57bdc0e39", "Plomberie & chauffage · Sites web professionnels",
+       "Quand la fuite arrive, <em>c'est vous qu'on appelle.</em>",
+       "En urgence comme pour un devis, vos clients cherchent un plombier proche, joignable vite et de confiance. Votre site doit leur permettre de vous appeler en un geste.",
+       "Un site pensé pour l'urgence et pour le devis.",
+       "Un particulier qui cherche un plombier compare vite. Il retient celui qu'il comprend, qu'il peut joindre tout de suite et qui lui inspire confiance.",
+       [("01", "Un appel en un geste", "Votre numéro est visible et cliquable sur téléphone, là où vos clients en ont besoin."),
+        ("02", "Des prestations claires", "Dépannage, chauffe-eau, salle de bain, rénovation : chaque service est présenté simplement."),
+        ("03", "Votre zone d'intervention", "Vos clients voient tout de suite si vous intervenez chez eux, puis demandent leur devis.")],
+       ["Numéro d'appel visible et cliquable sur mobile", "Présentation des prestations et des urgences", "Zones géographiques d'intervention",
+        "Formulaire de demande de devis", "Photos de chantiers si vous en avez", "Base SEO locale et expérience mobile"],
+       [("Puis-je afficher un numéro pour les urgences ?", "Oui. Le numéro et les modalités d'appel sont définis avec vous, selon votre organisation."),
+        ("Puis-je indiquer mes villes d'intervention ?", "Oui. Les villes ou secteurs couverts sont présentés selon votre activité."),
+        ("Le site sera-t-il adapté aux téléphones ?", "Oui. L'adaptation mobile fait partie de l'offre standard.")])
+
 # ---------- Garantie ----------
 G = [("1. Bénéficiaires et offres concernées", "La garantie est proposée aux clients professionnels qui commandent directement auprès de VITRIA PRO l'une des offres de création de site internet Essentiel, Business ou Premium. Elle doit être mentionnée sur le devis accepté. Elle ne s'applique pas aux prestations ou achats réalisés directement auprès de fournisseurs tiers."),
      ("2. Durée et point de départ", "Le délai est de <strong>14 jours calendaires</strong>. Il commence le lendemain de la mise en ligne effective du site sur le nom de domaine convenu. La date de mise en ligne est communiquée au client par écrit. La demande doit parvenir à VITRIA PRO avant l'expiration de ce délai."),
@@ -200,7 +216,7 @@ G = [("1. Bénéficiaires et offres concernées", "La garantie est proposée aux
      ("8. Contact", 'Pour toute question relative à cette garantie : <a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a>.')]
 body = hero("Engagement commercial VITRIA PRO", "14 jours pour décider <em>sereinement.</em>",
             "La garantie commerciale VITRIA PRO permet aux clients professionnels concernés de demander le remboursement de la prestation de création de leur site dans les 14 jours calendaires suivant sa mise en ligne, selon les conditions ci-dessous.",
-            [btn('Recevoir ma maquette <span class="ar">→</span>', "index.html#contact")])
+            [btn('Réserver mon appel gratuit <span class="ar">→</span>', "rendez-vous.html")])
 body += '<section class="section"><div class="wrap"><div class="article rv"><div class="callout"><strong>À lire avant de commander.</strong> Cette garantie est un engagement commercial volontaire de VITRIA PRO. Elle s\'ajoute aux droits légaux éventuellement applicables et ne les limite pas. Les conditions particulières figurant au devis accepté restent applicables pour le périmètre et les frais propres à la commande.</div>'
 body += "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in G) + "</div></div></section>\n"
 open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA PRO", "Conditions de la garantie commerciale VITRIA PRO : 14 jours après la mise en ligne pour décider.", body))
@@ -312,3 +328,20 @@ body += '<section class="section" style="padding-top:0"><div class="wrap faq-gri
 RJS = open("tools/recru_js.html").read()
 open("recrutement-commercial.html", "w").write(page("Recrutement commerciaux indépendants — VITRIA PRO", "VITRIA PRO recherche des commerciaux indépendants rémunérés à la commission.", body, RJS))
 print("pages générées")
+
+
+# ---------- Balises canonical et partage (toutes les pages) ----------
+import re as _re
+for _f in ["index","restaurants","coiffeurs","artisans","plomberie","garantie","realisations","rendez-vous","recrutement-commercial"]:
+    _p = _f + ".html"
+    _s = open(_p, encoding="utf-8").read()
+    if 'rel="canonical"' in _s:
+        continue
+    _t = _re.search(r"<title>(.*?)</title>", _s).group(1)
+    _d = _re.search(r'<meta name="description" content="(.*?)">', _s).group(1)
+    _u = "https://vitriapro.com/" if _f == "index" else f"https://vitriapro.com/{_p}"
+    _tags = (f'<link rel="canonical" href="{_u}">\n<meta property="og:type" content="website">\n'
+             f'<meta property="og:site_name" content="VITRIA PRO">\n<meta property="og:title" content="{_t}">\n'
+             f'<meta property="og:description" content="{_d}">\n<meta property="og:url" content="{_u}">\n')
+    _s = _s.replace('<link rel="icon"', _tags + '<link rel="icon"', 1)
+    open(_p, "w", encoding="utf-8").write(_s)
