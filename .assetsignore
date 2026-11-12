@@ -1,0 +1,7 @@
+# Keep internal documentation and repository metadata out of public assets
+README.md
+docs/**
+.github/**
+.gitignore
+.assetsignore
+wrangler.jsonc
