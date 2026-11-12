@@ -79,3 +79,20 @@ body:has(.hero-grid .hero-visual) .method-aside{min-height:330px}
 body:has(.hero-grid .hero-visual) .contact{padding:88px 0}
 @media(max-width:900px){body:has(.hero-grid .hero-visual) .hero-grid{grid-template-columns:1fr;gap:35px}body:has(.hero-grid .hero-visual) .pricing-grid{grid-template-columns:1fr}body:has(.hero-grid .hero-visual) .pricing-card.featured{transform:none}body:has(.hero-grid .hero-visual) .method-layout,body:has(.hero-grid .hero-visual) .faq-layout,body:has(.hero-grid .hero-visual) .contact-grid{grid-template-columns:1fr;gap:32px}}
 @media(max-width:650px){body:has(.hero-grid .hero-visual) .hero{padding:54px 0 46px}body:has(.hero-grid .hero-visual) .hero h1{font-size:clamp(43px,11.7vw,61px)}body:has(.hero-grid .hero-visual) section.section{padding:68px 0}body:has(.hero-grid .hero-visual) .work-grid{grid-template-columns:1fr}body:has(.hero-grid .hero-visual) .service-grid{grid-template-columns:1fr 1fr}body:has(.hero-grid .hero-visual) .service{min-height:180px;padding:19px 15px}body:has(.hero-grid .hero-visual) .method-aside{min-height:245px}body:has(.hero-grid .hero-visual) .form-grid{grid-template-columns:1fr}}
+
+/* FINAL BRAND OVERRIDE — remove legacy warm/orange accents */
+:root{--paper:#F4F6F7!important;--white:#FFFFFF!important;--ink:#252D33!important;--muted:#65717A!important;--line:#DCE2E5!important;--accent:#183746!important;--accent-dark:#102A37!important;--olive:#8DA9B3!important;--dark:#142D3A!important}
+.topline,.btn,.nav-cta,.pricing-link,.method-aside,.contact-direct a.whatsapp-contact,.whatsapp-float{background-color:#183746!important;background-image:none!important;border-color:#183746!important}
+.nav-cta:hover,.btn:hover,.pricing-link:hover,.contact-direct a.whatsapp-contact:hover,.whatsapp-float:hover{background-color:#102A37!important}
+.eyebrow,.eyebrow:before,.work-tag,.pricing-kicker,.service-no,.step-no,.sector span,.ticker-list span:before,.meta-dot,.offer .eyebrow,.pricing .eyebrow,.offer-list li:before,.pricing-card li:before,.pricing-card.featured .pricing-kicker,.pricing-card.featured li:before,.method-aside small,.method-aside span,summary:after{color:#8DA9B3!important}
+.eyebrow:before{background:#8DA9B3!important}
+.hero h1 em,.section-title h2 em,.offer h2 em,.pricing-intro h2 em,.contact h2 em,.founder-copy h2 em{color:#183746!important}
+.offer h2 em,.pricing-intro h2 em{color:#B8C8CE!important}
+.pricing-card.featured{border-color:#8DA9B3!important}
+.pricing-card.featured .pricing-kicker,.pricing-card.featured li:before{color:#183746!important}
+.work-tag{color:#D5E1E5!important}
+.footer .logo-mark{background:#183746!important}
+.footer-wordmark span{color:#8DA9B3!important}
+a:hover,.nav-links a:hover,.nav-link:hover,.text-link:hover{color:#183746!important}
+.sector:hover{border-color:#8DA9B3!important}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:#183746!important;box-shadow:0 0 0 3px rgba(24,55,70,.08)!important}
