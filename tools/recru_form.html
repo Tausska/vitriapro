@@ -1,0 +1,21 @@
+<form class="form" id="candidateForm">
+<p class="form-intro">Les champs marqués d'un astérisque sont nécessaires. Après validation, votre application e-mail s'ouvrira avec votre candidature préremplie : vous pourrez la relire et l'envoyer.</p>
+<div class="formgrid">
+<div class="field"><label for="firstName">Prénom *</label><input id="firstName" name="Prénom" autocomplete="given-name" required maxlength="80"></div>
+<div class="field"><label for="lastName">Nom *</label><input id="lastName" name="Nom" autocomplete="family-name" required maxlength="80"></div>
+<div class="field"><label for="email">Adresse e-mail *</label><input id="email" name="E-mail" type="email" autocomplete="email" required maxlength="160"></div>
+<div class="field"><label for="phone">Téléphone</label><input id="phone" name="Téléphone" type="tel" autocomplete="tel" maxlength="50"></div>
+<div class="field"><label for="location">Ville / pays *</label><input id="location" name="Localisation" required maxlength="100" placeholder="Ex. Lyon, France"></div>
+<div class="field"><label for="status">Situation professionnelle *</label><select id="status" name="Situation professionnelle" required><option value="">Sélectionner</option><option>Entreprise / indépendant déjà immatriculé</option><option>Création d'activité en cours</option><option>Salarié envisageant une activité indépendante</option><option>Autre situation</option></select></div>
+<div class="field"><label for="experience">Expérience commerciale *</label><select id="experience" name="Expérience commerciale" required><option value="">Sélectionner</option><option>Débutant motivé</option><option>Moins de 2 ans</option><option>2 à 5 ans</option><option>5 à 10 ans</option><option>Plus de 10 ans</option></select></div>
+<div class="field"><label for="b2b">Expérience B2B</label><select id="b2b" name="Expérience B2B"><option value="">Sélectionner</option><option>Aucune pour le moment</option><option>Prospection téléphonique</option><option>Vente terrain / rendez-vous</option><option>Vente à distance</option><option>Gestion de portefeuille clients</option><option>Plusieurs de ces expériences</option></select></div>
+<div class="field full"><label for="method">Comment trouveriez-vous vos 10 premiers prospects ? *</label><textarea id="method" name="Méthode de prospection" required maxlength="1800" placeholder="Décrivez concrètement les entreprises ciblées, les canaux utilisés et votre façon de prendre contact."></textarea></div>
+<div class="field full"><label for="results">Un exemple de résultat commercial (facultatif)</label><textarea id="results" name="Résultat commercial" maxlength="1200" placeholder="Exemple : type de client, offre vendue, montant ou résultat obtenu. Vous pouvez aussi indiquer que vous débutez."></textarea></div>
+<div class="field full"><label for="profile">Profil LinkedIn ou site professionnel (facultatif)</label><input id="profile" name="Lien professionnel" type="url" maxlength="250" placeholder="https://..."></div>
+<div class="field full"><label for="availability">Disponibilité / date de démarrage</label><select id="availability" name="Disponibilité"><option value="">Sélectionner</option><option>Immédiatement</option><option>Dans les 2 prochaines semaines</option><option>Dans le mois</option><option>À discuter</option></select></div>
+</div>
+<label class="consent"><input type="checkbox" id="consent" required><span>J'accepte que les informations saisies soient utilisées pour étudier ma candidature et me recontacter à ce sujet. Je comprends que le bouton ouvre mon application e-mail et que je dois envoyer le message pour transmettre ma candidature.</span></label>
+<div class="form-actions"><button class="btn btn-dark" type="submit">Préparer ma candidature <span>↗</span></button><span style="font-size:13px;color:#6f6f6b;margin-left:14px">Aucun envoi automatique sans votre action.</span></div>
+<div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+<p class="form-fine">Ne transmettez pas de données sensibles ni de documents d'identité dans ce formulaire. Les candidatures sont traitées uniquement dans le cadre de ce recrutement.</p>
+</form>

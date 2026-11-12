@@ -1,0 +1,25 @@
+<script>
+
+document.getElementById('candidateForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  if (!form.reportValidity()) return;
+  const fields = Array.from(form.querySelectorAll('input:not([type="checkbox"]), select, textarea'));
+  const lines = fields.filter(field => field.value.trim()).map(field => field.name + ' : ' + field.value.trim());
+  const subject = 'Candidature commercial indépendant — VITRIA PRO';
+  const body = [
+    'Bonjour VITRIA PRO,',
+    '',
+    'Je souhaite présenter ma candidature pour la collaboration commerciale indépendante.',
+    '',
+    ...lines,
+    '',
+    'Cordialement,',
+    form.querySelector('#firstName').value.trim() + ' ' + form.querySelector('#lastName').value.trim()
+  ].join('\n');
+  const status = document.getElementById('formStatus');
+  status.style.display = 'block';
+  status.textContent = 'Votre application e-mail va s’ouvrir avec les informations saisies. Vérifiez le message puis appuyez sur Envoyer pour transmettre votre candidature.';
+  window.location.href = 'mailto:contact@vitriapro.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
