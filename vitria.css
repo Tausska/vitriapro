@@ -183,7 +183,7 @@ thead .us{color:#fff}
 /* Founder */
 .founder{padding:0 0 140px}
 .founder-grid{display:grid;grid-template-columns:.8fr 1fr;gap:80px;align-items:center}
-.founder-photo{aspect-ratio:4/5;overflow:hidden;background:#d9d6ce}
+.founder-photo{aspect-ratio:4/5;overflow:hidden;background:#d9d6ce;max-width:360px}
 .founder-photo img{width:100%;height:100%;object-fit:cover}
 .founder-text{color:var(--muted);font-size:18px;max-width:520px;margin:24px 0 30px}
 .founder-sign{font-size:15px;color:var(--muted);margin-bottom:34px}
@@ -245,6 +245,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
  .qform{grid-template-columns:1fr}
  .founder-grid{grid-template-columns:1fr;gap:40px}
  .founder{padding-bottom:100px}
+ .founder-photo{max-width:240px}
  .rev-grid{grid-template-columns:1fr}
  .reviews{padding-bottom:100px}
  .rev{padding:32px 26px}
