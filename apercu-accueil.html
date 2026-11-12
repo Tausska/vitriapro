@@ -38,7 +38,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .header.solid{background:rgba(246,245,241,.94);backdrop-filter:blur(14px);color:var(--ink);border-color:var(--line)}
 .nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:30px}
 .brand{display:flex;align-items:center}
-.brand img{height:30px;width:auto;filter:brightness(0) invert(1);transition:filter .4s}
+.brand img{height:52px;width:auto;filter:brightness(0) invert(1);transition:filter .4s}
 .header.solid .brand img{filter:none}
 .wordmark{font:700 20px var(--display);letter-spacing:-.03em}
 .wordmark span{font-weight:500;opacity:.55}
@@ -193,6 +193,14 @@ thead .us{color:#fff}
 .a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
 .a p{padding:0 0 28px;color:var(--muted);max-width:720px}
 
+/* Founder */
+.founder{padding:0 0 140px}
+.founder-grid{display:grid;grid-template-columns:.8fr 1fr;gap:80px;align-items:center}
+.founder-photo{aspect-ratio:4/5;overflow:hidden;background:#d9d6ce}
+.founder-photo img{width:100%;height:100%;object-fit:cover}
+.founder-text{color:var(--muted);font-size:18px;max-width:520px;margin:24px 0 30px}
+.founder-sign{font-size:15px;color:var(--muted);margin-bottom:34px}
+.founder-sign b{display:block;font:600 22px var(--display);color:var(--ink);letter-spacing:-.02em}
 /* Final */
 .final{position:relative;color:#fff;padding:170px 0 150px;overflow:hidden}
 .final .photo{position:absolute;inset:0}
@@ -248,6 +256,8 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
  .process-in{padding:80px 24px}
  .final{padding:120px 0 110px}
  .qform{grid-template-columns:1fr}
+ .founder-grid{grid-template-columns:1fr;gap:40px}
+ .founder{padding-bottom:100px}
  .rev-grid{grid-template-columns:1fr}
  .reviews{padding-bottom:100px}
  .rev{padding:32px 26px}
@@ -266,7 +276,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
 
 <header class="header" id="header">
  <div class="wrap nav">
-  <a class="brand" href="#top" aria-label="VITRIA PRO"><img src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO" onerror="this.outerHTML='<span class=wordmark>VITRIA <span>PRO</span></span>'"></a>
+  <a class="brand" href="#top" aria-label="VITRIA PRO"><img src="/logo-vitria-pro.png" alt="VITRIA PRO"></a>
   <nav class="menu">
    <a href="#secteurs">Secteurs</a>
    <a href="#methode">Méthode</a>
@@ -457,6 +467,20 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
  </div>
 </section>
 
+<!-- FONDATEUR -->
+<section class="founder">
+ <div class="wrap founder-grid">
+  <div class="founder-photo rv"><img src="/fondateur-alan.jpg" alt="Alan, fondateur de VITRIA PRO" loading="lazy"></div>
+  <div class="rv">
+   <span class="eyebrow">Votre interlocuteur</span>
+   <h2 class="h2" style="font-size:clamp(36px,4.2vw,62px)">Une seule personne, du premier appel à la <em>mise en ligne.</em></h2>
+   <p class="founder-text">Pas de standard, pas d'intermédiaire. Vous parlez directement à celui qui conçoit votre site, et qui reste disponible après sa mise en ligne.</p>
+   <div class="founder-sign"><b>Alan</b>Fondateur de VITRIA PRO</div>
+   <a class="btn btn-dark" href="#contact">Recevoir ma maquette <span class="ar">→</span></a>
+  </div>
+ </div>
+</section>
+
 <!-- FINAL -->
 <section class="final" id="contact">
  <div class="photo" style="background-image:url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85)"></div>
@@ -482,7 +506,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
 <footer>
  <div class="wrap">
   <div class="foot">
-   <span class="wordmark" style="color:#fff">VITRIA <span>PRO</span></span>
+   <img src="/logo-vitria-pro.png" alt="VITRIA PRO" style="height:64px;width:auto;filter:brightness(0) invert(1)">
    <nav><a href="#secteurs">Secteurs</a><a href="#offres">Offres</a><a href="/realisations.html">Réalisations</a><a href="/garantie.html">Garantie</a><a href="/rendez-vous.html">Rendez-vous</a></nav>
   </div>
   <p class="fine">© 2026 VITRIA PRO. Les sites présentés par secteur sont des démonstrations et les photographies sont des illustrations. Prix indicatifs : périmètre, délais et conditions sont précisés dans le devis. Délais comptés à réception du paiement et des éléments nécessaires.</p>
