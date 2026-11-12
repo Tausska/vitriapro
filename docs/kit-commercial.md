@@ -13,7 +13,7 @@ Ne pas promettre un nombre de clients, un classement Google, un chiffre d'affair
 
 ## 2. Offre de référence
 
-**Site vitrine standard — à partir de 1 490 €**
+**Site vitrine standard — à partir de 1 490 € TTC**
 
 Périmètre de référence à confirmer dans chaque devis :
 - jusqu'à 5 pages de présentation ;
@@ -81,17 +81,13 @@ Répondre honnêtement : « Nous avons préparé des concepts de démonstration 
 - Les coordonnées du prospect et les notes d'échange sont transmises avec son accord et conformément aux règles applicables.
 - Les commissions sont calculées uniquement selon un accord écrit séparé.
 
-## 7. Rémunération commerciale — À VALIDER
+## 7. Rémunération commerciale
 
-Hypothèse discutée : commission pouvant aller jusqu'à 30 % des montants HT effectivement encaissés, sous réserve d'un contrat écrit.
+**Taux retenu : 30 % des montants HT effectivement encaissés par VITRIA PRO**, sous réserve de formalisation dans un accord écrit.
 
-Avant publication de l'annonce ou démarrage :
-- confirmer le taux et sa base de calcul ;
-- préciser si la commission s'applique à l'acompte puis au solde au fur et à mesure des encaissements ;
-- définir le traitement des annulations, remboursements et impayés ;
-- définir la durée d'attribution du prospect et les règles en cas de doublon ;
-- fixer le moment de paiement de la commission ;
-- vérifier le statut juridique adapté du commercial indépendant et les règles françaises applicables.
+Le prix public de référence est affiché TTC. La commission est calculée sur la base HT correspondante, après détermination du traitement fiscal applicable à la vente. Le versement de la commission suit les encaissements du client : une part sur l'acompte effectivement reçu, puis le complément sur le solde effectivement reçu.
+
+L'accord écrit doit encore définir le traitement des annulations, remboursements et impayés, la durée d'attribution du prospect, les règles en cas de doublon et le calendrier de versement. Le statut juridique adapté du commercial indépendant et les règles françaises applicables doivent être vérifiés.
 
 Ne jamais présenter cette hypothèse comme une rémunération garantie tant que le contrat n'est pas signé.
 
@@ -101,7 +97,7 @@ Ne jamais présenter cette hypothèse comme une rémunération garantie tant que
 2. Découverte du besoin et collecte des éléments.
 3. Transmission à VITRIA PRO.
 4. Échange de cadrage et devis écrit.
-5. Acceptation contractuelle et paiement selon les conditions du devis.
+5. Acceptation contractuelle et paiement : 50 % à la commande, puis 50 % avant mise en ligne et livraison définitive, selon les conditions du devis.
 6. Collecte des contenus et validation du périmètre.
 7. Conception, retours prévus au devis et validation.
 8. Solde et livraison selon le contrat.
