@@ -1,5 +1,5 @@
 # VITRIA PRO — Checklist de mise en vente
-Mise à jour : 12 novembre 2026
+Mise à jour : 11 novembre 2026
 
 ## Déjà préparé dans le dépôt
 - [x] Page d'accueil et identité graphique.
@@ -11,10 +11,11 @@ Mise à jour : 12 novembre 2026
 - [x] Offre de référence : à partir de 1 490 € TTC, périmètre à préciser au devis.
 - [x] Paiement commercial de référence : 50 % à la commande, 50 % avant publication/livraison.
 - [x] Kit commercial, annonce de recrutement et CRM minimal.
-- [x] Modèle de devis/contrat client (brouillon).
-- [x] Projet de contrat commercial indépendant (brouillon).
-- [x] Brouillons de mentions légales et politique de confidentialité (non publiables en l'état).
-- [x] Procédure de production et livraison.
+- [x] Modèle de devis et projet de contrat client ajoutés dans `docs/` (brouillons).
+- [x] Projet d'accord commercial indépendant ajouté dans `docs/` (brouillon).
+- [x] Fiches de préparation des mentions légales et de la politique de confidentialité ajoutées dans `docs/` (non publiables en l'état).
+- [x] Procédure de production et livraison ajoutée dans `docs/`.
+- [x] Plan de prospection des 100 premiers prospects ajouté dans `docs/`.
 
 ## À faire avant d'accepter une commande
 - [ ] Le propriétaire règle Dodo Payments, configure le compte et effectue un test réel de paiement/remboursement.
