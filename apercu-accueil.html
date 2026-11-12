@@ -46,6 +46,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .menu a{opacity:.82;transition:opacity .2s}
 .menu a:hover{opacity:1}
 .nav .btn{height:46px;padding:0 20px;font-size:14px}
+.nav-cta{display:flex;align-items:center;gap:22px}.wa{font-size:14px;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:2px}
 .header .btn{background:#fff;color:var(--ink)}
 .header.solid .btn{background:var(--ink);color:#fff}
 
@@ -108,6 +109,14 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .num h3{font:600 18px var(--display);margin:22px 0 8px}
 .num p{font-size:15px;color:#ffffff9a}
 
+/* Reviews */
+.reviews{padding:0 0 140px}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px}
+.rev{background:#fff;border:1px solid var(--line);padding:44px 42px;display:flex;flex-direction:column;justify-content:space-between;gap:34px}
+.stars{letter-spacing:4px;font-size:20px;color:#c9a227}
+.rev blockquote{font:500 clamp(21px,2vw,27px)/1.35 var(--display);letter-spacing:-.02em}
+.rev cite{font-style:normal;font-size:15px;color:var(--muted)}
+.rev cite b{display:block;color:var(--ink);font-weight:600}
 /* Compare */
 .compare-sec{padding:140px 0}
 .table-wrap{margin-top:56px;overflow-x:auto}
@@ -192,6 +201,10 @@ thead .us{color:#fff}
 .final .eyebrow{color:#ffffffb0}
 .final h2{font:600 clamp(46px,7.6vw,118px)/.95 var(--display);letter-spacing:-.045em;margin:24px 0 30px;max-width:1100px}
 .final p{font-size:19px;color:#ffffffcc;max-width:520px;margin-bottom:38px}
+.qform{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-top:44px;max-width:1100px}
+.qform input{height:58px;padding:0 18px;border:1px solid #ffffff55;background:#ffffff14;color:#fff;font:500 15px var(--sans);outline:0}
+.qform input::placeholder{color:#ffffffa0}
+.qform input:focus{border-color:#fff}
 .contact-line{display:flex;gap:34px;flex-wrap:wrap;margin-top:44px;font-size:15px;color:#ffffffc0}
 
 footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
@@ -234,6 +247,11 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
  .process .photo{min-height:340px}
  .process-in{padding:80px 24px}
  .final{padding:120px 0 110px}
+ .qform{grid-template-columns:1fr}
+ .rev-grid{grid-template-columns:1fr}
+ .reviews{padding-bottom:100px}
+ .rev{padding:32px 26px}
+ .wa{display:none}
  footer{padding-bottom:110px}
  .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:8px;transform:translateY(130%);transition:transform .45s var(--ease)}
  .mbar.show{transform:none}
@@ -255,7 +273,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
    <a href="#offres">Offres</a>
    <a href="#questions">Questions</a>
   </nav>
-  <a class="btn" href="/rendez-vous.html">Recevoir ma maquette</a>
+  <div class="nav-cta"><a class="wa" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20recevoir%20ma%20maquette." aria-label="WhatsApp">WhatsApp</a><a class="btn" href="#contact">Recevoir ma maquette</a></div>
  </div>
 </header>
 
@@ -275,7 +293,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
   <div class="hero-row">
    <p>Artisans, restaurants, indépendants : nous concevons votre site haut de gamme, et vous le voyez avant de payer. En ligne en 5 jours, ou en 48 heures.</p>
    <div class="cta">
-    <a class="btn btn-white" href="/rendez-vous.html">Recevoir ma maquette offerte <span class="ar">→</span></a>
+    <a class="btn btn-white" href="#contact">Recevoir ma maquette offerte <span class="ar">→</span></a>
     <a class="btn btn-line" href="#offres">Voir les offres</a>
    </div>
   </div>
@@ -295,6 +313,17 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
   <div>
    <h2 class="rv">Vos futurs clients vous cherchent sur Google. Ils choisissent en quelques secondes. <span>Nous concevons des sites qui font la différence dans ces quelques secondes : ils inspirent confiance, et ils font appeler.</span></h2>
    <div class="statement-foot rv"><a class="btn btn-dark" href="/rendez-vous.html">Parler de mon projet <span class="ar">→</span></a></div>
+  </div>
+ </div>
+</section>
+
+<!-- COMMENTAIRES -->
+<section class="reviews" id="avis">
+ <div class="wrap">
+  <h2 class="h2 rv">Commentaires</h2>
+  <div class="rev-grid">
+   <figure class="rev rv"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Le site donne immédiatement une image sérieuse et professionnelle de l'entreprise. La présentation est soignée, l'ensemble inspire confiance et donne envie d'en découvrir davantage. »</blockquote></figure>
+   <figure class="rev rv"><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Une présentation particulièrement soignée et professionnelle. Le site est clair, agréable à parcourir et donne immédiatement une impression de sérieux. »</blockquote></figure>
   </div>
  </div>
 </section>
@@ -345,6 +374,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
      <tr><td>Maquette avant de payer</td><td class="us">Oui, offerte</td><td class="mute">Non</td><td class="mute">Non</td><td class="mute">Rarement</td></tr>
      <tr><td>Satisfait ou remboursé</td><td class="us">14 jours</td><td class="mute">Non</td><td class="mute">Non</td><td class="mute">Rarement</td></tr>
      <tr><td>Textes rédigés pour vous</td><td class="us">Inclus</td><td class="mute">En option</td><td class="mute">Partiel</td><td class="mute">Variable</td></tr>
+     <tr><td>Domaine, hébergement et fiche Google</td><td class="us">Inclus 3 ans</td><td class="mute">En option</td><td class="mute">Dans l'abonnement</td><td class="mute">Rarement</td></tr>
      <tr><td>Design haut de gamme</td><td class="us">Inclus</td><td>Oui</td><td class="mute">Modèles</td><td class="mute">Selon le profil</td></tr>
     </tbody>
    </table>
@@ -364,7 +394,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
     <div class="offer-tag"><span>01</span></div>
     <h3>Essentiel</h3><p class="sub">Pour être trouvé et appelé.</p>
     <div class="price">990 €</div><div class="once">Paiement unique</div>
-    <ul><li>Site one-page haut de gamme</li><li>Textes rédigés pour vous</li><li>Appel et contact en un geste</li><li>Référencement local de base</li><li>7 jours de suivi après la mise en ligne</li></ul>
+    <ul><li>Site one-page haut de gamme</li><li>Textes rédigés pour vous</li><li>Appel et contact en un geste</li><li>Référencement local de base</li><li>Fiche Google Business configurée</li><li>7 jours de suivi après la mise en ligne</li></ul>
     <div class="express"><span>Option Express 48 h</span><b>+199 €</b></div>
     <a class="btn btn-line" href="/rendez-vous.html">Recevoir ma maquette</a>
    </div>
@@ -372,7 +402,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
     <div class="offer-tag"><span>02</span><span>Le plus choisi</span></div>
     <h3>Business</h3><p class="sub">Pour présenter chaque service.</p>
     <div class="price">1 490 €</div><div class="once">Paiement unique</div>
-    <ul><li>Jusqu'à 5 pages</li><li>Une page par service, rédigée pour vous</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>14 jours de suivi après la mise en ligne</li></ul>
+    <ul><li>Jusqu'à 5 pages</li><li>Une page par service, rédigée pour vous</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>14 jours de suivi après la mise en ligne</li></ul>
     <div class="express"><span>Option Express 48 h</span><b>+199 €</b></div>
     <a class="btn" href="/rendez-vous.html">Recevoir ma maquette</a>
    </div>
@@ -380,12 +410,12 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
     <div class="offer-tag"><span>03</span></div>
     <h3>Premium</h3><p class="sub">Pour s'imposer dans son secteur.</p>
     <div class="price">2 490 €</div><div class="once">Paiement unique</div>
-    <ul><li>Jusqu'à 10 pages</li><li>Sections sur mesure et galerie</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>30 jours de suivi après la mise en ligne</li></ul>
+    <ul><li>Jusqu'à 10 pages</li><li>Sections sur mesure et galerie</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>30 jours de suivi après la mise en ligne</li></ul>
     <div class="express"><span>Option Express 48 h</span><b>+199 €</b></div>
     <a class="btn btn-line" href="/rendez-vous.html">Recevoir ma maquette</a>
    </div>
   </div>
-  <div class="all rv"><h4>Dans toutes les offres</h4><p>Maquette offerte avant engagement · Design adapté au mobile · Site qui vous appartient · Garantie satisfait ou remboursé 14 jours</p></div>
+  <div class="all rv"><h4>Dans toutes les offres</h4><p>Maquette offerte avant engagement · Nom de domaine et hébergement inclus pendant 3 ans · Adresse e-mail professionnelle · Mentions légales et RGPD · Inscription sur Google · Design adapté au mobile · Site qui vous appartient · Garantie satisfait ou remboursé 14 jours</p></div>
  </div>
 </section>
 
@@ -438,6 +468,12 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
    <a class="btn btn-white" href="/rendez-vous.html">Réserver mon appel <span class="ar">→</span></a>
    <a class="btn btn-line" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20recevoir%20ma%20maquette.">Écrire sur WhatsApp</a>
   </div>
+  <form class="qform" id="qform">
+   <input name="nom" placeholder="Votre nom" required>
+   <input name="metier" placeholder="Votre métier et votre ville" required>
+   <input name="tel" placeholder="Votre téléphone" required>
+   <button class="btn btn-white" type="submit">Recevoir ma maquette <span class="ar">→</span></button>
+  </form>
   <div class="contact-line"><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a><a href="/recrutement-commercial.html">Devenir commercial VITRIA PRO</a></div>
  </div>
 </section>
@@ -453,7 +489,7 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
  </div>
 </footer>
 
-<div class="mbar" id="mbar"><a href="/rendez-vous.html">Recevoir ma maquette</a><a href="#offres">Offres</a></div>
+<div class="mbar" id="mbar"><a href="#contact">Recevoir ma maquette</a><a href="#offres">Offres</a></div>
 
 <script>
 // Hero slideshow
@@ -465,6 +501,9 @@ show(0);setInterval(()=>{s=(s+1)%slides.length;show(s)},6000);
 
 // Sector carousel: duplicate for seamless loop
 const track=document.getElementById('track');track.innerHTML+=track.innerHTML;
+
+// Formulaire : envoie la demande sur WhatsApp
+document.getElementById('qform').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const t='Bonjour VITRIA PRO, je souhaite recevoir ma maquette offerte.\nNom : '+f.get('nom')+'\nMétier et ville : '+f.get('metier')+'\nTéléphone : '+f.get('tel');location.href='https://wa.me/595992666002?text='+encodeURIComponent(t)});
 
 // FAQ
 document.querySelectorAll('.q button').forEach(b=>b.addEventListener('click',()=>{const q=b.parentElement,a=q.querySelector('.a'),o=q.classList.toggle('open');a.style.maxHeight=o?a.scrollHeight+'px':0}));
