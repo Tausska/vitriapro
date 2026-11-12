@@ -14,7 +14,17 @@
 <body><div class="topline"></div>
 <header><div class="wrap nav"><a class="logo" href="/" aria-label="VITRIA PRO, accueil"><img src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO"></a><a class="back" href="/">← Retour au site</a></div></header>
 <main><section class="hero"><div class="wrap"><span class="eyebrow">Premier échange · 100 % gratuit</span><h1>Parlons de votre projet <em>ensemble.</em></h1><p class="intro">Choisissez le format qui correspond à votre besoin. Échangeons sur votre activité, votre site actuel et vos objectifs, sans engagement et avant tout devis.</p>
-<div class="options"><article class="option featured"><span class="tag">Rendez-vous gratuit</span><div class="duration">30 min</div><h2>Consultation projet</h2><p>Présentez votre activité, vos besoins, vos objectifs et votre budget. Nous échangeons sur les pages, les fonctionnalités et les prochaines étapes de votre site.</p><p style="margin-top:18px"><a class="book-link" href="https://calendly.com/contact-vitriapro/30min" target="_blank" rel="noopener">Choisir mon créneau →</a></p></article></div></div></section>
-<section class="booking wrap"><div class="booking-head"><h2>Choisissez votre créneau</h2><p>Les horaires s'affichent dans votre fuseau horaire local. La réservation et sa confirmation sont gérées par Calendly.</p></div><div class="calendar"><iframe src="https://calendly.com/contact-vitriapro/30min?embed_type=Inline" title="Réserver un rendez-vous de 30 minutes avec VITRIA PRO" loading="lazy"></iframe></div><p class="help">Un problème avec la réservation ? Écrivez-nous à <a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a>.</p></section></main>
+<div class="options"><article class="option featured"><span class="tag">Rendez-vous gratuit</span><div class="duration">30 min</div><h2>Consultation projet</h2><p>Présentez votre activité, vos besoins, vos objectifs et votre budget. Nous échangeons sur les pages, les fonctionnalités et les prochaines étapes de votre site.</p><p style="margin-top:18px"><a class="book-link" href="#calendar">Choisir mon créneau →</a></p></article></div></div></section>
+<section class="booking wrap"><div class="booking-head"><h2>Choisissez votre créneau</h2><p>Les horaires s’affichent dans votre fuseau horaire local. Choisissez votre créneau directement ci-dessous.</p></div><div class="calendar" id="calendar"><div id="my-cal-inline-vitriapro30"></div></div><p class="help">Un problème avec la réservation ? Écrivez-nous à <a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a>.</p></section></main>
 <footer class="footer"><div class="wrap"><span>© <span id="year"></span> VITRIA PRO. Tous droits réservés.</span><span><a href="/">Accueil</a> · <a href="mailto:contact@vitriapro.com">Contact</a></span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script></body></html>
+<script>
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "vitriapro30", { origin: "https://app.cal.com" });
+Cal.ns.vitriapro30("inline", {
+  elementOrSelector: "#my-cal-inline-vitriapro30",
+  calLink: "vitriapro/30min",
+  config: { layout: "month_view", theme: "light" }
+});
+Cal.ns.vitriapro30("ui", { styles: { branding: { brandColor: "#e45735" } } });
+document.getElementById('year').textContent = new Date().getFullYear();
+</script></body></html>
