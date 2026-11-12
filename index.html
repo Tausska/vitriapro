@@ -59,7 +59,19 @@ html.vp-motion{scroll-behavior:smooth}
   .work-card:hover .work-img{transform:scale(1.045)}
 }
 @media (prefers-reduced-motion:reduce){.vp-reveal{opacity:1!important;transform:none!important;transition:none!important}}
-</style>
+
+    .founder{background:var(--white)}
+    .founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:64px;align-items:center}
+    .founder-portrait{position:relative;max-width:430px;background:#dedbd2;overflow:hidden}
+    .founder-portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 35%}
+    .founder-copy h2{margin:16px 0 20px;font:700 clamp(35px,4.5vw,57px)/1.04 var(--display);letter-spacing:-3.5px}
+    .founder-copy h2 em{font:400 1.02em var(--serif);color:var(--accent)}
+    .founder-copy p{max-width:590px;color:#666b63;font-size:13px;line-height:1.9}
+    .founder-signature{margin-top:25px;padding-top:18px;border-top:1px solid var(--line);font:600 14px var(--display)}
+    .founder-signature small{display:block;margin-top:5px;color:#858a80;font:500 10px var(--sans);letter-spacing:1px;text-transform:uppercase}
+    @media(max-width:900px){.founder-grid{grid-template-columns:1fr;gap:30px}.founder-portrait{max-width:360px}}
+
+  </style>
 </head>
 <body>
   <div class="topline"></div>
@@ -67,6 +79,7 @@ html.vp-motion{scroll-behavior:smooth}
     <div class="wrap nav">
       <a class="logo" href="#accueil" aria-label="VITRIA PRO, accueil"><img class="brand-logo" src="https://i.ibb.co/vC9TbkzF/vitria-pro-on-white.png" alt="VITRIA PRO"></a>
       <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#fondateur">À propos</a>
         <a href="#realisations">Nos exemples</a><a href="#services">Expertises</a><a href="#methode">Méthode</a><a href="#offre">Tarif</a><a href="/recrutement-commercial.html">Recrutement</a><a href="/rendez-vous.html">Appel gratuit</a>
       </nav>
       <a class="nav-cta" href="/rendez-vous.html">Réserver un appel <span>↗</span></a>
@@ -179,6 +192,21 @@ html.vp-motion{scroll-behavior:smooth}
           <a class="sector" href="/restaurants.html"><span>02 /</span><strong>Restaurants & cafés</strong><small>Carte · Ambiance · Réservation ↗</small></a>
           <a class="sector" href="/coiffeurs.html"><span>03 /</span><strong>Coiffeurs & instituts</strong><small>Prestations · Galerie · Contact ↗</small></a>
           <a class="sector" href="#contact"><span>04 /</span><strong>TPE, PME & indépendants</strong><small>Présentation · Expertise · Contact ↗</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section founder" id="fondateur">
+      <div class="wrap founder-grid">
+        <div class="founder-portrait">
+          <img src="https://i.postimg.cc/B6Cqx6C8/897839398-1790393512185571-7519749347401423464-n.webp" alt="Portrait du fondateur de VITRIA PRO" loading="lazy">
+        </div>
+        <div class="founder-copy">
+          <span class="eyebrow">Derrière VITRIA PRO</span>
+          <h2>Un interlocuteur direct. <em>Un projet bien cadré.</em></h2>
+          <p>VITRIA PRO accompagne les petites entreprises, indépendants et professionnels dans la création de leur présence en ligne. Chaque collaboration commence par un échange pour comprendre votre activité, vos clients et vos objectifs, puis définir un site adapté à votre besoin.</p>
+          <p>Vous échangez directement avec la personne qui pilote votre demande, du cadrage initial jusqu'à la préparation de la mise en ligne. Le périmètre, le tarif et les délais sont clarifiés avant tout démarrage.</p>
+          <div class="founder-signature">VITRIA PRO<small>Création de sites web professionnels</small></div>
         </div>
       </div>
     </section>
