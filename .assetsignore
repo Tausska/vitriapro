@@ -2,6 +2,8 @@
 README.md
 docs/**
 .github/**
+.git/**
+.wrangler/**
 .gitignore
 .assetsignore
 wrangler.jsonc
