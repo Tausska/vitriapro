@@ -189,6 +189,9 @@
           <details><summary>Combien de temps faut-il pour créer le site ?</summary><p>Le délai dépend du périmètre et de la réception des contenus. Un calendrier est précisé dans la proposition avant le démarrage.</p></details>
           <details><summary>Puis-je demander des fonctionnalités supplémentaires ?</summary><p>Oui. Réservation en ligne, paiement, catalogue, espace client ou fonctionnalités particulières peuvent être étudiés et faire l'objet d'un devis complémentaire.</p></details>
           <details><summary>Est-ce que je m'engage en demandant un devis ?</summary><p>Non. Le premier échange sert à comprendre votre besoin. Le périmètre, le tarif et les conditions sont présentés avant toute décision de votre part.</p></details>
+          <details><summary>Qui fournit les textes, photos et informations du site ?</summary><p>Nous cadrons ensemble les éléments nécessaires avant la conception. Le devis précise les contenus fournis par le client et les éventuelles prestations complémentaires de rédaction ou de recherche d’images.</p></details>
+          <details><summary>Le nom de domaine et l’hébergement sont-ils compris ?</summary><p>Les besoins techniques et les éventuels frais récurrents sont identifiés dans la proposition commerciale avant validation. Aucun abonnement ou frais tiers ne doit être engagé sans être présenté au préalable.</p></details>
+          <details><summary>Comment se déroulent le paiement et la validation ?</summary><p>Les étapes de validation, l’échéancier et les conditions de paiement sont précisés dans le devis et les conditions contractuelles avant le démarrage.</p></details>
         </div>
       </div>
     </section>
@@ -202,7 +205,7 @@
           <div class="contact-points"><span><b>✓</b> Premier échange sans engagement</span><span><b>✓</b> Proposition adaptée à votre besoin</span><span><b>✓</b> Budget présenté avant démarrage</span></div>
         </div>
         <form class="lead-form" id="leadForm">
-          <p class="form-intro">Présentez votre projet en quelques informations. Les champs marqués d'un astérisque sont obligatoires.</p>
+          <p class="form-intro">Quelques informations suffisent pour préparer votre premier échange. Aucun engagement à ce stade.</p>
           <div class="form-grid">
             <label>Nom et prénom *<input name="name" autocomplete="name" required placeholder="Votre nom"></label>
             <label>Entreprise *<input name="company" autocomplete="organization" required placeholder="Nom de votre entreprise"></label>
@@ -210,9 +213,9 @@
             <label>Téléphone <small>Facultatif</small><input name="phone" type="tel" autocomplete="tel" placeholder="+33…"></label>
             <label>Votre activité *<input name="activity" required placeholder="Ex. : artisan, conseil, restauration…"></label>
             <label>Votre besoin *<select name="siteType" required><option value="">Choisir une option</option><option>Créer un site vitrine (1 à 5 pages)</option><option>Refondre un site existant</option><option>Ajouter des fonctionnalités</option><option>Je souhaite être conseillé</option></select></label>
-            <label class="form-wide">Quelques mots sur votre projet *<textarea name="message" rows="4" required placeholder="Votre activité, vos services, vos objectifs…"></textarea></label>
+            <label class="form-wide">Quelques mots sur votre projet <small>Facultatif</small><textarea name="message" rows="3" placeholder="Votre activité, vos services, vos objectifs…"></textarea></label>
           </div>
-          <div class="form-bottom"><button class="btn btn-dark" type="submit">Envoyer ma demande <span class="btn-arrow">↗</span></button><span class="form-privacy">Votre demande prépare un e-mail dans votre messagerie. Vous gardez la main sur son envoi.</span></div>
+          <div class="form-bottom"><button class="btn btn-dark" type="submit">Préparer ma demande <span class="btn-arrow">↗</span></button><span class="form-privacy">Votre application e-mail s’ouvrira avec le message prérempli. Vous devrez confirmer son envoi.</span></div>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -235,7 +238,7 @@
       const labels={name:'Nom',company:'Entreprise',email:'E-mail',phone:'Téléphone',activity:'Activité',siteType:'Besoin',message:'Description du projet'};
       const body=[...data.entries()].map(([key,value])=>(labels[key]||key)+': '+value).join('\n\n');
       const subject='Demande de projet - VITRIA PRO';
-      document.getElementById('formStatus').textContent='Votre messagerie va s’ouvrir avec votre demande préremplie. Vérifiez puis envoyez votre e-mail.';
+      document.getElementById('formStatus').textContent='Votre application e-mail va s’ouvrir. Vérifiez le message puis confirmez son envoi.';
       window.location.href='mailto:contact@vitriapro.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
     });
   </script>
