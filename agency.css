@@ -1,0 +1,81 @@
+/* VITRIA PRO — institutional agency identity */
+:root{--paper:#F4F6F7;--white:#FFFFFF;--ink:#252D33;--muted:#65717A;--line:#DCE2E5;--accent:#183746;--accent-dark:#102A37;--olive:#8DA9B3;--dark:#142D3A;--sans:"DM Sans",Arial,sans-serif;--display:"Manrope",Arial,sans-serif}
+*{box-sizing:border-box}
+body{background:var(--paper)!important;color:var(--ink)!important;font-family:var(--sans)!important}
+h1,h2,h3,strong,.nav-cta,.btn,.pricing-link{font-family:var(--display)!important}
+h1 em,h2 em,.hero h1 em,.section-title h2 em,.offer h2 em,.pricing-intro h2 em,.contact h2 em,.founder-copy h2 em{font-family:var(--display)!important;font-style:normal!important;color:var(--accent)!important}
+a:hover{color:var(--accent)}
+.header,.site-header,header{background:rgba(244,246,247,.97)!important;border-bottom:1px solid var(--line)!important;box-shadow:none!important;backdrop-filter:blur(14px)}
+.nav-links,.nav-right{color:#46545D!important}
+.nav-links a:hover,.nav-link:hover{color:var(--accent)!important}
+.nav-cta,.btn,.pricing-link{background:var(--accent)!important;color:#fff!important;border:1px solid var(--accent)!important;border-radius:2px!important;box-shadow:none!important}
+.nav-cta:hover,.btn:hover,.pricing-link:hover{background:var(--accent-dark)!important;transform:translateY(-1px)}
+.menu-toggle{border-color:var(--line)!important;color:var(--accent)!important}
+.hero{background:var(--paper)!important}
+.hero h1{font-family:var(--display)!important;font-weight:700!important;letter-spacing:-.055em!important;line-height:1.02!important}
+.hero-copy,.intro,.section-intro,.service p,.step p,.contact-copy{color:var(--muted)!important}
+.eyebrow,.work-tag,.pricing-kicker,.service-no,.step-no,.sector span{color:#426171!important}
+.eyebrow:before{background:var(--olive)!important}
+.hero-visual{border:1px solid var(--line)!important;background:#E4EAED!important}
+.hero-stamp{background:#fff!important;color:var(--accent)!important;border:1px solid var(--line)!important}
+.ticker{background:#E9EEF0!important;border-color:var(--line)!important}
+.ticker-list span:before{color:var(--olive)!important}
+.work,.sectors{background:#fff!important}
+.work-card,.work-card.small{border:1px solid var(--line)!important}
+.work-tag{color:#D5E1E5!important}
+.offer,.pricing{background:var(--dark)!important;color:#fff!important}
+.offer .eyebrow,.pricing .eyebrow{color:#AFC3CC!important}
+.offer h2 em,.pricing-intro h2 em{color:#B8C8CE!important}
+.offer-copy,.pricing-intro p,.pricing-desc{color:#C1CDD2!important}
+.offer-list,.pricing-card ul{border-color:#385361!important}
+.offer-list li,.pricing-card li{color:#E7ECEF!important}
+.offer-list li:before,.pricing-card li:before{color:#AFC3CC!important}
+.pricing-card{background:#1C3A49!important;border:1px solid #45606C!important;color:#fff!important;border-radius:2px!important;box-shadow:none!important}
+.pricing-card.featured{background:var(--paper)!important;color:var(--ink)!important;border:1px solid var(--olive)!important;transform:translateY(-5px)}
+.pricing-card.featured .pricing-kicker,.pricing-card.featured li:before{color:var(--accent)!important}
+.pricing-card.featured .pricing-desc{color:var(--muted)!important}
+.pricing-card.featured li{color:#35424A!important}
+.pricing-card.featured ul{border-color:var(--line)!important}
+.pricing-footnote{color:#B6C4CA!important}
+.services{background:#E9EEF0!important}
+.service-grid{border-color:#CBD5DA!important}
+.service{border-color:#CBD5DA!important;background:transparent!important}
+.service:hover{background:#F8FAFB!important}
+.service h3{color:var(--ink)!important}
+.method{background:var(--paper)!important}
+.method-aside{background:var(--accent)!important;border-radius:2px!important}
+.method-aside:after{color:rgba(255,255,255,.055)!important}
+.steps,.step,.faq-list,details{border-color:var(--line)!important}
+.sector{border-color:var(--line)!important;background:#fff!important}
+.sector:hover{border-color:var(--olive)!important;transform:translateY(-2px)}
+.faq{background:var(--paper)!important}
+summary:after{color:var(--accent)!important}
+.contact{background:#E9EEF0!important}
+.form{background:#fff!important;border:1px solid var(--line)!important;border-radius:2px!important;box-shadow:none!important}
+.form input,.form select,.form textarea{background:#fff!important;border-color:var(--line)!important;border-radius:2px!important;color:var(--ink)!important}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--accent)!important;box-shadow:0 0 0 3px rgba(24,55,70,.08)!important}
+.form label{color:#46545D!important}
+.form-note,.form-status{color:var(--muted)!important}
+.footer{background:var(--accent-dark)!important;color:#DCE5E9!important}
+.footer-top{border-color:#36515D!important}
+.footer-blurb,.footer-bottom{color:#AFC0C7!important}
+.footer-links a:hover{color:#fff!important}
+.footer-wordmark span{color:var(--olive)!important}
+.whatsapp-float,.contact-direct a.whatsapp-contact{background:var(--accent)!important;border-radius:2px!important;box-shadow:none!important}
+.contact-direct a.whatsapp-contact:hover,.whatsapp-float:hover{background:var(--accent-dark)!important}
+.text-link{border-color:var(--olive)!important}
+.topline{height:3px!important;background:var(--accent)!important}
+@media(max-width:650px){.nav-links{background:var(--paper)!important;border-color:var(--line)!important}.pricing-card.featured{transform:none!important}}
+/* Homepage layout refinements */
+body:has(.hero-grid .hero-visual) .hero{padding:76px 0 68px}
+body:has(.hero-grid .hero-visual) .hero-grid{gap:54px}
+body:has(.hero-grid .hero-visual) .hero h1{font-size:clamp(46px,5.35vw,72px);letter-spacing:-.065em}
+body:has(.hero-grid .hero-visual) section.section{padding:92px 0}
+body:has(.hero-grid .hero-visual) .section-title h2{font-size:clamp(34px,4vw,51px);letter-spacing:-.06em;line-height:1.06}
+body:has(.hero-grid .hero-visual) .service-grid{grid-template-columns:repeat(3,1fr)}
+body:has(.hero-grid .hero-visual) .service{min-height:190px;padding:24px 22px}
+body:has(.hero-grid .hero-visual) .method-layout{gap:72px}
+body:has(.hero-grid .hero-visual) .method-aside{min-height:330px}
+body:has(.hero-grid .hero-visual) .contact{padding:88px 0}
+@media(max-width:900px){body:has(.hero-grid .hero-visual) .hero-grid{grid-template-columns:1fr;gap:35px}body:has(.hero-grid .hero-visual) .pricing-grid{grid-template-columns:1fr}body:has(.hero-grid .hero-visual) .pricing-card.featured{transform:none}body:has(.hero-grid .hero-visual) .method-layout,body:has(.hero-grid .hero-visual) .faq-layout,body:has(.hero-grid .hero-visual) .contact-grid{grid-template-columns:1fr;gap:32px}}
+@media(max-width:650px){body:has(.hero-grid .hero-visual) .hero{padding:54px 0 46px}body:has(.hero-grid .hero-visual) .hero h1{font-size:clamp(43px,11.7vw,61px)}body:has(.hero-grid .hero-visual) section.section{padding:68px 0}body:has(.hero-grid .hero-visual) .work-grid{grid-template-columns:1fr}body:has(.hero-grid .hero-visual) .service-grid{grid-template-columns:1fr 1fr}body:has(.hero-grid .hero-visual) .service{min-height:180px;padding:19px 15px}body:has(.hero-grid .hero-visual) .method-aside{min-height:245px}body:has(.hero-grid .hero-visual) .form-grid{grid-template-columns:1fr}}
