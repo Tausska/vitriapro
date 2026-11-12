@@ -16,12 +16,12 @@ Nous recherchons un commercial indépendant capable d'identifier des entreprises
 - Assurer le suivi jusqu'à la décision du prospect.
 
 ### L'offre à commercialiser
-Sites vitrines professionnels à partir de **1 490 €**, avec un périmètre défini dans un devis : jusqu'à 5 pages, design adapté à l'activité, affichage mobile, formulaire de contact et fondations SEO.
+Sites vitrines professionnels à partir de **1 490 € TTC**, avec un périmètre défini dans un devis : jusqu'à 5 pages, design adapté à l'activité, affichage mobile, formulaire de contact et fondations SEO.
 
 La production, la facturation et la livraison sont prises en charge par VITRIA PRO.
 
 ### Rémunération
-Collaboration indépendante rémunérée à la commission sur les ventes effectivement conclues et encaissées. Le taux, le calcul, le calendrier de versement et les conditions sont définis dans un accord écrit avant toute mission.
+Collaboration indépendante rémunérée à **30 % des montants HT effectivement encaissés par VITRIA PRO**, selon un accord écrit précisant le calcul, les versements au fur et à mesure des encaissements, les remboursements et les autres conditions avant toute mission.
 
 **Il ne s'agit pas d'un salaire fixe.** Aucun revenu minimum ni volume de ventes n'est garanti.
 
