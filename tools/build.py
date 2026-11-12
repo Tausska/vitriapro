@@ -226,21 +226,36 @@ body = hero("Prise de rendez-vous · Premier échange gratuit", "Présentons vot
             "Choisissez le format adapté à votre besoin. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
 body += """<section class="section" style="padding-top:0"><div class="wrap">
  <div class="book">
-  <article class="feat rv"><div class="tag"><span>Format court · recommandé</span></div><div class="dur">15 min</div><h2>Rendez-vous découverte</h2><p>Présentez votre entreprise et votre besoin. Un premier échange pour identifier les enjeux et vérifier comment VITRIA PRO peut vous accompagner.</p><a class="btn" href="https://cal.com/d/6KKNofKR3qQMgGjeWjsBcF/15min" target="_blank" rel="noopener">Choisir ce rendez-vous <span class="ar">→</span></a></article>
-  <article class="rv"><div class="tag"><span>Pour un besoin à cadrer</span></div><div class="dur">30 min</div><h2>Rendez-vous projet</h2><p>Approfondissez votre besoin, vos objectifs, les fonctionnalités attendues, les contraintes techniques et les prochaines étapes.</p><a class="btn btn-dark" href="#calendar">Choisir un créneau <span class="ar">↓</span></a></article>
+  <article class="feat rv"><div class="tag"><span>Format court · recommandé</span></div><div class="dur">15 min</div><h2>Rendez-vous découverte</h2><p>Présentez votre entreprise et votre besoin. Un premier échange pour identifier les enjeux et vérifier comment VITRIA PRO peut vous accompagner.</p><a class="btn" href="#calendar" data-cal="15">Choisir ce rendez-vous <span class="ar">↓</span></a></article>
+  <article class="rv"><div class="tag"><span>Pour un besoin à cadrer</span></div><div class="dur">30 min</div><h2>Rendez-vous projet</h2><p>Approfondissez votre besoin, vos objectifs, les fonctionnalités attendues, les contraintes techniques et les prochaines étapes.</p><a class="btn btn-dark" href="#calendar" data-cal="30">Choisir un créneau <span class="ar">↓</span></a></article>
  </div>
  <div id="calendar" style="padding-top:110px">
   <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Agenda</span><h2 class="mid">Sélectionnez une date et une heure</h2></div><p>Les disponibilités s’affichent dans votre fuseau horaire local. Sélectionnez le créneau qui vous convient.</p></div>
-  <div class="calendar"><div id="my-cal-inline-vitriapro30" style="width:100%;height:100%;overflow:scroll"></div></div>
-  <p class="fine-note">Un problème pour choisir votre créneau ? Écrivez-nous à <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a>.</p>
+  <div class="calendar"><div id="my-cal-inline-vitriapro15" class="cal-pane" style="width:100%;height:100%;overflow:scroll"></div><div id="my-cal-inline-vitriapro30" class="cal-pane" style="width:100%;height:100%;overflow:scroll;display:none"></div></div>
+  <p class="fine-note" id="cal-label">Rendez-vous découverte · 15 minutes</p>
+  <p class="fine-note">Le calendrier ne s'affiche pas ? <a href="https://cal.com/d/6KKNofKR3qQMgGjeWjsBcF/15min" target="_blank" rel="noopener" style="text-decoration:underline">Ouvrez-le dans une nouvelle fenêtre</a>, ou écrivez-nous à <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a>.</p>
  </div>
 </div></section>
 """
 CAL = """<script>
 (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "vitriapro30", { origin: "https://app.cal.com" });
-Cal.ns.vitriapro30("inline", { elementOrSelector: "#my-cal-inline-vitriapro30", calLink: "vitriapro/30min", config: { layout: "month_view", theme: "light" } });
-Cal.ns.vitriapro30("ui", { styles: { branding: { brandColor: "#0a1533" } } });
+var done = {};
+function open15_30(w) {
+  var ns = "vitriapro" + w;
+  document.getElementById("my-cal-inline-vitriapro15").style.display = (w === "15") ? "" : "none";
+  document.getElementById("my-cal-inline-vitriapro30").style.display = (w === "30") ? "" : "none";
+  document.getElementById("cal-label").textContent = (w === "15") ? "Rendez-vous découverte · 15 minutes" : "Rendez-vous projet · 30 minutes";
+  if (!done[w]) {
+    done[w] = true;
+    Cal("init", ns, { origin: "https://app.cal.com" });
+    Cal.ns[ns]("inline", { elementOrSelector: "#my-cal-inline-" + ns, calLink: (w === "15") ? "d/6KKNofKR3qQMgGjeWjsBcF/15min" : "vitriapro/30min", config: { layout: "month_view", theme: "light" } });
+    Cal.ns[ns]("ui", { styles: { branding: { brandColor: "#0a1533" } } });
+  }
+}
+open15_30("15");
+document.querySelectorAll("[data-cal]").forEach(function (a) {
+  a.addEventListener("click", function () { open15_30(a.getAttribute("data-cal")); });
+});
 </script>"""
 open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : rendez-vous découverte de 15 minutes ou rendez-vous projet de 30 minutes.", body, CAL))
 
