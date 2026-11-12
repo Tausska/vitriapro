@@ -25,3 +25,11 @@ Le formulaire de la page d'accueil prépare un e-mail à destination de `contact
 - Vérifier les obligations légales et fiscales applicables.
 - Confirmer précisément le périmètre des prestations et les conditions tarifaires.
 - Ne publier aucun témoignage, résultat chiffré ou référence client sans preuve réelle.
+
+## Documentation commerciale interne
+
+- `docs/kit-commercial.md` : positionnement, offre, script de vente, objections et règles de transmission.
+- `docs/recrutement-commercial.md` : annonce pour recruter un commercial indépendant à la commission.
+- `docs/checklist-lancement.md` : points à vérifier avant toute commande et avant le lancement commercial.
+
+Ces documents sont des supports de travail. Les taux de commission, conditions contractuelles, informations légales et modalités de paiement doivent être validés avant publication ou signature.
