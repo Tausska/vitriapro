@@ -97,18 +97,28 @@ def faq(items):
 
 
 # ---------- Pages secteur ----------
-STEPS = [("01", "Échange", "Nous comprenons votre activité, vos clients et vos objectifs."),
-         ("02", "Proposition", "Vous recevez un périmètre clair, un prix et un calendrier prévisionnel."),
-         ("03", "Conception", "Le site est conçu, présenté et ajusté selon les conditions convenues."),
-         ("04", "Mise en ligne", "Après validation, votre site est préparé pour sa publication.")]
+STEPS = [("01", "Un appel de 30 minutes", "Vous présentez votre activité et vos clients. Nous nous occupons du reste."),
+         ("02", "Votre maquette, offerte", "Vous découvrez votre futur site à votre nom, avant tout paiement."),
+         ("03", "En ligne en 5 jours, ou 48 h", "Textes, design, mobile et Google : votre site est prêt à recevoir vos premiers appels.")]
+
+OFFERS = """<section class="section" id="offre"><div class="wrap">
+ <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Offres</span><h2 class="mid">Un prix clair. <em>Une seule fois.</em></h2></div><p>Livraison en 5 jours incluse. Besoin d'aller plus vite ? L'Express met votre site en ligne en 48 heures.</p></div>
+ <div class="offers">
+  <div class="offer rv"><div class="offer-tag"><span>01</span></div><h3>Essentiel</h3><p class="sub">Pour être trouvé et appelé.</p><div class="price">990 €</div><div class="once">Paiement unique</div><ul><li>Site one-page haut de gamme</li><li>Textes rédigés pour vous</li><li>Appel et contact en un geste</li><li>Référencement local de base</li><li>Fiche Google Business configurée</li><li>7 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="index.html#contact">Recevoir ma maquette</a></div>
+  <div class="offer feat rv"><div class="offer-tag"><span>02</span><span>Le plus choisi</span></div><h3>Business</h3><p class="sub">Pour présenter chaque service.</p><div class="price">1 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 5 pages</li><li>Une page par service, rédigée pour vous</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>14 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn" href="index.html#contact">Recevoir ma maquette</a></div>
+  <div class="offer rv"><div class="offer-tag"><span>03</span></div><h3>Premium</h3><p class="sub">Pour s'imposer dans son secteur.</p><div class="price">2 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 10 pages</li><li>Sections sur mesure et galerie</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>30 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="index.html#contact">Recevoir ma maquette</a></div>
+ </div>
+ <div class="all rv"><h4>Dans toutes les offres</h4><p>Maquette offerte avant engagement · Nom de domaine et hébergement inclus pendant 3 ans · Adresse e-mail professionnelle · Mentions légales et RGPD · Inscription sur Google · Design adapté au mobile · Site qui vous appartient · Garantie satisfait ou remboursé 14 jours</p></div>
+</div></section>
+"""
 
 TRUST = ["Une présence en ligne pensée pour", "Être compris rapidement", "Inspirer confiance", "Générer des contacts", "Être consultée sur mobile"]
 
 
 def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards, checks, faqs):
     body = hero(eyebrow, h1, lead,
-                [btn('Prendre rendez-vous <span class="ar">→</span>', "rendez-vous.html"), btn("Voir l'offre", "#offre", "btn-line")],
-                "Sites vitrines sur mesure · Design professionnel · Expérience mobile", photo)
+                [btn('Recevoir ma maquette offerte <span class="ar">→</span>', "index.html#contact"), btn("Voir les offres", "#offre", "btn-line")],
+                "Maquette offerte · En ligne en 5 jours ou 48 h · Paiement unique · Satisfait ou remboursé 14 jours", photo)
     body += '<div class="trustbar"><div class="wrap">' + "".join(f"<span>{t}</span>" for t in TRUST) + "</div></div>\n"
     body += f'<section class="section"><div class="wrap">{head("Les attentes de vos clients", att_h2, att_p)}{cards(att_cards)}</div></section>\n'
     body += ('<section class="section white"><div class="wrap">'
@@ -116,20 +126,16 @@ def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards
                     "Le contenu et les fonctionnalités sont définis selon votre activité, vos objectifs et le périmètre validé ensemble. Voici des éléments que nous pouvons prévoir.")
              + '<div class="checks rv">' + "".join(f"<div>{c}</div>" for c in checks) + "</div></div></section>\n")
     body += ('<section class="section dark"><div class="wrap">'
-             + head("Notre méthode", "Un parcours simple, du premier échange à la mise en ligne.",
-                    "Vous savez ce qui est prévu, ce qui doit être fourni et quelle est la prochaine étape.")
-             + cards(STEPS, "four") + "</div></section>\n")
-    body += """<section class="section" id="offre"><div class="wrap"><div class="panel rv">
- <div><span class="eyebrow">Une base claire</span><h2>Un site professionnel, conçu autour de votre activité.</h2><p>Offre standard : site vitrine de 1 à 5 pages, design personnalisé, adaptation mobile, formulaire de contact, fondations SEO et préparation à la mise en ligne. Les fonctionnalités spécifiques, contenus, outils tiers, taxes éventuellement applicables et frais récurrents sont précisés dans le devis.</p></div>
- <div><div class="price">À partir de 990 €</div><small>Prix indicatif · devis personnalisé</small><a class="btn btn-white" href="index.html#contact">Demander un devis <span class="ar">→</span></a></div>
-</div></div></section>
-"""
+             + head("Méthode", "Simple pour vous. <em>Exigeant</em> pour nous.",
+                    "Vous continuez votre activité. Nous nous occupons de tout, des textes à la mise en ligne.")
+             + cards(STEPS) + "</div></section>\n")
+    body += OFFERS
     body += f'<section class="section" style="padding-top:0"><div class="wrap faq-grid"><div class="rv"><span class="eyebrow">Questions fréquentes</span><h2 class="h2" style="font-size:clamp(36px,4.2vw,62px)">Avant de vous <em>lancer.</em></h2></div>{faq(faqs)}</div></section>\n'
     body += f"""<section class="band"><div class="wrap">
  <span class="eyebrow">Parlons de votre activité</span>
  <h2>Votre prochain site commence par <em>un échange.</em></h2>
- <p>Présentez-nous votre besoin. Nous pourrons vérifier ensemble si l'offre correspond à votre activité et définir les prochaines étapes.</p>
- <div class="cta">{btn('Présenter mon projet <span class="ar">→</span>', "index.html#contact")}{btn("Ou écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
+ <p>Réservez un appel de 30 minutes. Vous recevez ensuite votre maquette, offerte et sans engagement.</p>
+ <div class="cta">{btn('Recevoir ma maquette offerte <span class="ar">→</span>', "index.html#contact")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
 </div></section>
 """
     open(file, "w").write(page(title, desc, body))
@@ -201,7 +207,7 @@ open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA 
 
 # ---------- Rendez-vous ----------
 body = hero("Prise de rendez-vous · Premier échange gratuit", "Présentons votre projet <em>ensemble.</em>",
-            "Choisissez le format adapté à votre besoin. Nous échangerons sur votre activité, vos objectifs et la solution numérique à concevoir : site web, application, plateforme ou outil métier.", [])
+            "Choisissez le format adapté à votre besoin. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
 body += """<section class="section" style="padding-top:0"><div class="wrap">
  <div class="book">
   <article class="feat rv"><div class="tag"><span>Format court · recommandé</span></div><div class="dur">15 min</div><h2>Rendez-vous découverte</h2><p>Présentez votre entreprise et votre besoin. Un premier échange pour identifier les enjeux et vérifier comment VITRIA PRO peut vous accompagner.</p><a class="btn" href="https://cal.com/d/6KKNofKR3qQMgGjeWjsBcF/15min" target="_blank" rel="noopener">Choisir ce rendez-vous <span class="ar">→</span></a></article>
@@ -229,16 +235,16 @@ def proj(tag, h3, p, lis, mock, link="", alt=""):
     return f"""<div class="proj rv"><div><span class="tag">{tag}</span><h3>{h3}</h3><p>{p}</p><ul>{''.join(f'<li>{x}</li>' for x in lis)}</ul>{l}</div>
 <div class="mock {alt}"><div class="dots"><i></i><i></i><i></i></div><div><small>{ms[0]}</small><strong>{ms[1]}</strong><p>{ms[2]}</p></div><b>{ms[3]}</b></div></div>"""
 
-body = hero("Portfolio · Projets internes & démonstrations", "Du concret, sans <em>fausses références.</em>",
-            "Cette page présente un projet conçu en interne par VITRIA PRO et des concepts visuels de démonstration destinés à illustrer différentes directions possibles. Les concepts ne sont pas des commandes clients et ne constituent pas des résultats commerciaux attribués à des clients.",
+body = hero("Réalisations", "Voyez le niveau. <em>Imaginez le vôtre.</em>",
+            "Notre propre site, conçu et développé en interne, et des concepts par secteur pour vous projeter dans le vôtre.",
             [btn('Prendre rendez-vous <span class="ar">→</span>', "rendez-vous.html")])
 body += '<section class="section"><div class="wrap">' + head("01 / Projet interne", "Une réalisation réelle : VITRIA PRO.", "Le site de l'agence est un projet interne conçu et développé pour présenter les offres, expliquer la méthode et permettre aux entreprises de prendre contact.")
 body += '<div style="margin-top:40px">' + proj("Projet interne · Site de marque", "VITRIA PRO — identité et présence web",
              "Conception de l'identité numérique de l'agence et de son site vitrine : direction visuelle, structure des pages, présentation des offres, parcours de contact et adaptation mobile.",
              ["Identité visuelle et système typographique", "Page d'accueil et pages sectorielles", "Présentation des offres et prise de rendez-vous", "Assistant d'orientation et contact WhatsApp"],
              ("AGENCE DE SITES INTERNET", "Des sites qui font venir des clients.", "Maquette offerte · En ligne en 5 jours ou 48 h.", "RECEVOIR MA MAQUETTE"), ("index.html", "Voir le site"))
-body += '</div><p class="fine-note"><strong>Transparence :</strong> VITRIA PRO est un projet interne de l\'agence, pas une commande d\'un client externe. Il démontre le travail réalisé sur notre propre présence numérique, mais ne remplace pas des références clients.</p></div></section>\n'
-body += '<section class="section white"><div class="wrap">' + head("02 / Concepts de démonstration", "Trois univers pour se projeter.", "Ces maquettes conceptuelles illustrent des pistes de présentation possibles. Elles servent à discuter du style et du parcours, pas à prétendre montrer des sites déjà livrés.")
+body += '</div></div></section>\n'
+body += '<section class="section white"><div class="wrap">' + head("02 / Concepts de démonstration", "Trois univers pour se projeter.", "Des directions de design par métier, pour imaginer votre futur site avant même notre premier appel.")
 body += '<div style="margin-top:40px">'
 body += proj("Concept de démonstration · Artisan", "Artisan / Plomberie & dépannage", "Une page pensée pour rendre les services immédiatement compréhensibles et faciliter l'appel ou la demande de devis.",
              ["Accroche centrée sur le besoin urgent", "Services et zones d'intervention", "Appel téléphonique mis en évidence"],
@@ -249,7 +255,7 @@ body += proj("Concept de démonstration · Restaurant", "Restaurant / Cuisine co
 body += proj("Concept de démonstration · Beauté", "Salon / Coiffure & beauté", "Une présentation visuelle soignée pour valoriser les prestations, les tarifs, l'équipe et les possibilités de rendez-vous.",
              ["Univers graphique adapté à la marque", "Prestations et tarifs lisibles", "Prise de rendez-vous ou demande de contact"],
              ("STUDIO ÉPURE · COIFFURE & BEAUTÉ", "Un moment pour révéler votre style.", "Conseil, coupe et soin dans un espace pensé pour vous.", "VOIR LES PRESTATIONS"), alt="alt2")
-body += '</div><p class="fine-note"><strong>À noter :</strong> les noms, textes et interfaces de ces trois concepts sont fictifs et servent uniquement à illustrer des directions de design. Ils ne représentent pas des entreprises clientes ni des sites mis en production.</p></div></section>\n'
+body += '</div><p class="fine-note">Les noms et textes de ces concepts sont fictifs.</p></div></section>\n'
 body += f"""<section class="band"><div class="wrap"><span class="eyebrow">Votre projet</span><h2>Votre activité mérite un site conçu pour <em>vos clients.</em></h2><p>Parlons de votre entreprise, de vos services et de ce que votre site doit permettre à vos visiteurs de faire.</p><div class="cta">{btn('Prendre rendez-vous <span class="ar">→</span>', "rendez-vous.html")}</div></div></section>
 """
 open("realisations.html", "w").write(page("Réalisations & démonstrations | VITRIA PRO", "Projet interne VITRIA PRO et concepts de démonstration par secteur.", body))
@@ -260,10 +266,10 @@ body = hero("VITRIA PRO Careers · Développement commercial · France", "Vous d
             [btn('Présenter ma candidature <span class="ar">→</span>', "#candidature"), btn("Découvrir la collaboration", "#mission", "btn-line")],
             photo="photo-1521737711867-e3b97375f902",
             stats='<div class="hero-stats"><div><strong>Marché français</strong>PME, artisans et indépendants</div><div><strong>À distance</strong>Prospection organisée librement</div><div><strong>À la commission</strong>Sur les ventes éligibles encaissées</div></div>')
-body += '<section class="section" id="mission"><div class="wrap">' + head("L'offre VITRIA PRO", "Des solutions numériques concrètes à <em>commercialiser.</em>", "Vous développez les relations commerciales. Notre agence prend en charge le cadrage, la conception et la coordination de réalisation des prestations acceptées.")
-body += cards([("01 / Présence digitale", "Sites web & e-commerce", "Sites vitrines, boutiques en ligne, refonte et optimisation de la présence numérique des entreprises."),
-               ("02 / Expérience produit", "UX/UI & design d'interface", "Parcours utilisateurs, interfaces, prototypes et tableaux de bord adaptés aux besoins définis."),
-               ("03 / Outils numériques", "Applications & plateformes", "Applications web, espaces clients et plateformes métier, après étude du périmètre et de la faisabilité.")]) + "</div></section>\n"
+body += '<section class="section" id="mission"><div class="wrap">' + head("L'offre VITRIA PRO", "Une offre simple et forte à <em>commercialiser.</em>", "Maquette offerte, mise en ligne en 5 jours ou 48 h, paiement unique et garantie 14 jours : des arguments qui facilitent la vente. Vous vendez, nous concevons.")
+body += cards([("01 / Essentiel · 990 €", "Site one-page", "Pour les artisans et indépendants qui veulent être trouvés et appelés."),
+               ("02 / Business · 1 490 €", "Jusqu'à 5 pages", "Une page par service, formulaire de devis et référencement local optimisé."),
+               ("03 / Premium · 2 490 €", "Jusqu'à 10 pages", "Une structure complète pour les entreprises qui veulent s'imposer dans leur secteur.")]) + "</div></section>\n"
 body += '<section class="section dark"><div class="wrap">' + head("Votre mission", "De la première prise de contact à la vente.", "Le rôle est commercial. Vous n'avez pas à concevoir les sites ni à assurer le développement technique. Vous identifiez les opportunités, comprenez le besoin et faites avancer la relation jusqu'à la conclusion, avec l'appui de VITRIA PRO sur le cadrage de l'offre.")
 body += cards([("01", "Identifier les entreprises", "Repérer les PME, artisans et indépendants qui ont un besoin numérique réel : création, refonte, vente en ligne ou outil métier."),
                ("02", "Prospecter et obtenir un échange", "Contacter les décideurs par téléphone, e-mail, LinkedIn ou tout autre canal professionnel adapté, dans le respect des règles applicables."),

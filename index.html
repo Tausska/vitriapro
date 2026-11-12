@@ -31,12 +31,12 @@
 
 <!-- HERO -->
 <section class="hero" aria-label="Présentation">
- <div class="slide on"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=2200&q=85)"></div></div>
+ <div class="slide on"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85)"></div></div>
  <div class="slide"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2200&q=85)"></div></div>
- <div class="slide"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85)"></div></div>
  <div class="slide"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=2200&q=85)"></div></div>
  <div class="slide"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=2200&q=85)"></div></div>
- <div class="slide-cap"><span id="cap">Plomberie</span><div class="bars" id="bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+ <div class="slide"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=2200&q=85)"></div></div>
+ <div class="slide-cap"><span id="cap">Bâtiment & habitat</span><div class="bars" id="bars"><i></i><i></i><i></i><i></i><i></i></div></div>
  <div class="wrap hero-in">
   <span class="eyebrow">Agence de sites internet</span>
   <h1>Des sites qui font venir <em>des clients.</em></h1>
@@ -258,7 +258,7 @@
 <script>
 // Hero slideshow
 const slides=[...document.querySelectorAll('.slide')],bars=[...document.querySelectorAll('#bars i')],cap=document.getElementById('cap');
-const names=['Plomberie','Restauration','Bâtiment & habitat','Coiffure & beauté','Rénovation'];
+const names=['Bâtiment & habitat','Restauration','Coiffure & beauté','Rénovation','Plomberie'];
 let s=0;
 function show(i){slides.forEach((el,j)=>el.classList.toggle('on',i===j));bars.forEach((b,j)=>{b.classList.remove('on');void b.offsetWidth;if(j===i)b.classList.add('on')});cap.textContent=names[i]}
 show(0);setInterval(()=>{s=(s+1)%slides.length;show(s)},6000);
