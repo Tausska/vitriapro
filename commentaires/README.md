@@ -21,3 +21,4 @@ Les deux textes à intégrer sur la page d’accueil de Vitria Pro.
 - Emplacement : après la présentation de l’agence et avant le portfolio / les réalisations.
 - Aucun texte gris explicatif, aucune mention du type « simple visite », aucun texte supplémentaire.
 
+
