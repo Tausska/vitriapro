@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prendre rendez-vous — VITRIA PRO</title>
-<meta name="description" content="Réservez un échange avec VITRIA PRO : appel gratuit de 30 minutes.">
+<meta name="description" content="Réservez un échange avec VITRIA PRO : appel gratuit de 15 minutes.">
 <link rel="canonical" href="https://vitriapro.com/rendez-vous.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="VITRIA PRO">
 <meta property="og:title" content="Prendre rendez-vous — VITRIA PRO">
-<meta property="og:description" content="Réservez un échange avec VITRIA PRO : appel gratuit de 30 minutes.">
+<meta property="og:description" content="Réservez un échange avec VITRIA PRO : appel gratuit de 15 minutes.">
 <meta property="og:url" content="https://vitriapro.com/rendez-vous.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,14 +35,14 @@
  <div class="wrap">
   <span class="eyebrow">Prise de rendez-vous · Premier échange gratuit</span>
   <h1>Présentons votre projet <em>ensemble.</em></h1>
-  <p class="lead">Réservez un appel gratuit de 30 minutes. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.</p>
+  <p class="lead">Réservez un appel gratuit de 15 minutes. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.</p>
   <div class="cta"></div>
  </div>
 </section>
 <section class="section" style="padding-top:60px"><div class="wrap">
  <div id="calendar">
   <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Agenda</span><h2 class="mid">Choisissez une date et une heure</h2></div><p>Les disponibilités s’affichent dans votre fuseau horaire local. Sélectionnez le créneau qui vous convient.</p></div>
-  <div class="calendar"><div id="my-cal-inline-vitriapro30" style="width:100%;height:100%;overflow:scroll"></div></div>
+  <div class="calendar"><div id="my-cal-inline-vitriapro15" style="width:100%;height:100%;overflow:scroll"></div></div>
   <p class="fine-note">Un problème pour choisir votre créneau ? Écrivez-nous à <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a>.</p>
  </div>
 </div></section>
@@ -66,9 +66,9 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
 </script>
 <script>
 (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "vitriapro30", { origin: "https://app.cal.com" });
-Cal.ns.vitriapro30("inline", { elementOrSelector: "#my-cal-inline-vitriapro30", calLink: "vitriapro/30min", config: { layout: "month_view", theme: "light" } });
-Cal.ns.vitriapro30("ui", { styles: { branding: { brandColor: "#0a1533" } } });
+Cal("init", "vitriapro15", { origin: "https://app.cal.com" });
+Cal.ns.vitriapro15("inline", { elementOrSelector: "#my-cal-inline-vitriapro15", calLink: "vitriapro/15min", config: { layout: "month_view", theme: "light" } });
+Cal.ns.vitriapro15("ui", { styles: { branding: { brandColor: "#0a1533" } } });
 </script>
 </body>
 </html>

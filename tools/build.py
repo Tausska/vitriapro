@@ -97,7 +97,7 @@ def faq(items):
 
 
 # ---------- Pages secteur ----------
-STEPS = [("01", "Un appel de 30 minutes", "Vous présentez votre activité et vos clients. Nous nous occupons du reste."),
+STEPS = [("01", "Un appel de 15 minutes", "Vous présentez votre activité et vos clients. Nous nous occupons du reste."),
          ("02", "Votre maquette, offerte", "Vous découvrez votre futur site à votre nom, avant tout paiement."),
          ("03", "En ligne en 5 jours, ou 48 h", "Textes, design, mobile et Google : votre site est prêt à recevoir vos premiers appels.")]
 
@@ -223,22 +223,22 @@ open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA 
 
 # ---------- Rendez-vous ----------
 body = hero("Prise de rendez-vous · Premier échange gratuit", "Présentons votre projet <em>ensemble.</em>",
-            "Réservez un appel gratuit de 30 minutes. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
+            "Réservez un appel gratuit de 15 minutes. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
 body += """<section class="section" style="padding-top:60px"><div class="wrap">
  <div id="calendar">
   <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Agenda</span><h2 class="mid">Choisissez une date et une heure</h2></div><p>Les disponibilités s’affichent dans votre fuseau horaire local. Sélectionnez le créneau qui vous convient.</p></div>
-  <div class="calendar"><div id="my-cal-inline-vitriapro30" style="width:100%;height:100%;overflow:scroll"></div></div>
+  <div class="calendar"><div id="my-cal-inline-vitriapro15" style="width:100%;height:100%;overflow:scroll"></div></div>
   <p class="fine-note">Un problème pour choisir votre créneau ? Écrivez-nous à <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a>.</p>
  </div>
 </div></section>
 """
 CAL = """<script>
 (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "vitriapro30", { origin: "https://app.cal.com" });
-Cal.ns.vitriapro30("inline", { elementOrSelector: "#my-cal-inline-vitriapro30", calLink: "vitriapro/30min", config: { layout: "month_view", theme: "light" } });
-Cal.ns.vitriapro30("ui", { styles: { branding: { brandColor: "#0a1533" } } });
+Cal("init", "vitriapro15", { origin: "https://app.cal.com" });
+Cal.ns.vitriapro15("inline", { elementOrSelector: "#my-cal-inline-vitriapro15", calLink: "vitriapro/15min", config: { layout: "month_view", theme: "light" } });
+Cal.ns.vitriapro15("ui", { styles: { branding: { brandColor: "#0a1533" } } });
 </script>"""
-open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : appel gratuit de 30 minutes.", body, CAL))
+open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : appel gratuit de 15 minutes.", body, CAL))
 
 # ---------- Réalisations ----------
 def proj(tag, h3, p, lis, mock, link="", alt=""):
