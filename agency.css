@@ -96,3 +96,9 @@ body:has(.hero-grid .hero-visual) .contact{padding:88px 0}
 a:hover,.nav-links a:hover,.nav-link:hover,.text-link:hover{color:#183746!important}
 .sector:hover{border-color:#8DA9B3!important}
 .form input:focus,.form select:focus,.form textarea:focus{border-color:#183746!important;box-shadow:0 0 0 3px rgba(24,55,70,.08)!important}
+
+/* Footer brand wordmark — replaces white-background raster logo */
+.footer-brand{display:inline-block;color:#FFFFFF!important;font-family:"Manrope",Arial,sans-serif!important;font-size:22px!important;font-weight:800!important;letter-spacing:-1px!important;line-height:1.1!important;text-decoration:none!important;background:transparent!important;padding:0!important;border:0!important;box-shadow:none!important}
+.footer-brand span{color:#8DA9B3!important}
+.footer-about>a,.footer-grid>div>a:first-child{display:inline-block;background:transparent!important}
+.footer-logo{background:transparent!important;object-fit:contain}
