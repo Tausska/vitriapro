@@ -321,7 +321,21 @@ function show(i){slides.forEach((el,j)=>el.classList.toggle('on',i===j));bars.fo
 show(0);setInterval(()=>{s=(s+1)%slides.length;show(s)},6000);
 
 // Sector carousel: duplicate for seamless loop
-const track=document.getElementById('track');track.innerHTML+=track.innerHTML;
+const track=document.getElementById('track');
+(function(){const o=track.innerHTML,n=track.children.length;track.innerHTML=o+o+o;
+const half=()=>track.children[n].offsetLeft-track.children[0].offsetLeft;
+let last=0,hover=false,acc=0,t0=0;
+const touch=()=>{last=Date.now()};
+['touchstart','touchmove','touchend','pointerdown','wheel'].forEach(e=>track.addEventListener(e,touch,{passive:true}));
+track.addEventListener('mouseenter',()=>hover=true);track.addEventListener('mouseleave',()=>hover=false);
+function wrap(){const h=half();if(!h)return;if(track.scrollLeft>=2*h)track.scrollLeft-=h;else if(track.scrollLeft<h)track.scrollLeft+=h}
+track.addEventListener('scroll',()=>{if(Date.now()-last>250)wrap()},{passive:true});
+function init(){track.scrollLeft=half()}
+window.addEventListener('load',init);init();
+function tick(t){const dt=t0?Math.min(t-t0,64):16;t0=t;
+if(!hover&&Date.now()-last>2500&&!document.hidden){acc+=dt*0.035;if(acc>=1){const d=Math.floor(acc);acc-=d;track.scrollLeft+=d;wrap()}}
+requestAnimationFrame(tick)}
+requestAnimationFrame(tick)})();
 
 // Formulaire : envoie la demande sur WhatsApp
 document.getElementById('qform').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const t='Bonjour VITRIA PRO, je souhaite recevoir ma maquette offerte.\nNom : '+f.get('nom')+'\nMétier et ville : '+f.get('metier')+'\nTéléphone : '+f.get('tel');location.href='https://wa.me/595992666002?text='+encodeURIComponent(t)});

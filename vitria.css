@@ -72,8 +72,8 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:46px}
 .sec-head h2,.h2{font:600 clamp(38px,5.4vw,80px)/1 var(--display);letter-spacing:-.045em;margin-top:18px;max-width:820px}
 .sec-head p{max-width:360px;color:var(--muted)}
-.track{display:flex;gap:20px;width:max-content;animation:slide 60s linear infinite}
-.sectors:hover .track{animation-play-state:paused}
+.track{display:flex;gap:20px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
 @keyframes slide{to{transform:translateX(calc(-50% - 10px))}}
 .card{position:relative;width:min(440px,78vw);aspect-ratio:4/5;overflow:hidden;color:#fff;flex:none}
 .card .photo{position:absolute;inset:0;transition:transform 1.2s var(--ease)}
