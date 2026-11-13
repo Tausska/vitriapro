@@ -7,7 +7,7 @@ OUT = "demo-restaurant"
 U = lambda i, w=900: f"https://images.unsplash.com/photo-{i}?auto=format&fit=crop&w={w}&q=80"
 IMG = {
     "salle": "1517248135467-4c7edcad34c4", "plat": "1414235077428-338989a2e8c0", "grill": "1555939594-58d7cb561ad1",
-    "salade": "1546069901-ba9599a7e63c", "table": "1752650735119-8929e5f7d1ec", "salle2": "1559339352-11d035aa65de",
+    "salade": "1546069901-ba9599a7e63c", "salle2": "1559339352-11d035aa65de",
     "assiette": "1551218808-94e220e084d2", "viande": "1600891964092-4316c288032e", "marche": "1504674900247-0877df9cc836",
 }
 NAV = [("index.html", "Accueil"), ("carte.html", "La carte"), ("galerie.html", "Galerie"), ("histoire.html", "Notre histoire"), ("contact.html", "Contact")]
@@ -81,7 +81,7 @@ h2:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:56px;back
 .it b{display:block;font-weight:600;font-size:17px}.it span{font-size:14px;color:#6b5a50}.it em{font-style:normal;font-family:PF,Georgia,serif;font-size:19px;color:var(--clay)}
 .cat{grid-column:1/-1;margin-top:26px;letter-spacing:.22em;font-size:12px;color:var(--clay);text-transform:uppercase;font-weight:600}
 .note{font-size:13px;color:#7a6a60;margin-top:26px}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
 .gal div{position:relative;overflow:hidden;aspect-ratio:1;background:#7a5a46;cursor:zoom-in}.gal div:hover:before{transform:scale(1.1)}
 .lb{position:fixed;inset:0;background:rgba(15,10,8,.92);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out}
 .lb.show{display:flex;animation:fade2 .35s}.lb div{width:min(92vw,900px);height:80vh;background:var(--im) center/contain no-repeat}
@@ -170,7 +170,7 @@ def page(fn, title, body, active, desc, hero=None):
 <div class="menu-l">{nav}<a class="b1 btn" href="reserver.html">Réserver</a></div>
 <button class="burger" id="bu" aria-label="Menu"><i></i><i></i><i></i></button></div>
 {body}
-<div class="vp"><div class="rv"><h2>Votre restaurant mérite le même site</h2><p>Ce site est une démonstration. Le vôtre est fait sur mesure : votre carte, vos photos, votre ambiance, avec réservation en ligne.</p><a class="btn" href="../rendez-vous.html">Réserver un appel gratuit de 15 minutes</a></div></div>
+<div class="vp"><div class="rv"><h2>Vous avez un restaurant ?</h2><p>Ce site est une démonstration. Le vôtre sera fait sur mesure : votre carte, vos photos, votre ambiance, avec réservation en ligne.</p><a class="btn" href="../rendez-vous.html">Je veux le même site</a></div></div>
 <footer class="f"><div class="g"><div><b>Maison Aubépine</b><p>Cuisine de saison, au feu de bois.<br>12 rue des Halles (adresse fictive)</p></div>
 <div><b>Horaires</b><p>Mardi au samedi<br>12h – 14h · 19h – 22h<br>Fermé dimanche et lundi</p></div>
 <div><b>Le site</b>{"".join(f'<a href="{h}">{t}</a>' for h, t in NAV)}<a href="reserver.html">Réserver</a><a href="mentions.html">Mentions légales</a></div></div>
@@ -189,7 +189,7 @@ pages = {}
 # ---- Accueil
 pages["index.html"] = page("index.html", "Restaurant, cuisine de saison", hero("salle", "RESTAURANT · CUISINE DE SAISON", "Une table qui sent bon la saison", "Produits du marché, cuisine au feu de bois, vins de petits producteurs.", '<a class="cta btn" href="reserver.html">Réserver une table</a><a class="cta alt btn" href="carte.html">Voir la carte</a>', em=["sent", "bon"]) + f"""
 <section><div class="wrap split"><div class="rv"><h2>Une cuisine simple, faite avec ceux qui cultivent</h2><p class="lead">Chaque semaine, la carte change avec ce que nos producteurs nous apportent. Peu de plats, bien faits, servis dans une salle chaleureuse de trente couverts.</p><p style="margin-top:18px"><a href="histoire.html" style="color:var(--clay);font-weight:600">Notre histoire →</a></p></div>
-<div class="ph rv" style="--im:url({U(IMG['table'],1100)});--d:.15s"></div></div></section>
+<div class="ph rv" style="--im:url({U(IMG['grill'],1100)});--d:.15s"></div></div></section>
 <section class="dark"><div class="wrap"><div class="rv"><h2>Pourquoi on vous attend</h2></div><div class="why">
 <div class="rv"><b>Le marché d'abord</b><p>Légumes, viandes et poissons choisis chaque semaine auprès de producteurs voisins.</p></div>
 <div class="rv" style="--d:.12s"><b>Le feu de bois</b><p>Les grillades et les cuissons lentes se font sur braise, devant vous.</p></div>
@@ -218,7 +218,7 @@ pages["carte.html"] = page("carte.html", "La carte", hero("plat", "LA CARTE DU M
 <section style="background:var(--sand)"><div class="wrap tc"><div class="rv"><h2>Une envie ? Réservez</h2><a class="cta btn" href="reserver.html" style="display:inline-block">Réserver une table</a></div></div></section>""", "carte.html", "La carte du restaurant Maison Aubépine (démonstration).")
 
 # ---- Galerie
-gal = [IMG[k] for k in ("salle", "plat", "grill", "table", "salade", "salle2", "assiette", "viande", "marche")]
+gal = [IMG[k] for k in ("salle", "plat", "grill", "salade", "salle2", "assiette", "viande", "marche")]
 gl = "".join(f'<div class="rv" style="--im:url({U(i, 1000)});--d:{(n % 3) * 0.1}s"></div>' for n, i in enumerate(gal))
 pages["galerie.html"] = page("galerie.html", "Galerie", hero("salle2", "GALERIE", "La salle, les plats, les gestes", small_hero=True) + f"""
 <section><div class="wrap"><div class="rv"><h2>En images</h2><p class="lead">Touchez une photo pour l'agrandir.</p></div><div class="gal">{gl}</div></div></section>""", "galerie.html", "Galerie photo du restaurant Maison Aubépine (démonstration).")
@@ -238,7 +238,7 @@ pages["reserver.html"] = page("reserver.html", "Réserver", hero("salle", "RÉSE
 <div class="err" id="er"></div><button class="go b1 btn" type="submit">Réserver ma table</button><div class="ok" id="ok"></div></form></div></section>""", "reserver.html", "Réserver une table au restaurant Maison Aubépine (démonstration).")
 
 # ---- Contact
-pages["contact.html"] = page("contact.html", "Contact", hero("table", "CONTACT", "Une question ? Écrivez-nous", small_hero=True) + """
+pages["contact.html"] = page("contact.html", "Contact", hero("salle2", "CONTACT", "Une question ? Écrivez-nous", small_hero=True) + """
 <section><div class="wrap"><div class="info"><div class="rv"><b>Adresse</b><p>12 rue des Halles<br>Adresse fictive de démonstration</p></div><div class="rv" style="--d:.12s"><b>Téléphone</b><p>01 23 45 67 89<br>Numéro fictif de démonstration</p></div><div class="rv" style="--d:.24s"><b>Horaires</b><p>Mardi au samedi<br>12h – 14h et 19h – 22h<br>Fermé dimanche et lundi</p></div></div>
 <div class="plan rv">Plan d'accès et itinéraire en un geste<br>(carte intégrée sur votre vrai site)</div></div></section>
 <section style="background:var(--sand)"><div class="wrap tc"><div class="rv"><h2>Nous écrire</h2><p class="lead">Groupes, privatisation, allergies, questions : nous répondons sous 24 h.</p></div>
