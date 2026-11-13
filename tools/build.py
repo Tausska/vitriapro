@@ -228,6 +228,19 @@ body += '<section class="section"><div class="wrap"><div class="article rv"><div
 body += "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in G) + "</div></div></section>\n"
 open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA PRO", "Conditions de la garantie commerciale VITRIA PRO : 14 jours après la mise en ligne pour décider.", body))
 
+# ---------- Mentions légales ----------
+ML = [("Éditeur du site", "Le site vitriapro.com est édité par <strong>Alan Laurençont</strong>, entrepreneur individuel exerçant sous le nom commercial <strong>VITRIA PRO</strong>.<br>RUC (Paraguay) : 9418022-9<br>Adresse : Asunción, Paraguay<br>Téléphone : +595 992 666 002<br>E-mail : <a href=\"mailto:contact@vitriapro.com\" style=\"text-decoration:underline\">contact@vitriapro.com</a><br>Directeur de la publication : Alan Laurençont."),
+      ("Hébergement", "Le site est hébergé par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis (cloudflare.com)."),
+      ("Prix et taxes", "Les prix sont indiqués en euros, toutes taxes comprises (TTC). Le paiement est unique. Le périmètre exact de chaque prestation est précisé dans le devis accepté par le client."),
+      ("Garantie commerciale", "Les conditions de la garantie de 14 jours sont décrites sur la page <a href=\"garantie.html\" style=\"text-decoration:underline\">Garantie 14 jours</a>."),
+      ("Démonstrations et photographies", "Les sites présentés par secteur sont des démonstrations. Les entreprises qui y figurent sont fictives. Les photographies sont des illustrations, issues de la banque d'images Unsplash et utilisées selon sa licence."),
+      ("Propriété intellectuelle", "Les textes, éléments graphiques et le logo de VITRIA PRO sont la propriété de l'éditeur. Toute reproduction sans autorisation écrite est interdite."),
+      ("Données personnelles", "Les informations que vous transmettez par e-mail, par WhatsApp ou via l'agenda de rendez-vous servent uniquement à répondre à votre demande et à préparer votre projet. Elles ne sont ni vendues ni cédées. La prise de rendez-vous passe par le service Cal.com. Pour consulter, corriger ou faire supprimer vos données, écrivez à contact@vitriapro.com."),
+      ("Contact", "Pour toute question sur le site ou une prestation, écrivez à contact@vitriapro.com ou écrivez-nous sur WhatsApp.")]
+body = hero("Informations légales", "Mentions <em>légales.</em>", "Qui est derrière VITRIA PRO, où le site est hébergé, et comment sont traités vos prix et vos données.", [])
+body += '<section class="section"><div class="wrap"><div class="article rv">' + "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in ML) + "</div></div></section>\n"
+open("mentions-legales.html", "w").write(page("Mentions légales — VITRIA PRO", "Mentions légales de VITRIA PRO : éditeur, hébergement, prix, données personnelles.", body))
+
 # ---------- Rendez-vous ----------
 body = """<section class="rvhero"><div class="wrap">
  <div>
