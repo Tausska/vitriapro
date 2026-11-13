@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VITRIA PRO — Des sites qui font venir des clients</title>
+<meta name="description" content="VITRIA PRO conçoit des sites internet haut de gamme pour artisans, restaurants et indépendants. Maquette offerte, en ligne en 5 jours ou 48 h.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a1533;--ink2:#26324f;--paper:#f6f5f1;--muted:#6f6f6b;--line:#dddbd4;--gold:#d9ad55;--gold2:#e8c274;--bronze:#8a6a22;--sans:"Inter",Arial,sans-serif;--display:"Inter Tight",Arial,sans-serif;--serif:"Instrument Serif",Georgia,serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.6 var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+em{font-family:var(--serif);font-style:italic;font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;height:58px;padding:0 32px;font:600 15px var(--sans);background:var(--gold);color:var(--ink);transition:background .3s}
+.btn:hover{background:var(--gold2)}
+.btn.dark{background:var(--ink);color:#fff}.btn.dark:hover{background:var(--ink2)}
+.link{font-weight:600;font-size:15px;border-bottom:1px solid currentColor;padding-bottom:3px}
+
+/* En-tête */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;padding:26px 0}
+.top .wrap{display:flex;justify-content:space-between;align-items:center}
+.top img{height:56px;width:auto;filter:brightness(0) invert(1)}
+.top .btn{height:46px;padding:0 22px;font-size:14px}
+
+/* Accueil plein écran */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--ink) center/cover no-repeat;background-image:var(--hero)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0a153399 0%,#0a153333 35%,#0a1533e6 100%)}
+.hero .wrap{position:relative;padding-bottom:84px;width:100%}
+.hero h1{font:600 clamp(44px,7.4vw,112px)/.98 var(--display);letter-spacing:-.045em;max-width:12.5em}
+.hero h1 em{letter-spacing:-.02em}
+.hero p{font-size:clamp(17px,1.7vw,21px);color:#ffffffcc;max-width:30em;margin:26px 0 38px}
+.hero .row{display:flex;align-items:center;gap:34px;flex-wrap:wrap}
+.hero small{display:block;margin-top:44px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#ffffff99}
+
+/* Sections */
+section{padding:140px 0}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze);margin-bottom:22px}
+h2{font:600 clamp(34px,4.6vw,64px)/1.04 var(--display);letter-spacing:-.04em;max-width:14em}
+h2 em{letter-spacing:-.02em}
+
+/* Secteurs */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:64px}
+.tile{position:relative;aspect-ratio:3/4;background:var(--ink2) center/cover no-repeat;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.tile:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,#0a1533ee);transition:opacity .4s}
+.tile span{position:relative;display:flex;justify-content:space-between;align-items:center;width:100%;padding:28px;font:600 24px var(--display);letter-spacing:-.03em}
+.tile i{font-style:normal;font-weight:400;transition:transform .3s}
+.tile:hover i{transform:translateX(6px)}
+
+/* Avis */
+.avis{background:#fff}
+.avis .grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:64px}
+.stars{color:var(--gold);letter-spacing:5px;font-size:18px;margin-bottom:22px}
+blockquote{font:400 clamp(21px,2.2vw,29px)/1.4 var(--serif);letter-spacing:-.005em}
+.who{margin-top:24px;font-size:14px;font-weight:600;letter-spacing:.04em}
+
+/* Offres */
+.offers{margin-top:64px;border-top:1px solid var(--line)}
+.offer{display:grid;grid-template-columns:1fr 1.4fr auto;gap:40px;align-items:baseline;padding:38px 0;border-bottom:1px solid var(--line)}
+.offer h3{font:600 28px var(--display);letter-spacing:-.03em}
+.offer h3 small{display:inline-block;margin-left:12px;font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:5px 9px;vertical-align:middle}
+.offer p{color:var(--muted)}
+.offer b{font:600 34px var(--display);letter-spacing:-.04em}
+.note{margin-top:30px;color:var(--muted);font-size:15px}
+
+/* Méthode */
+.method{background:var(--ink);color:#fff}
+.method .kicker{color:var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:56px;margin-top:64px}
+.steps b{display:block;font:600 14px var(--display);color:var(--gold);margin-bottom:18px}
+.steps h3{font:600 26px/1.15 var(--display);letter-spacing:-.03em;margin-bottom:12px}
+.steps p{color:#ffffffb0}
+
+/* Fondateur */
+.founder .wrap{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center}
+.founder img{width:230px;aspect-ratio:4/5;object-fit:cover}
+.founder p{font-size:20px;color:var(--muted);max-width:30em;margin:20px 0 26px}
+.founder b{display:block;font:600 22px var(--display);letter-spacing:-.02em}
+.founder span{font-size:15px;color:var(--muted)}
+
+/* Contact final */
+.final{background:var(--ink);color:#fff;text-align:center;padding:150px 0}
+.final h2{margin:0 auto 40px}
+.final .row{display:flex;gap:30px;justify-content:center;align-items:center;flex-wrap:wrap}
+footer{background:var(--ink);color:#ffffff80;padding:0 0 46px;font-size:13px;text-align:center}
+footer .wrap{border-top:1px solid #ffffff22;padding-top:30px}
+
+@media(max-width:860px){
+ section{padding:96px 0}
+ .tiles{grid-template-columns:1fr}.tile{aspect-ratio:4/3}
+ .avis .grid{grid-template-columns:1fr;gap:56px}
+ .offer{grid-template-columns:1fr;gap:10px}
+ .steps{grid-template-columns:1fr;gap:40px}
+ .founder .wrap{grid-template-columns:1fr;gap:34px}.founder img{width:200px}
+ .hero .wrap{padding-bottom:56px}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+ <img src="../logo-vitria-pro.png" alt="VITRIA PRO">
+ <a class="btn" href="../rendez-vous.html">Réserver un appel</a>
+</div></header>
+
+<section class="hero" style="--hero:url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85);padding:0">
+ <div class="wrap">
+  <h1>Des sites qui font venir <em>des clients.</em></h1>
+  <p>Artisans, restaurants, indépendants : nous concevons votre site haut de gamme, et vous le voyez avant de payer.</p>
+  <div class="row">
+   <a class="btn" href="../rendez-vous.html">Réserver mon appel gratuit →</a>
+   <a class="link" href="#offres">Voir les offres</a>
+  </div>
+  <small>Maquette offerte · En ligne en 5 jours ou 48 h · Paiement unique</small>
+ </div>
+</section>
+
+<section id="secteurs">
+ <div class="wrap">
+  <div class="kicker">Secteurs</div>
+  <h2>Un site pensé pour <em>votre</em> métier.</h2>
+  <div class="tiles">
+   <a class="tile" href="../plomberie.html" style="background-image:url(https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1000&q=85)"><span>Plomberie <i>→</i></span></a>
+   <a class="tile" href="../restaurants.html" style="background-image:url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85)"><span>Restaurants <i>→</i></span></a>
+   <a class="tile" href="../artisans.html" style="background-image:url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85)"><span>Bâtiment <i>→</i></span></a>
+  </div>
+ </div>
+</section>
+
+<section class="avis">
+ <div class="wrap">
+  <div class="kicker">Commentaires</div>
+  <div class="grid">
+   <figure><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Le site donne immédiatement une image sérieuse et professionnelle de l'entreprise. La présentation est soignée, l'ensemble inspire confiance et donne envie d'en découvrir davantage. »</blockquote><div class="who">Marc, Toulouse</div></figure>
+   <figure><div class="stars" aria-label="5 étoiles sur 5">★★★★★</div><blockquote>« Une présentation particulièrement soignée et professionnelle. Le site est clair, agréable à parcourir et donne immédiatement une impression de sérieux. »</blockquote><div class="who">Éric, Paris</div></figure>
+  </div>
+ </div>
+</section>
+
+<section id="offres">
+ <div class="wrap">
+  <div class="kicker">Offres</div>
+  <h2>Un prix clair. <em>Une seule fois.</em></h2>
+  <div class="offers">
+   <div class="offer"><h3>Essentiel</h3><p>Pour être trouvé et appelé.</p><b>990 €</b></div>
+   <div class="offer"><h3>Business <small>Le plus choisi</small></h3><p>Pour présenter chaque service.</p><b>1 490 €</b></div>
+   <div class="offer"><h3>Premium</h3><p>Pour s'imposer dans son secteur.</p><b>2 490 €</b></div>
+  </div>
+  <p class="note">Nom de domaine et hébergement inclus 3 ans · Option Express 48 h : +199 € · Satisfait ou remboursé 14 jours</p>
+ </div>
+</section>
+
+<section class="method">
+ <div class="wrap">
+  <div class="kicker">Méthode</div>
+  <h2>Simple pour vous. <em>Exigeant</em> pour nous.</h2>
+  <div class="steps">
+   <div><b>01</b><h3>Un appel gratuit</h3><p>Vous présentez votre activité et vos clients.</p></div>
+   <div><b>02</b><h3>Votre maquette offerte</h3><p>Vous la voyez avant de payer, sans engagement.</p></div>
+   <div><b>03</b><h3>En ligne en 5 jours</h3><p>Ou en 48 heures avec l'option Express.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="founder">
+ <div class="wrap">
+  <img src="../fondateur-alan.jpg" alt="Alan Laurençont, fondateur de VITRIA PRO">
+  <div>
+   <div class="kicker">Votre interlocuteur</div>
+   <p>Pas de standard, pas d'intermédiaire. Vous parlez directement à celui qui conçoit votre site, et qui reste disponible après sa mise en ligne.</p>
+   <b>Alan Laurençont</b><span>Fondateur de VITRIA PRO</span>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap">
+  <h2>Parlons de <em>votre</em> projet.</h2>
+  <div class="row">
+   <a class="btn" href="../rendez-vous.html">Réserver mon appel gratuit →</a>
+   <a class="link" href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20recevoir%20ma%20maquette.">Écrire sur WhatsApp</a>
+  </div>
+ </div>
+</section>
+
+<footer><div class="wrap">© 2026 VITRIA PRO. Les sites présentés par secteur sont des démonstrations et les photographies sont des illustrations. Périmètre et conditions précisés dans le devis.</div></footer>
+</body>
+</html>
