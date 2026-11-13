@@ -412,3 +412,12 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
 .rvph .cap{position:absolute;left:16px;right:16px;bottom:16px;background:#fff;color:#0a1533;border-radius:14px;padding:14px 16px;font-size:15px;line-height:1.4;box-shadow:0 10px 30px #0004}
 .rvph .cap b{display:block;font-size:16px}
 @media(max-width:860px){.rvhero{padding:96px 0 40px}.rvhero .wrap{grid-template-columns:1fr;gap:26px}.rvph{order:-1;aspect-ratio:4/3.4}}
+/* bandeau humain : visage souriant + appel */
+.hband{background:var(--ink);color:#fff;padding:0}
+.hband .wrap{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;gap:0;padding:0}
+.hband .hph{min-height:460px;background:#13224d center/cover no-repeat}
+.hband .htx{padding:80px 56px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.hband h2{font:600 clamp(32px,4vw,56px)/1.02 var(--display);letter-spacing:-.04em;margin:18px 0 16px}
+.hband p{font-size:18px;line-height:1.6;color:#ffffffd0;max-width:480px}
+.hband .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:860px){.hband .wrap{grid-template-columns:1fr}.hband .hph{min-height:300px}.hband .htx{padding:44px 22px 56px}}

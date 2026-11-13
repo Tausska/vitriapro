@@ -108,12 +108,29 @@ OFFERS = """<section class="section" id="offre"><div class="wrap">
 </div></section>
 """
 
+
+P_A = "photo-1758611974917-f7f7a58b74b0"
+P_B = "photo-1752650735119-8929e5f7d1ec"
+P_C = "photo-1758876020337-2501eeb1ede5"
+
+
+def human(photo, eyebrow="Parlons de votre activité"):
+    img = UNS.replace("w=2000", "w=1100").format(photo)
+    return f"""<section class="hband"><div class="wrap">
+ <div class="hph" style="background-image:url({img})"></div>
+ <div class="htx"><span class="eyebrow" style="color:#ffffffc0">{eyebrow}</span>
+  <h2>Un vrai échange, <em>avec une vraie personne.</em></h2>
+  <p>15 minutes pour parler de votre activité. Ensuite, vous recevez votre maquette, offerte et sans engagement. Pas de robot, pas de pression.</p>
+  <div class="cta">{btn("Réserver mon appel gratuit", "rendez-vous.html")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
+ </div></div></section>
+"""
+
 TRUST = ["Une présence en ligne pensée pour", "Être compris rapidement", "Inspirer confiance", "Générer des contacts", "Être consultée sur mobile"]
 
 
 def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards, checks, faqs):
     body = hero(eyebrow, h1, lead,
-                [btn('Réserver mon appel gratuit <span class="ar">→</span>', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
+                [btn('Réserver mon appel gratuit', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
                 "Maquette offerte · En ligne en 5 jours ou 48 h · Paiement unique · Satisfait ou remboursé 14 jours", photo)
     body += '<div class="trustbar"><div class="wrap">' + "".join(f"<span>{t}</span>" for t in TRUST) + "</div></div>\n"
     body += f'<section class="section"><div class="wrap">{head("Les attentes de vos clients", att_h2, att_p)}{cards(att_cards)}</div></section>\n'
@@ -127,13 +144,7 @@ def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards
              + cards(STEPS) + "</div></section>\n")
     body += OFFERS
     body += f'<section class="section" style="padding-top:0"><div class="wrap faq-grid"><div class="rv"><span class="eyebrow">Questions fréquentes</span><h2 class="h2" style="font-size:clamp(36px,4.2vw,62px)">Avant de vous <em>lancer.</em></h2></div>{faq(faqs)}</div></section>\n'
-    body += f"""<section class="band"><div class="wrap">
- <span class="eyebrow">Parlons de votre activité</span>
- <h2>Votre prochain site commence par <em>un échange.</em></h2>
- <p>Réservez un appel gratuit. Vous recevez ensuite votre maquette, offerte et sans engagement.</p>
- <div class="cta">{btn('Réserver mon appel gratuit <span class="ar">→</span>', "rendez-vous.html")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
-</div></section>
-"""
+    body += human({"restaurants.html":P_B,"coiffeurs.html":P_A}.get(file,P_C))
     open(file, "w").write(page(title, desc, body))
 
 
@@ -212,7 +223,7 @@ G = [("1. Bénéficiaires et offres concernées", "La garantie est proposée aux
      ("8. Contact", 'Pour toute question relative à cette garantie : <a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a>.')]
 body = hero("Engagement commercial VITRIA PRO", "14 jours pour décider <em>sereinement.</em>",
             "La garantie commerciale VITRIA PRO permet aux clients professionnels concernés de demander le remboursement de la prestation de création de leur site dans les 14 jours calendaires suivant sa mise en ligne, selon les conditions ci-dessous.",
-            [btn('Réserver mon appel gratuit <span class="ar">→</span>', "rendez-vous.html")])
+            [btn('Réserver mon appel gratuit', "rendez-vous.html")])
 body += '<section class="section"><div class="wrap"><div class="article rv"><div class="callout"><strong>À lire avant de commander.</strong> Cette garantie est un engagement commercial volontaire de VITRIA PRO. Elle s\'ajoute aux droits légaux éventuellement applicables et ne les limite pas. Les conditions particulières figurant au devis accepté restent applicables pour le périmètre et les frais propres à la commande.</div>'
 body += "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in G) + "</div></div></section>\n"
 open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA PRO", "Conditions de la garantie commerciale VITRIA PRO : 14 jours après la mise en ligne pour décider.", body))
@@ -246,14 +257,14 @@ open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "
 
 # ---------- Réalisations ----------
 def proj(tag, h3, p, lis, mock, link="", alt=""):
-    l = f'<a class="btn btn-dark" href="{link[0]}">{link[1]} <span class="ar">→</span></a>' if link else ""
+    l = f'<a class="btn btn-dark" href="{link[0]}">{link[1]}</a>' if link else ""
     ms = mock
     return f"""<div class="proj rv"><div><span class="tag">{tag}</span><h3>{h3}</h3><p>{p}</p><ul>{''.join(f'<li>{x}</li>' for x in lis)}</ul>{l}</div>
 <div class="mock {alt}"><div class="dots"><i></i><i></i><i></i></div><div><small>{ms[0]}</small><strong>{ms[1]}</strong><p>{ms[2]}</p></div><b>{ms[3]}</b></div></div>"""
 
 body = hero("Réalisations", "Voyez le niveau. <em>Imaginez le vôtre.</em>",
             "Notre propre site, conçu et développé en interne, et des concepts par secteur pour vous projeter dans le vôtre.",
-            [btn('Prendre rendez-vous <span class="ar">→</span>', "rendez-vous.html")])
+            [btn('Prendre rendez-vous', "rendez-vous.html")])
 body += '<section class="section"><div class="wrap">' + head("01 / Projet interne", "Une réalisation réelle : VITRIA PRO.", "Le site de l'agence est un projet interne conçu et développé pour présenter les offres, expliquer la méthode et permettre aux entreprises de prendre contact.")
 body += '<div style="margin-top:40px">' + proj("Projet interne · Site de marque", "VITRIA PRO — identité et présence web",
              "Conception de l'identité numérique de l'agence et de son site vitrine : direction visuelle, structure des pages, présentation des offres, parcours de contact et adaptation mobile.",
@@ -272,14 +283,14 @@ body += proj("Concept de démonstration · Beauté", "Salon / Coiffure & beauté
              ["Univers graphique adapté à la marque", "Prestations et tarifs lisibles", "Prise de rendez-vous ou demande de contact"],
              ("STUDIO ÉPURE · COIFFURE & BEAUTÉ", "Un moment pour révéler votre style.", "Conseil, coupe et soin dans un espace pensé pour vous.", "VOIR LES PRESTATIONS"), alt="alt2")
 body += '</div><p class="fine-note">Les noms et textes de ces concepts sont fictifs.</p></div></section>\n'
-body += f"""<section class="band"><div class="wrap"><span class="eyebrow">Votre projet</span><h2>Votre activité mérite un site conçu pour <em>vos clients.</em></h2><p>Parlons de votre entreprise, de vos services et de ce que votre site doit permettre à vos visiteurs de faire.</p><div class="cta">{btn('Prendre rendez-vous <span class="ar">→</span>', "rendez-vous.html")}</div></div></section>
+body += f"""<section class="band"><div class="wrap"><span class="eyebrow">Votre projet</span><h2>Votre activité mérite un site conçu pour <em>vos clients.</em></h2><p>Parlons de votre entreprise, de vos services et de ce que votre site doit permettre à vos visiteurs de faire.</p><div class="cta">{btn('Prendre rendez-vous', "rendez-vous.html")}</div></div></section>
 """
 open("realisations.html", "w").write(page("Réalisations & démonstrations | VITRIA PRO", "Projet interne VITRIA PRO et concepts de démonstration par secteur.", body))
 
 # ---------- Recrutement ----------
 body = hero("VITRIA PRO Careers · Développement commercial · France", "Vous développez les ventes. <em>Nous concevons les solutions.</em>",
             "VITRIA PRO recherche des commerciaux indépendants capables de développer une clientèle professionnelle et de commercialiser des solutions numériques auprès des PME, artisans et entrepreneurs français.",
-            [btn('Présenter ma candidature <span class="ar">→</span>', "#candidature"), btn("Découvrir la collaboration", "#mission", "btn-line")],
+            [btn('Présenter ma candidature', "#candidature"), btn("Découvrir la collaboration", "#mission", "btn-line")],
             photo="photo-1521737711867-e3b97375f902",
             stats='<div class="hero-stats"><div><strong>Marché français</strong>PME, artisans et indépendants</div><div><strong>À distance</strong>Prospection organisée librement</div><div><strong>À la commission</strong>Sur les ventes éligibles encaissées</div></div>')
 body += '<section class="section" id="mission"><div class="wrap">' + head("L'offre VITRIA PRO", "Une offre simple et forte à <em>commercialiser.</em>", "Maquette offerte, mise en ligne en 5 jours ou 48 h, paiement unique et garantie 14 jours : des arguments qui facilitent la vente. Vous vendez, nous concevons.")
