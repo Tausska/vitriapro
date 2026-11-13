@@ -95,7 +95,7 @@ def faq(items):
 
 # ---------- Pages secteur ----------
 STEPS = [("01", "Un appel de 15 minutes", "Vous présentez votre activité et vos clients. Nous nous occupons du reste."),
-         ("02", "Votre maquette, offerte", "Vous découvrez votre futur site à votre nom, avant tout paiement."),
+         ("02", "Votre maquette", "Vous validez votre futur site, à votre nom, avant sa mise en ligne."),
          ("03", "En ligne en 5 jours, ou 48 h", "Textes, design, mobile et Google : votre site est prêt à recevoir vos premiers appels.")]
 
 OFFERS = """<section class="section" id="offre"><div class="wrap">
@@ -105,7 +105,7 @@ OFFERS = """<section class="section" id="offre"><div class="wrap">
   <div class="offer feat rv"><div class="offer-tag"><span>02</span><span>Le plus choisi</span></div><h3>Business</h3><p class="sub">Pour présenter chaque service.</p><div class="price">1 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 5 pages</li><li>Une page par service, rédigée pour vous</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>14 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn" href="rendez-vous.html">Réserver mon appel</a></div>
   <div class="offer rv"><div class="offer-tag"><span>03</span></div><h3>Premium</h3><p class="sub">Pour s'imposer dans son secteur.</p><div class="price">2 490 €</div><div class="once">Paiement unique</div><ul><li>Jusqu'à 10 pages</li><li>Sections sur mesure et galerie</li><li>Formulaire de demande de devis</li><li>Référencement local optimisé</li><li>Fiche Google Business configurée</li><li>30 jours de suivi après la mise en ligne</li></ul><div class="express"><span>Option Express 48 h</span><b>+199 €</b></div><a class="btn btn-line" href="rendez-vous.html">Réserver mon appel</a></div>
  </div>
- <div class="all rv"><h4>Dans toutes les offres</h4><p>Maquette offerte avant engagement · Nom de domaine et hébergement inclus pendant 3 ans · Adresse e-mail professionnelle · Mentions légales et RGPD · Inscription sur Google · Design adapté au mobile · Site qui vous appartient · Garantie satisfait ou remboursé 14 jours</p></div>
+ <div class="all rv"><h4>Dans toutes les offres</h4><p>Nom de domaine et hébergement inclus pendant 3 ans · Adresse e-mail professionnelle · Mentions légales et RGPD · Inscription sur Google · Design adapté au mobile · Site qui vous appartient · Garantie satisfait ou remboursé 14 jours</p></div>
 </div></section>
 """
 
@@ -121,8 +121,8 @@ def human(photo, eyebrow="Parlons de votre activité"):
  <div class="hph" style="background-image:url({img})"></div>
  <div class="htx"><span class="eyebrow" style="color:#ffffffc0">{eyebrow}</span>
   <h2>Un vrai échange, <em>avec une vraie personne.</em></h2>
-  <p>15 minutes pour parler de votre activité. Ensuite, vous recevez votre maquette, offerte et sans engagement. Pas de robot, pas de pression.</p>
-  <div class="cta">{btn("Réserver mon appel gratuit", "rendez-vous.html")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
+  <p>15 minutes pour parler de votre activité et de ce dont vous avez besoin. Pas de robot, pas de pression.</p>
+  <div class="cta">{btn("Réserver un appel", "rendez-vous.html")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
  </div></div></section>
 """
 
@@ -131,8 +131,8 @@ TRUST = ["Une présence en ligne pensée pour", "Être compris rapidement", "Ins
 
 def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards, checks, faqs):
     body = hero(eyebrow, h1, lead,
-                [btn('Réserver mon appel gratuit', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
-                "Maquette offerte · En ligne en 5 jours ou 48 h · Paiement unique · Satisfait ou remboursé 14 jours", photo)
+                [btn('Réserver un appel', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
+                "En ligne en 5 jours ou 48 h · Paiement unique · Satisfait ou remboursé 14 jours", photo)
     body += '<div class="trustbar"><div class="wrap">' + "".join(f"<span>{t}</span>" for t in TRUST) + "</div></div>\n"
     body += f'<section class="section"><div class="wrap">{head("Les attentes de vos clients", att_h2, att_p)}{cards(att_cards)}</div></section>\n'
     body += ('<section class="section white"><div class="wrap">'
@@ -224,7 +224,7 @@ G = [("1. Bénéficiaires et offres concernées", "La garantie est proposée aux
      ("8. Contact", 'Pour toute question relative à cette garantie : <a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a>.')]
 body = hero("Engagement commercial VITRIA PRO", "14 jours pour décider <em>sereinement.</em>",
             "La garantie commerciale VITRIA PRO permet aux clients professionnels concernés de demander le remboursement de la prestation de création de leur site dans les 14 jours calendaires suivant sa mise en ligne, selon les conditions ci-dessous.",
-            [btn('Réserver mon appel gratuit', "rendez-vous.html")])
+            [btn('Réserver un appel', "rendez-vous.html")])
 body += '<section class="section"><div class="wrap"><div class="article rv"><div class="callout"><strong>À lire avant de commander.</strong> Cette garantie est un engagement commercial volontaire de VITRIA PRO. Elle s\'ajoute aux droits légaux éventuellement applicables et ne les limite pas. Les conditions particulières figurant au devis accepté restent applicables pour le périmètre et les frais propres à la commande.</div>'
 body += "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in G) + "</div></div></section>\n"
 open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA PRO", "Conditions de la garantie commerciale VITRIA PRO : 14 jours après la mise en ligne pour décider.", body))
@@ -245,10 +245,10 @@ open("mentions-legales.html", "w").write(page("Mentions légales — VITRIA PRO"
 # ---------- Rendez-vous ----------
 body = """<section class="rvhero"><div class="wrap">
  <div>
-  <span class="eyebrow">Prise de rendez-vous · Premier échange gratuit</span>
+  <span class="eyebrow">Prise de rendez-vous</span>
   <h1>Parlons de votre projet, <em>simplement.</em></h1>
-  <p class="lead">Un vrai échange de 15 minutes avec une vraie personne. On écoute votre activité et vos clients, puis vous recevez votre maquette, offerte et sans engagement.</p>
-  <ul class="rvpts"><li>Gratuit, sans engagement</li><li>Maquette offerte après l'appel</li><li>Réponse humaine, pas de robot</li></ul>
+  <p class="lead">Un vrai échange de 15 minutes avec une vraie personne. On écoute votre activité et vos clients, et on vous dit ce qu'il vous faut.</p>
+  <ul class="rvpts"><li>15 minutes, sans engagement</li><li>Votre site en ligne en 5 jours ou 48 h</li><li>Réponse humaine, pas de robot</li></ul>
  </div>
  <div class="rvph" style="background-image:url(""" + UNS.replace("w=2000","w=1000").format("photo-1758876020337-2501eeb1ede5") + """)"><div class="cap"><b>Un appel de 15 minutes</b>Choisissez votre créneau juste en dessous.</div></div>
 </div></section>
@@ -267,7 +267,7 @@ Cal("init", "vitriapro15", { origin: "https://app.cal.com" });
 Cal.ns.vitriapro15("inline", { elementOrSelector: "#my-cal-inline-vitriapro15", calLink: "vitriapro/15min", config: { layout: "month_view", theme: "light" } });
 Cal.ns.vitriapro15("ui", { styles: { branding: { brandColor: "#0a1533" } } });
 </script>"""
-open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : appel gratuit de 15 minutes.", body, CAL))
+open("rendez-vous.html", "w").write(page("Prendre rendez-vous — VITRIA PRO", "Réservez un échange avec VITRIA PRO : appel de 15 minutes.", body, CAL))
 
 # ---------- Réalisations ----------
 def proj(tag, h3, p, lis, mock, link="", alt=""):
@@ -283,7 +283,7 @@ body += '<section class="section"><div class="wrap">' + head("01 / Projet intern
 body += '<div style="margin-top:40px">' + proj("Projet interne · Site de marque", "VITRIA PRO — identité et présence web",
              "Conception de l'identité numérique de l'agence et de son site vitrine : direction visuelle, structure des pages, présentation des offres, parcours de contact et adaptation mobile.",
              ["Identité visuelle et système typographique", "Page d'accueil et pages sectorielles", "Présentation des offres et prise de rendez-vous", "Assistant d'orientation et contact WhatsApp"],
-             ("AGENCE DE SITES INTERNET", "Des sites qui font venir des clients.", "Maquette offerte · En ligne en 5 jours ou 48 h.", "RECEVOIR MA MAQUETTE"), ("index.html", "Voir le site"))
+             ("AGENCE DE SITES INTERNET", "Des sites qui font venir des clients.", "En ligne en 5 jours ou 48 h.", "RÉSERVER UN APPEL"), ("index.html", "Voir le site"))
 body += '</div></div></section>\n'
 body += '<section class="section white"><div class="wrap">' + head("02 / Concepts de démonstration", "Trois univers pour se projeter.", "Des directions de design par métier, pour imaginer votre futur site avant même notre premier appel.")
 body += '<div style="margin-top:40px">'
@@ -307,7 +307,7 @@ body = hero("VITRIA PRO Careers · Développement commercial · France", "Vous d
             [btn('Présenter ma candidature', "#candidature"), btn("Découvrir la collaboration", "#mission", "btn-line")],
             photo="photo-1521737711867-e3b97375f902",
             stats='<div class="hero-stats"><div><strong>Marché français</strong>PME, artisans et indépendants</div><div><strong>À distance</strong>Prospection organisée librement</div><div><strong>À la commission</strong>Sur les ventes éligibles encaissées</div></div>')
-body += '<section class="section" id="mission"><div class="wrap">' + head("L'offre VITRIA PRO", "Une offre simple et forte à <em>commercialiser.</em>", "Maquette offerte, mise en ligne en 5 jours ou 48 h, paiement unique et garantie 14 jours : des arguments qui facilitent la vente. Vous vendez, nous concevons.")
+body += '<section class="section" id="mission"><div class="wrap">' + head("L'offre VITRIA PRO", "Une offre simple et forte à <em>commercialiser.</em>", "Mise en ligne en 5 jours ou 48 h, paiement unique et garantie 14 jours : des arguments qui facilitent la vente. Vous vendez, nous concevons.")
 body += cards([("01 / Essentiel · 990 €", "Site one-page", "Pour les artisans et indépendants qui veulent être trouvés et appelés."),
                ("02 / Business · 1 490 €", "Jusqu'à 5 pages", "Une page par service, formulaire de devis et référencement local optimisé."),
                ("03 / Premium · 2 490 €", "Jusqu'à 10 pages", "Une structure complète pour les entreprises qui veulent s'imposer dans leur secteur.")]) + "</div></section>\n"
