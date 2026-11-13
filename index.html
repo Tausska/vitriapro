@@ -78,6 +78,17 @@ td.us{margin:2px -16px 4px;padding:11px 16px;width:calc(100% + 32px)!important}t
 .offers{gap:28px}.offer ul li{padding:8px 0}
 .q button{padding-top:26px;padding-bottom:26px}
 </style>
+<style>
+.demos{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px max(24px,calc((100vw - 1360px)/2 + 24px)) 12px;scrollbar-width:none;justify-content:flex-start}
+.demos::-webkit-scrollbar{display:none}
+.dcard{flex:0 0 300px;scroll-snap-align:center;display:block;color:var(--ink)}
+.dshot{position:relative;width:300px;height:585px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.dshot iframe{position:absolute;left:0;top:0;width:390px;height:760px;border:0;transform:scale(.769);transform-origin:0 0;pointer-events:none}
+.dcap{padding:14px 4px 0}.dcap b{display:block;font:600 20px var(--display);letter-spacing:-.02em}.dcap span{font-size:15px;color:var(--muted)}
+.dbtn{display:block;margin-top:14px;padding:14px 18px;background:var(--ink);color:#fff;font:600 16px var(--sans);font-style:normal;text-align:center;border-radius:999px}
+.demos-more{margin-top:26px;font-size:16px;color:var(--ink2)}.demos-more a{text-decoration:underline}
+@media(min-width:1100px){.demos{justify-content:center;overflow:visible}}
+</style>
 </head>
 <body>
 
@@ -175,15 +186,15 @@ td.us{margin:2px -16px 4px;padding:11px 16px;width:calc(100% + 32px)!important}t
 <!-- SECTEURS -->
 <section class="sectors" id="secteurs">
  <div class="wrap sec-head rv">
-  <div><h2>Un site pensé pour <em>votre</em> métier.</h2></div>
+  <div><h2>Voyez de vrais sites.</h2></div>
+  <p>Touchez un site pour l’ouvrir et l’essayer, comme le ferait votre client.</p>
  </div>
- <div class="track" id="track">
-  <a class="card" href="plomberie.html"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=85)"></div><div class="card-in"><div><small>Démo · Urgences & devis</small><h3>Plomberie</h3></div><span class="go"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></span></div></a>
-  <a class="card" href="restaurants.html"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85)"></div><div class="card-in"><div><small>Secteur · Réservations</small><h3>Restaurants & cafés</h3></div><span class="go"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></span></div></a>
-  <a class="card" href="artisans.html"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85)"></div><div class="card-in"><div><small>Secteur · Chantiers</small><h3>Bâtiment & habitat</h3></div><span class="go"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></span></div></a>
-  <a class="card" href="coiffeurs.html"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85)"></div><div class="card-in"><div><small>Secteur · Rendez-vous</small><h3>Coiffure & beauté</h3></div><span class="go"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></span></div></a>
-  <a class="card" href="rendez-vous.html"><div class="photo" style="background-image:url(https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85)"></div><div class="card-in"><div><small>Sur mesure</small><h3>Votre activité</h3></div><span class="go"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></span></div></a>
+ <div class="demos">
+  <a class="dcard" href="demo-plombier/index.html"><div class="dshot"><iframe src="demo-plombier/index.html" title="Site de démonstration : plomberie" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div><div class="dcap"><b>Plomberie</b><span>Urgences et devis en un geste</span><i class="dbtn">Voir le site plombier</i></div></a>
+  <a class="dcard" href="demo-restaurant/index.html"><div class="dshot"><iframe src="demo-restaurant/index.html" title="Site de démonstration : restaurant" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div><div class="dcap"><b>Restaurant</b><span>La carte et la réservation de table</span><i class="dbtn">Voir le site restaurant</i></div></a>
+  <a class="dcard" href="demo-coiffeur/index.html"><div class="dshot"><iframe src="demo-coiffeur/index.html" title="Site de démonstration : coiffure" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div><div class="dcap"><b>Coiffure</b><span>Prise de rendez-vous en ligne</span><i class="dbtn">Voir le site coiffure</i></div></a>
  </div>
+ <div class="wrap"><p class="demos-more">Votre métier n’est pas là ? <a href="rendez-vous.html">Parlons de votre site en 15 minutes</a>.</p></div>
 </section>
 
 <!-- OFFRES -->
@@ -283,23 +294,6 @@ const names=['Bâtiment & habitat','Restauration','Coiffure & beauté','Rénovat
 let s=0;
 function show(i){slides.forEach((el,j)=>el.classList.toggle('on',i===j));bars.forEach((b,j)=>{b.classList.remove('on');void b.offsetWidth;if(j===i)b.classList.add('on')});cap.textContent=names[i]}
 show(0);setInterval(()=>{s=(s+1)%slides.length;show(s)},6000);
-
-// Sector carousel: duplicate for seamless loop
-const track=document.getElementById('track');
-(function(){const o=track.innerHTML,n=track.children.length;track.innerHTML=o+o+o;
-const half=()=>track.children[n].offsetLeft-track.children[0].offsetLeft;
-let last=0,hover=false,acc=0,t0=0;
-const touch=()=>{last=Date.now()};
-['touchstart','touchmove','touchend','pointerdown','wheel'].forEach(e=>track.addEventListener(e,touch,{passive:true}));
-track.addEventListener('mouseenter',()=>hover=true);track.addEventListener('mouseleave',()=>hover=false);
-function wrap(){const h=half();if(!h)return;if(track.scrollLeft>=2*h)track.scrollLeft-=h;else if(track.scrollLeft<h)track.scrollLeft+=h}
-track.addEventListener('scroll',()=>{if(Date.now()-last>250)wrap()},{passive:true});
-function init(){track.scrollLeft=half()}
-window.addEventListener('load',init);init();
-function tick(t){const dt=t0?Math.min(t-t0,64):16;t0=t;
-if(!hover&&Date.now()-last>2500&&!document.hidden){acc+=dt*0.035;if(acc>=1){const d=Math.floor(acc);acc-=d;track.scrollLeft+=d;wrap()}}
-requestAnimationFrame(tick)}
-requestAnimationFrame(tick)})();
 
 // Formulaire : envoie la demande sur WhatsApp
 document.getElementById('qform').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const t='Bonjour VITRIA PRO, je souhaite un site pour mon activité.\nNom : '+f.get('nom')+'\nMétier et ville : '+f.get('metier')+'\nTéléphone : '+f.get('tel');location.href='https://wa.me/595992666002?text='+encodeURIComponent(t)});
