@@ -46,6 +46,7 @@ function onScroll(){{h.classList.toggle('solid',scrollY>200);m.classList.toggle(
 addEventListener('scroll',onScroll,{{passive:true}});onScroll();
 </script>
 {extra}
+<script src="track.js" defer></script>
 </body>
 </html>
 """
@@ -235,7 +236,7 @@ ML = [("Éditeur du site", "Le site vitriapro.com est édité par <strong>Alan L
       ("Garantie commerciale", "Les conditions de la garantie de 14 jours sont décrites sur la page <a href=\"garantie.html\" style=\"text-decoration:underline\">Garantie 14 jours</a>."),
       ("Démonstrations et photographies", "Les sites présentés par secteur sont des démonstrations. Les entreprises qui y figurent sont fictives. Les photographies sont des illustrations, issues de la banque d'images Unsplash et utilisées selon sa licence."),
       ("Propriété intellectuelle", "Les textes, éléments graphiques et le logo de VITRIA PRO sont la propriété de l'éditeur. Toute reproduction sans autorisation écrite est interdite."),
-      ("Données personnelles", "Les informations que vous transmettez par e-mail, par WhatsApp ou via l'agenda de rendez-vous servent uniquement à répondre à votre demande et à préparer votre projet. Elles ne sont ni vendues ni cédées. La prise de rendez-vous passe par le service Cal.com. Pour consulter, corriger ou faire supprimer vos données, écrivez à contact@vitriapro.com."),
+      ("Données personnelles", "Les informations que vous transmettez par e-mail, par WhatsApp ou via l'agenda de rendez-vous servent uniquement à répondre à votre demande et à préparer votre projet. Elles ne sont ni vendues ni cédées. La prise de rendez-vous passe par le service Cal.com. Si vous arrivez sur ce site depuis un de nos e-mails, nous enregistrons que le lien a été ouvert et quelles pages vous consultez, afin de savoir quels messages sont utiles ; aucun cookie n'est déposé. Pour consulter, corriger ou faire supprimer vos données, écrivez à contact@vitriapro.com."),
       ("Contact", "Pour toute question sur le site ou une prestation, écrivez à contact@vitriapro.com ou écrivez-nous sur WhatsApp.")]
 body = hero("Informations légales", "Mentions <em>légales.</em>", "Qui est derrière VITRIA PRO, où le site est hébergé, et comment sont traités vos prix et vos données.", [])
 body += '<section class="section"><div class="wrap"><div class="article rv">' + "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in ML) + "</div></div></section>\n"
