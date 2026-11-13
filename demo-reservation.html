@@ -44,7 +44,15 @@ h2{font-family:PF,Georgia,serif;font-size:clamp(30px,4vw,46px);line-height:1.12;
 footer{background:var(--wine2);color:#cdbfae;padding:44px 28px;font-size:14px;text-align:center}
 .note{background:#111;color:#fff;padding:18px 22px;font-size:14px;text-align:center}.note b{color:#e2c07a}
 @media(max-width:820px){.split,.grid3{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.nav a:not(.b){display:none}section{padding:56px 0}.hero .in{padding-bottom:60px}}
-</style></head><body>
+</style><style>
+button,.slot{font-family:inherit;-webkit-appearance:none;appearance:none}
+.slot{font-size:15px!important;color:#2a1b20;line-height:1.2;min-width:0;border-radius:0}
+.slot.on{color:#fff}
+.slots>*{min-width:0}
+input[type=date],input[type=text],input[type=email],input[type=tel],select{max-width:100%;width:100%;box-sizing:border-box;min-width:0;-webkit-appearance:none;appearance:none;font-family:inherit;font-size:16px}
+#p1,#p2,.split>*,.grid3>*{min-width:0}
+</style>
+</head><body>
 <div class="demo"><b>Démonstration VITRIA PRO</b> · domaine fictif, réservation simulée</div>
 <header class="hero">
  <div class="nav"><div class="l">Domaine des Quatre Vents</div><div><a href="#sejour">Le gîte</a><a href="#cave">La cave</a><a class="b" href="#resa">RÉSERVER</a></div></div>
