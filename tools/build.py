@@ -29,7 +29,7 @@ HEAD = """<!DOCTYPE html>
    <a href="realisations.html">Réalisations</a>
    <a href="garantie.html">Garantie</a>
   </nav>
-  <div class="nav-cta"><a class="wa" href="{wa}"><svg class="wai" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a><a class="btn" href="rendez-vous.html">Réserver un appel</a></div>
+  <div class="nav-cta"><a class="wa" href="{wa}"><svg class="wai" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Contacter</a><a class="btn" href="rendez-vous.html">Être appelé</a></div>
  </div>
 </header>
 <main>
@@ -37,7 +37,7 @@ HEAD = """<!DOCTYPE html>
 
 FOOT = """</main>
 @@FOOTER@@
-<div class="mbar" id="mbar"><a href="rendez-vous.html">Réserver un appel</a><a href="{wa}">WhatsApp</a></div>
+<div class="mbar" id="mbar"><a href="rendez-vous.html">Être appelé</a><a href="{wa}">Contacter</a></div>
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}}),{{threshold:.12}});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
@@ -122,7 +122,7 @@ def human(photo, eyebrow="Parlons de votre activité"):
  <div class="htx"><span class="eyebrow" style="color:#ffffffc0">{eyebrow}</span>
   <h2>Un vrai échange, <em>avec une vraie personne.</em></h2>
   <p>15 minutes pour parler de votre activité et de ce dont vous avez besoin. Pas de robot, pas de pression.</p>
-  <div class="cta">{btn("Réserver un appel", "rendez-vous.html")}{btn("Écrire sur WhatsApp", WA_PROJET, "btn-line")}</div>
+  <div class="cta">{btn("Être appelé", "rendez-vous.html")}{btn("Contacter", WA_PROJET, "btn-line")}</div>
  </div></div></section>
 """
 
@@ -131,7 +131,7 @@ TRUST = ["Une présence en ligne pensée pour", "Être compris rapidement", "Ins
 
 def sector(file, title, desc, photo, eyebrow, h1, lead, att_h2, att_p, att_cards, checks, faqs):
     body = hero(eyebrow, h1, lead,
-                [btn('Réserver un appel', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
+                [btn('Être appelé', "rendez-vous.html"), btn("Voir les offres", "#offre", "btn-line")],
                 "En ligne en 5 jours ou 48 h · Paiement unique · Satisfait ou remboursé 14 jours", photo)
     body += '<div class="trustbar"><div class="wrap">' + "".join(f"<span>{t}</span>" for t in TRUST) + "</div></div>\n"
     body += f'<section class="section"><div class="wrap">{head("Les attentes de vos clients", att_h2, att_p)}{cards(att_cards)}</div></section>\n'
@@ -224,7 +224,7 @@ G = [("1. Bénéficiaires et offres concernées", "La garantie est proposée aux
      ("8. Contact", 'Pour toute question relative à cette garantie : <a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a>.')]
 body = hero("Engagement commercial VITRIA PRO", "14 jours pour décider <em>sereinement.</em>",
             "La garantie commerciale VITRIA PRO permet aux clients professionnels concernés de demander le remboursement de la prestation de création de leur site dans les 14 jours calendaires suivant sa mise en ligne, selon les conditions ci-dessous.",
-            [btn('Réserver un appel', "rendez-vous.html")])
+            [btn('Être appelé', "rendez-vous.html")])
 body += '<section class="section"><div class="wrap"><div class="article rv"><div class="callout"><strong>À lire avant de commander.</strong> Cette garantie est un engagement commercial volontaire de VITRIA PRO. Elle s\'ajoute aux droits légaux éventuellement applicables et ne les limite pas. Les conditions particulières figurant au devis accepté restent applicables pour le périmètre et les frais propres à la commande.</div>'
 body += "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in G) + "</div></div></section>\n"
 open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA PRO", "Conditions de la garantie commerciale VITRIA PRO : 14 jours après la mise en ligne pour décider.", body))
