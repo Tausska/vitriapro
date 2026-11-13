@@ -218,8 +218,16 @@ body += "".join(f"<h2>{t}</h2><p>{p}</p>" for t, p in G) + "</div></div></sectio
 open("garantie.html", "w").write(page("Garantie commerciale 14 jours — VITRIA PRO", "Conditions de la garantie commerciale VITRIA PRO : 14 jours après la mise en ligne pour décider.", body))
 
 # ---------- Rendez-vous ----------
-body = hero("Prise de rendez-vous · Premier échange gratuit", "Présentons votre projet <em>ensemble.</em>",
-            "Réservez un appel gratuit de 15 minutes. Nous échangerons sur votre activité, vos clients et le site à concevoir. Vous recevez ensuite votre maquette, offerte et sans engagement.", [])
+body = """<section class="rvhero"><div class="wrap">
+ <div>
+  <span class="eyebrow">Prise de rendez-vous · Premier échange gratuit</span>
+  <h1>Parlons de votre projet, <em>simplement.</em></h1>
+  <p class="lead">Un vrai échange de 15 minutes avec une vraie personne. On écoute votre activité et vos clients, puis vous recevez votre maquette, offerte et sans engagement.</p>
+  <ul class="rvpts"><li>Gratuit, sans engagement</li><li>Maquette offerte après l'appel</li><li>Réponse humaine, pas de robot</li></ul>
+ </div>
+ <div class="rvph" style="background-image:url(""" + UNS.replace("w=2000","w=1000").format("photo-1758876020337-2501eeb1ede5") + """)"><div class="cap"><b>Un appel de 15 minutes</b>Choisissez votre créneau juste en dessous.</div></div>
+</div></section>
+"""
 body += """<section class="section" style="padding-top:60px"><div class="wrap">
  <div id="calendar">
   <div class="sec-head rv" style="margin-bottom:0"><div><span class="eyebrow">Agenda</span><h2 class="mid">Choisissez une date et une heure</h2></div><p>Les disponibilités s’affichent dans votre fuseau horaire local. Sélectionnez le créneau qui vous convient.</p></div>
