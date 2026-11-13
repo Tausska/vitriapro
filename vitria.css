@@ -383,3 +383,20 @@ footer{background:var(--ink);color:#ffffff90;padding:56px 0 40px;font-size:14px}
 .form-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
 .apply>*,.formgrid>*,.proj>*,.comm>*{min-width:0}.field select,.field input,.field textarea{width:100%;max-width:100%}
 .panel .price{font-size:clamp(40px,4vw,56px)}
+
+/* Pied de page commun, logo WhatsApp, boutons bleus (marque) */
+.wai{vertical-align:-3px;margin-right:8px}
+.wa{display:inline-flex;align-items:center}
+.wa .wai{color:#25D366}
+.btn:not(.btn-line):not(.btn-wa){background:#0153E9!important;color:#fff!important;border-color:#0153E9!important}
+.btn:not(.btn-line):not(.btn-wa):hover{background:#0143bd!important;border-color:#0143bd!important}
+.mbar a:first-child{background:#0153E9!important;color:#fff!important}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px}
+.ft h4{font:600 12px/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:18px}
+.ft a,.ft span{display:block;padding:5px 0;color:#ffffffa0}.ft a:hover{color:#fff}
+.ft p{line-height:1.6;color:#ffffffa0;margin-top:16px;max-width:36ch}
+.ft b{color:#fff;font-weight:600}
+.ft .ftwa{display:flex;align-items:center}.ft .ftwa .wai{color:#25D366}
+.fbot{padding-top:26px}
+@media(max-width:900px){.ft{grid-template-columns:1fr 1fr;gap:34px}.ft>div:first-child{grid-column:1/-1}}
+@media(max-width:980px){.wa{display:none}}

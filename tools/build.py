@@ -29,22 +29,14 @@ HEAD = """<!DOCTYPE html>
    <a href="realisations.html">Réalisations</a>
    <a href="garantie.html">Garantie</a>
   </nav>
-  <div class="nav-cta"><a class="wa" href="{wa}">WhatsApp</a><a class="btn" href="rendez-vous.html">Réserver un appel</a></div>
+  <div class="nav-cta"><a class="wa" href="{wa}"><svg class="wai" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a><a class="btn" href="rendez-vous.html">Réserver un appel</a></div>
  </div>
 </header>
 <main>
 """
 
 FOOT = """</main>
-<footer>
- <div class="wrap">
-  <div class="foot">
-   <img src="logo-vitria-pro.png" alt="VITRIA PRO" style="height:64px;width:auto;filter:brightness(0) invert(1)">
-   <nav><a href="index.html#secteurs">Secteurs</a><a href="restaurants.html">Restaurants</a><a href="coiffeurs.html">Coiffeurs</a><a href="artisans.html">Artisans</a><a href="realisations.html">Réalisations</a><a href="garantie.html">Garantie</a><a href="rendez-vous.html">Rendez-vous</a><a href="recrutement-commercial.html">Recrutement</a><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a></nav>
-  </div>
-  <p class="fine">© 2026 VITRIA PRO. Les sites présentés par secteur sont des démonstrations et les photographies sont des illustrations. Périmètre et conditions précisés dans le devis. Délais comptés à réception du paiement et des éléments nécessaires.</p>
- </div>
-</footer>
+@@FOOTER@@
 <div class="mbar" id="mbar"><a href="rendez-vous.html">Réserver un appel</a><a href="{wa}">WhatsApp</a></div>
 <script>
 const io=new IntersectionObserver(es=>es.forEach(e=>{{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}}),{{threshold:.12}});
@@ -59,8 +51,12 @@ addEventListener('scroll',onScroll,{{passive:true}});onScroll();
 """
 
 
+ICO = '<svg class="wai" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>'
+FOOTER = open("tools/footer.html").read().replace("@@WA@@", WA_PROJET).replace("@@ICO@@", ICO)
+
+
 def page(title, desc, body, extra=""):
-    return HEAD.format(title=title, desc=desc, wa=WA_PROJET) + body + FOOT.format(wa=WA_PROJET, extra=extra)
+    return (HEAD.format(title=title, desc=desc, wa=WA_PROJET) + body + FOOT.format(wa=WA_PROJET, extra=extra)).replace("@@FOOTER@@", FOOTER)
 
 
 def hero(eyebrow, h1, lead, ctas, note="", photo=None, stats=""):
