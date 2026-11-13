@@ -239,7 +239,7 @@ pages["reserver.html"] = page("reserver.html", "Réserver", hero("salle", "RÉSE
 
 # ---- Contact
 pages["contact.html"] = page("contact.html", "Contact", hero("salle2", "CONTACT", "Une question ? Écrivez-nous", small_hero=True) + """
-<section><div class="wrap"><div class="info"><div class="rv"><b>Adresse</b><p>12 rue des Halles<br>Adresse fictive de démonstration</p></div><div class="rv" style="--d:.12s"><b>Téléphone</b><p>01 23 45 67 89<br>Numéro fictif de démonstration</p></div><div class="rv" style="--d:.24s"><b>Horaires</b><p>Mardi au samedi<br>12h – 14h et 19h – 22h<br>Fermé dimanche et lundi</p></div></div>
+<section><div class="wrap"><div class="info"><div class="rv"><b>Adresse</b><p>12 rue des Halles<br>Adresse fictive de démonstration</p></div><div class="rv" style="--d:.12s"><b>Téléphone</b><p>01 99 00 12 34<br>Numéro fictif de démonstration</p></div><div class="rv" style="--d:.24s"><b>Horaires</b><p>Mardi au samedi<br>12h – 14h et 19h – 22h<br>Fermé dimanche et lundi</p></div></div>
 <div class="plan rv">Plan d'accès et itinéraire en un geste<br>(carte intégrée sur votre vrai site)</div></div></section>
 <section style="background:var(--sand)"><div class="wrap tc"><div class="rv"><h2>Nous écrire</h2><p class="lead">Groupes, privatisation, allergies, questions : nous répondons sous 24 h.</p></div>
 <form class="cform rv" id="cf" novalidate><label for="cn">Nom</label><input id="cn" autocomplete="name"><label for="ce">E-mail</label><input id="ce" type="email" autocomplete="email"><label for="cm">Message</label><textarea id="cm"></textarea>

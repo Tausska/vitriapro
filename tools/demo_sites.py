@@ -167,7 +167,7 @@ COIFFEUR = dict(
     cards_h="Nos prestations phares", cards_p="Les trois que nos clients réservent le plus.",
     cards=[("s1", "Coupe et brushing", "Conseil, coupe, coiffage"), ("couleur", "Couleur et mèches", "Résultat naturel, sans cassure"), ("barbe", "Barbe et rasage", "Taille précise, finition soignée")],
     book_h="Réservez votre rendez-vous", book_p="En quelques secondes, à toute heure, depuis votre téléphone.",
-    hours="Mardi au samedi<br>9h – 19h<br>Fermé dimanche et lundi", addr="8 place de la Mairie", phone="01 23 45 67 89",
+    hours="Mardi au samedi<br>9h – 19h<br>Fermé dimanche et lundi", addr="8 place de la Mairie", phone="01 99 00 12 34",
     services_title="Prestations et tarifs", serv_img="couleur", serv_small="PRESTATIONS ET TARIFS", serv_h1="Nos prestations, nos prix", serv_p="Tarifs clairs, sans mauvaise surprise.",
     serv_h2="Carte des prestations", serv_lead="Chaque prestation comprend le shampoing, le conseil et le coiffage.",
     menu=[("Femme", [("Coupe femme", "Shampoing, coupe, coiffage", "38 €"), ("Brushing", "Mise en forme", "25 €"), ("Coupe et brushing", "Cheveux mi-longs", "52 €")]),
@@ -202,7 +202,7 @@ PLOMBIER = dict(
     cards_h="Nos interventions les plus demandées", cards_p="Ce pour quoi on nous appelle le plus.",
     cards=[("tuyaux", "Fuite et dépannage", "Recherche et réparation rapide"), ("sdb", "Salle de bains", "Rénovation et pose complète"), ("chantier", "Chauffe-eau et chaudière", "Installation et entretien")],
     book_h="Demandez votre devis", book_p="Décrivez votre besoin, choisissez un créneau : on vous rappelle.",
-    hours="Lundi au samedi<br>8h – 19h<br>Urgences : 7j/7 (téléphone)", addr="Zone d'intervention : 30 km autour de la ville", phone="06 12 34 56 78",
+    hours="Lundi au samedi<br>8h – 19h<br>Urgences : 7j/7 (téléphone)", addr="Zone d'intervention : 30 km autour de la ville", phone="01 99 00 12 35",
     services_title="Services et tarifs", serv_img="atelier", serv_small="SERVICES ET TARIFS", serv_h1="Ce qu'on fait, à quel prix", serv_p="Des prix annoncés à l'avance.",
     serv_h2="Nos services", serv_lead="Chaque intervention commence par un diagnostic et un devis clair.",
     menu=[("Urgences", [("Dépannage fuite d'eau", "Recherche et réparation", "dès 89 €"), ("Débouchage canalisation", "Évier, WC, douche", "dès 79 €"), ("Déplacement et diagnostic", "Déduit si vous commandez les travaux", "49 €")]),
@@ -220,4 +220,3 @@ PLOMBIER = dict(
     band_h="Vous êtes plombier ?", band_p="vos services, vos chantiers, vos zones, avec demande de devis directement sur votre téléphone.", foot_tag="Dépannage, installation et entretien.")
 
 build("coiffeur", COIFFEUR)
-build("plombier", PLOMBIER)
