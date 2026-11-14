@@ -30,8 +30,18 @@
 .rv2-steps li{position:relative;padding-left:44px;font-size:16px;line-height:1.55;color:var(--ink2);counter-increment:s}
 .rv2-steps li:before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font:600 14px/28px var(--display);text-align:center}
 .rv2-steps b{display:block;color:var(--ink);font:600 17px var(--display);margin-bottom:2px}
-.rv2 .calendar{margin-top:0;min-height:620px}
-@media(max-width:860px){.rv2{padding:96px 0 60px}.rv2g{grid-template-columns:1fr;grid-template-areas:"intro" "cal" "steps" "rev" "hook" "inc";gap:26px}.rv2-who{margin-bottom:20px}.rv2-lead{font-size:17px}.rv2-steps{margin-top:8px}}
+.rv2-cal-card{background:#fff;border:1px solid #e8ebf0;border-radius:24px;padding:26px;box-shadow:0 18px 55px rgba(10,21,51,.08);overflow:hidden}
+.rv2-cal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:2px 2px 18px}
+.rv2-cal-head h2{font:600 clamp(25px,2.6vw,34px)/1.08 var(--display);letter-spacing:-.035em;margin:8px 0 7px;color:var(--ink)}
+.rv2-cal-head p{font-size:15px;line-height:1.5;color:var(--muted);margin:0;max-width:390px}
+.rv2-cal-duration{flex:none;border:1px solid #e6eaf0;border-radius:999px;padding:8px 12px;font:600 13px var(--sans);color:var(--ink);background:#f8f9fb}
+.rv2-cal-trust{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.rv2-cal-trust span{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:999px;background:#f5f7fa;color:#465064;font:500 12px var(--sans)}
+.rv2-cal-trust i{width:7px;height:7px;border-radius:50%;background:#23966a;display:inline-block}
+.rv2 .calendar{margin-top:0;min-height:590px;border:1px solid #edf0f4;border-radius:16px;padding:8px;background:#fff;overflow:hidden}
+.rv2-cal-foot{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:15px 2px 0;font-size:12px;line-height:1.45;color:var(--muted)}
+.rv2-cal-foot a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+@media(max-width:860px){.rv2{padding:96px 0 60px}.rv2g{grid-template-columns:1fr;grid-template-areas:"intro" "cal" "steps" "rev" "hook" "inc";gap:26px}.rv2-who{margin-bottom:20px}.rv2-lead{font-size:17px}.rv2-steps{margin-top:8px}.rv2-cal-card{padding:18px;border-radius:20px}.rv2 .calendar{min-height:650px;padding:4px}.rv2-cal-head{padding-bottom:15px}.rv2-cal-foot{align-items:flex-start;flex-direction:column;gap:6px}}
 .rv2-inc h2{font:600 20px var(--display);letter-spacing:-.02em;margin:0 0 12px}.rv2-inc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.rv2-inc li{position:relative;padding-left:26px;font-size:16px;line-height:1.5;color:var(--ink2)}.rv2-inc li:before{content:"";position:absolute;left:4px;top:8px;width:10px;height:6px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}.rv2-see{margin:18px 0 0;font-size:16px;color:var(--ink2)}.rv2-see a{text-decoration:underline}
 .rv2-rv{grid-area:rev;margin:6px 0 0;max-width:520px;display:grid;gap:12px}.rv2-rv figure{margin:0;padding-left:14px;border-left:3px solid var(--accent)}.rv2-rv .st{color:#F5B301;letter-spacing:2px;font-size:14px}.rv2-rv blockquote{margin:2px 0 2px;font-size:16px;line-height:1.45;color:var(--ink)}.rv2-rv figcaption{font-size:14px;color:var(--muted)}
 </style>
@@ -58,8 +68,15 @@
   <p class="rv2-gar">14 jours, satisfait ou remboursé.</p>
  </div>
  <div class="rv2-cal">
-  <div class="calendar" id="calendar"><div id="my-cal-inline-vitriapro15" style="width:100%"></div></div>
-  <p class="fine-note">Gratuit. Les heures s’affichent dans votre fuseau horaire. Un souci ? <a href="mailto:contact@vitriapro.com" style="text-decoration:underline">contact@vitriapro.com</a> ou <a href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet." style="text-decoration:underline">WhatsApp</a>.</p>
+  <div class="rv2-cal-card">
+   <div class="rv2-cal-head">
+    <div><span class="eyebrow">Votre prochain pas</span><h2>Choisissez votre créneau.</h2><p>15 minutes pour faire le point sur votre activité et votre futur site.</p></div>
+    <span class="rv2-cal-duration">15 min</span>
+   </div>
+   <div class="rv2-cal-trust"><span><i></i> Gratuit</span><span>Sans engagement</span><span>En ligne</span></div>
+   <div class="calendar" id="calendar"><div id="my-cal-inline-vitriapro15" style="width:100%"></div></div>
+   <div class="rv2-cal-foot"><span>Les horaires s’affichent dans votre fuseau horaire.</span><a href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet.">Une question ? WhatsApp</a></div>
+  </div>
  </div>
  <ol class="rv2-steps">
   <li><b>On identifie ce qui fait choisir vos clients.</b> Vos services, vos points forts, vos preuves et les questions qui freinent une prise de contact.</li>
@@ -106,8 +123,8 @@ addEventListener('scroll',onScroll,{passive:true});onScroll();
 <script>
 (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
 Cal("init", "vitriapro15", { origin: "https://app.cal.com" });
-Cal.ns.vitriapro15("inline", { elementOrSelector: "#my-cal-inline-vitriapro15", calLink: "vitriapro/15min", config: { layout: "column_view", theme: "light" } });
-Cal.ns.vitriapro15("ui", { styles: { branding: { brandColor: "#0a1533" } } });
+Cal.ns.vitriapro15("inline", { elementOrSelector: "#my-cal-inline-vitriapro15", calLink: "vitriapro/15min", config: { layout: "month_view", theme: "light" } });
+Cal.ns.vitriapro15("ui", { styles: { branding: { brandColor: "#14264b" } }, hideEventTypeDetails: false });
 </script>
 <script src="track.js" defer></script>
 </body>
