@@ -18,8 +18,8 @@
 <link rel="stylesheet" href="vitria.css">
 <style>
 .rv2{padding:130px 0 90px}
-.rv2g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px 72px;grid-template-areas:"intro cal" "steps cal" "inc cal";align-items:start}
-.rv2-intro{grid-area:intro}.rv2-cal{grid-area:cal}.rv2-benefits{grid-area:steps}.rv2-steps{grid-area:steps}.rv2-hook{grid-area:hook;max-width:520px;margin:10px 0 0;font:500 19px/1.45 var(--display);letter-spacing:-.01em;color:var(--ink)}.rv2-hook small{font:400 12px var(--sans);color:var(--muted);white-space:nowrap}.rv2-inc{grid-area:inc;max-width:520px;margin-top:14px}
+.rv2g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px 72px;grid-template-areas:"intro cal" "hook cal" "rev cal" "steps cal" "inc cal";align-items:start}
+.rv2-intro{grid-area:intro}.rv2-cal{grid-area:cal}.rv2-steps{grid-area:steps}.rv2-hook{grid-area:hook;max-width:520px;margin:10px 0 0;font:500 19px/1.45 var(--display);letter-spacing:-.01em;color:var(--ink)}.rv2-hook small{font:400 12px var(--sans);color:var(--muted);white-space:nowrap}.rv2-inc{grid-area:inc;max-width:520px;margin-top:14px}
 .rv2-who{display:flex;align-items:center;gap:16px;margin-bottom:30px}
 .rv2-who img{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:50% 18%}
 .rv2-who b{display:block;font:600 18px var(--display);letter-spacing:-.01em}
@@ -41,9 +41,9 @@
 .rv2 .calendar{margin-top:0;min-height:590px;border:1px solid #edf0f4;border-radius:16px;padding:8px;background:#fff;overflow:hidden}
 .rv2-cal-foot{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:15px 2px 0;font-size:12px;line-height:1.45;color:var(--muted)}
 .rv2-cal-contacts{display:flex;flex-wrap:wrap;gap:16px}.rv2-cal-foot a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-@media(max-width:860px){.rv2{padding:96px 0 60px}.rv2g{grid-template-columns:1fr;grid-template-areas:"intro" "cal" "steps" "inc";gap:26px}.rv2-who{margin-bottom:20px}.rv2-lead{font-size:17px}.rv2-steps{margin-top:8px}.rv2-cal-card{padding:18px;border-radius:20px}.rv2 .calendar{min-height:650px;padding:4px}.rv2-cal-head{padding-bottom:15px}.rv2-cal-foot{align-items:flex-start;flex-direction:column;gap:6px}}
+@media(max-width:860px){.rv2{padding:96px 0 60px}.rv2g{grid-template-columns:1fr;grid-template-areas:"intro" "cal" "hook" "rev" "steps" "inc";gap:26px}.rv2-who{margin-bottom:20px}.rv2-lead{font-size:17px}.rv2-steps{margin-top:8px}.rv2-cal-card{padding:18px;border-radius:20px}.rv2 .calendar{min-height:650px;padding:4px}.rv2-cal-head{padding-bottom:15px}.rv2-cal-foot{align-items:flex-start;flex-direction:column;gap:6px}}
 .rv2-inc h2{font:600 20px var(--display);letter-spacing:-.02em;margin:0 0 12px}.rv2-inc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.rv2-inc li{position:relative;padding-left:26px;font-size:16px;line-height:1.5;color:var(--ink2)}.rv2-inc li:before{content:"";position:absolute;left:4px;top:8px;width:10px;height:6px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}.rv2-see{margin:18px 0 0;font-size:16px;color:var(--ink2)}.rv2-see a{text-decoration:underline}
-.rv2-rv{margin:20px 0 0;max-width:520px;display:grid;gap:12px}.rv2-rv figure{margin:0;padding-left:14px;border-left:3px solid var(--accent)}.rv2-rv .st{color:#F5B301;letter-spacing:2px;font-size:14px}.rv2-rv blockquote{margin:2px 0 2px;font-size:16px;line-height:1.45;color:var(--ink)}.rv2-rv figcaption{font-size:14px;color:var(--muted)}
+.rv2-rv{grid-area:rev;margin:6px 0 0;max-width:520px;display:grid;gap:12px}.rv2-rv figure{margin:0;padding-left:14px;border-left:3px solid var(--accent)}.rv2-rv .st{color:#F5B301;letter-spacing:2px;font-size:14px}.rv2-rv blockquote{margin:2px 0 2px;font-size:16px;line-height:1.45;color:var(--ink)}.rv2-rv figcaption{font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -66,9 +66,6 @@
   <h1>Un site qui aide vos clients à <em>vous choisir.</em></h1>
  <p class="rv2-hook">Pendant l’appel, on identifie ce qui bloque aujourd’hui vos prospects, ce que votre site doit leur montrer et le moyen le plus simple de vous contacter.</p>
   <p class="rv2-gar">14 jours, satisfait ou remboursé.</p>
-  <div class="rv2-rv">   <div style="margin-top:22px"><span class="eyebrow">Le retour de nos clients</span><h2 style="font:600 25px/1.15 var(--display);margin:8px 0 6px">Une image professionnelle. Une confiance immédiate.</h2><p style="font-size:15px;line-height:1.5;color:var(--muted);margin:0 0 14px">Deux retours reçus après la découverte du site.</p></div>
-   <figure><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><div style="color:var(--ink);letter-spacing:0;font-size:13px;font-weight:600">IMAGE PROFESSIONNELLE</div><blockquote>« Le site donne immédiatement une image sérieuse et professionnelle de l'entreprise. »</blockquote><figcaption>Marc, Toulouse</figcaption></figure>
-   <figure><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><div style="color:var(--ink);letter-spacing:0;font-size:13px;font-weight:600">CLARTÉ ET CONFIANCE</div><blockquote>« Clair, agréable à parcourir, et il inspire tout de suite confiance. »</blockquote><figcaption>Éric, Paris</figcaption></figure></div>
  </div>
  <div class="rv2-cal">
   <div class="rv2-cal-card">
@@ -81,12 +78,14 @@
    <div class="rv2-cal-foot"><span>Les horaires s’affichent dans votre fuseau horaire.</span><div class="rv2-cal-contacts"><a href="mailto:contact@vitriapro.com">Une question ? Email</a><a href="https://wa.me/595992666002?text=Bonjour%20VITRIA%20PRO%2C%20je%20souhaite%20parler%20de%20mon%20projet.">WhatsApp</a></div></div>
   </div>
  </div>
- <div class="rv2-benefits">
+ <div class="rv2-rv">
    <div><span class="eyebrow">Ce que vous obtenez</span><h2 style="font:600 25px/1.15 var(--display);margin:8px 0 12px">Un site prêt à travailler pour votre activité.</h2></div>
    <figure><div class="st">01 · Votre offre clarifiée</div><blockquote>Vos services, vos points forts, votre zone et les informations que vos clients cherchent avant de vous contacter.</blockquote></figure>
    <figure><div class="st">02 · Vos outils de contact</div><blockquote>Un bouton d’appel, un formulaire de demande adapté et des coordonnées faciles à trouver sur mobile.</blockquote></figure>
    <figure><div class="st">03 · Votre site livré et configuré</div><blockquote>Textes rédigés pour votre activité, design mobile, mise en ligne, domaine et hébergement selon l’offre choisie.</blockquote></figure>
-
+   <div style="margin-top:22px"><span class="eyebrow">Le retour de nos clients</span><h2 style="font:600 25px/1.15 var(--display);margin:8px 0 6px">Une image professionnelle. Une confiance immédiate.</h2><p style="font-size:15px;line-height:1.5;color:var(--muted);margin:0 0 14px">Deux retours reçus après la découverte du site.</p></div>
+   <figure><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><div style="color:var(--ink);letter-spacing:0;font-size:13px;font-weight:600">IMAGE PROFESSIONNELLE</div><blockquote>« Le site donne immédiatement une image sérieuse et professionnelle de l'entreprise. »</blockquote><figcaption>Marc, Toulouse</figcaption></figure>
+   <figure><div class="st" aria-label="5 étoiles sur 5">★★★★★</div><div style="color:var(--ink);letter-spacing:0;font-size:13px;font-weight:600">CLARTÉ ET CONFIANCE</div><blockquote>« Clair, agréable à parcourir, et il inspire tout de suite confiance. »</blockquote><figcaption>Éric, Paris</figcaption></figure>
   </div>
  <ol class="rv2-steps">
   <li><b>On identifie ce qui fait choisir vos clients.</b> Vos services, vos points forts, vos preuves et les questions qui freinent une prise de contact.</li>
