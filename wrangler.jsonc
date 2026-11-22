@@ -1,11 +1,17 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "vitriapro",
+  "main": "worker.js",
   "compatibility_date": "2026-11-11",
   "assets": {
     "directory": "./",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    "binding": "ASSETS",
+    "run_worker_first": ["/t"]
   },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "vitriapro-visits", "database_id": "71109453-3b97-43e1-af0d-23437aa137b2" }
+  ],
   "observability": {
     "enabled": true
   }
