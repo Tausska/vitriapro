@@ -1,4 +1,5 @@
 (function(){try{
+if(window.top!==window.self)return;
 var q=new URLSearchParams(location.search),H=location.hostname;
 var rh='';try{rh=document.referrer?new URL(document.referrer).hostname.replace(/^www\./,''):''}catch(_){}
 if(rh===H.replace(/^www\./,''))rh='';
