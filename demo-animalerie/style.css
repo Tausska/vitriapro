@@ -63,3 +63,24 @@ footer{padding:44px 0 110px;font-size:14px;color:var(--mute)}.fx{display:flex;fl
 .ph2{position:relative;min-height:300px;display:flex;align-items:flex-end;background:#3a2c24 center/cover;border-radius:0 0 40px 40px}.ph2:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,12,8,.82),rgba(20,12,8,.1) 70%);border-radius:inherit}.ph2 .w{position:relative;z-index:2;padding-bottom:32px;color:#fff}.ph2 h1{color:#fff;font-size:clamp(40px,10vw,84px);max-width:12ch}.ph2 .lead{color:#fff3e4}.ph2 .tag{background:var(--sun);color:var(--ink)}
 .art .im{background-size:cover!important;background-position:center;font-size:0}
 @media(min-width:900px){.pcs{grid-template-columns:repeat(4,1fr)}.pc{min-height:340px}.hero2{min-height:78vh}}
+/* v3 premium */
+:root{--d:"Bricolage Grotesque","Arial Black",Arial,sans-serif;--coral:#e4512f;--r:22px}
+body{font-size:17px}
+h1,h2,.logo,.pill,.pc h3,.stp h3,.pr h3,.pr b,.art h3{letter-spacing:-.025em}
+h1{font-weight:800;line-height:.94}h2{font-weight:700;line-height:1.02;max-width:16ch}
+.pill{box-shadow:none!important;height:50px;padding:0 26px;font-weight:600;font-size:16px;letter-spacing:-.01em;transition:background .2s,transform .15s}.pill:hover{transform:translateY(-2px);filter:brightness(1.05)}.pill:active{transform:none}
+.tag{background:none;padding:0;font:600 13px var(--s);letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:16px}.tag:before{content:"";display:inline-block;width:22px;height:2px;background:var(--coral);vertical-align:middle;margin-right:10px}
+.tb{background:var(--ink);color:#f4e8dc;font:500 13px var(--s)}.tb .w{display:flex;justify-content:space-between;align-items:center;height:38px;gap:12px}.tb a{color:#fff}.tb .h{display:none;font-style:normal;color:#d8c9bb}.tb .rs{background:var(--sun);color:var(--ink);padding:5px 14px;border-radius:99px;font-weight:600}
+@media(min-width:760px){.tb .h{display:inline}}
+header{background:rgba(255,246,230,.96)}.nav{height:72px}
+.pc{background-color:#6b4f3f;background-image:linear-gradient(135deg,#7a5a48,#3a2c24)}.pc.p1{background-image:url(https://images.unsplash.com/photo-1566418337549-5e829ccc62e8?auto=format&fit=crop&w=800&q=80),linear-gradient(135deg,#8a6a52,#3a2c24)}.pc.p2{background-image:url(https://images.unsplash.com/photo-1665931817898-48b920a96a9f?auto=format&fit=crop&w=800&q=80),linear-gradient(135deg,#7d6a5e,#3a2c24)}.pc.p3{background-image:url(https://images.unsplash.com/photo-1758120014196-905613232c79?auto=format&fit=crop&w=800&q=80),linear-gradient(135deg,#4d7a72,#24403b)}.pc.p4{background-image:url(https://images.unsplash.com/photo-1783829727807-0763f1456e1c?auto=format&fit=crop&w=800&q=80),linear-gradient(135deg,#3f7f95,#1d3f4d)}
+.hero2{background-image:url(https://images.unsplash.com/photo-1760448934632-32853396fb8e?auto=format&fit=crop&w=1800&q=80),linear-gradient(160deg,#6b4f3f,#2b1f18)}
+.band{background-image:url(https://images.unsplash.com/photo-1548858806-e064cf9872c0?auto=format&fit=crop&w=1400&q=80),linear-gradient(160deg,#6b4f3f,#2b1f18)}
+.art .im{background-color:#6b4f3f}
+.pf2{padding:0;margin-top:-1px}.pf2 .w{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #e6d9c6}.pf2 .w div{padding:22px 14px 22px 0;border-top:1px solid #e6d9c6}.pf2 b{display:block;font:700 19px var(--d);letter-spacing:-.02em}.pf2 span{font-size:14px;color:var(--mute)}
+@media(min-width:900px){.pf2 .w{grid-template-columns:repeat(4,1fr)}.pf2 .w div{border-top:0;border-left:1px solid #e6d9c6;padding-left:24px}.pf2 .w div:first-child{border-left:0;padding-left:0}}
+.pl{margin-top:34px;border-top:1px solid var(--ink)}.pl a{display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:1px solid #e6d9c6;transition:padding .2s}.pl a:hover{padding-left:10px}.pl span{font:500 19px var(--s)}.pl b{font:700 34px var(--d);letter-spacing:-.03em}
+@media(min-width:900px){.pl{max-width:760px}}
+section{padding:72px 0}
+.stp,.pr,.art{box-shadow:none;border:1px solid #eadfcf}
+@media(max-width:700px){.nav .pill{display:none}.nav{height:60px}}
