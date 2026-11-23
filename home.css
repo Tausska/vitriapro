@@ -122,3 +122,8 @@
 .vp :focus-visible{outline:2px solid var(--vp-blue);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.vp-state .vp-wd{transition:none}}
 @media(max-width:640px){.vp-st{grid-template-columns:1fr 1fr}.vp-st div:nth-child(3){padding-left:0;border-left:0}.vp-st div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}}
+
+.vp-p{background:#0e1d45}.vp-sc{position:relative;width:100%;aspect-ratio:1/2;overflow:hidden;background:#0e1d45}
+.vp-sc iframe{position:absolute;left:0;top:0;width:390px;height:780px;border:0;pointer-events:none;transform-origin:0 0;transform:scale(var(--vs,.508));opacity:0;transition:opacity 1.1s ease}
+.vp-sc iframe.on{opacity:1}
+@media(min-width:900px){.vp-p{--vs:.5641}}
