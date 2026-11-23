@@ -2,70 +2,20 @@
 <title>Cabinet Roussel — Avocats à Lyon</title>
 <meta name="description" content="Cabinet Roussel, avocats en droit des affaires, droit de la famille et droit du travail. Une réponse sous 24 h. Démonstration VITRIA PRO.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--ivory:#f4efe4;--ink:#101012;--brass:#a9824a;--brass2:#c9a468;--mute:#6d6a62;--line:#d9d2c1;--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,Arial,sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{background:var(--ivory);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}.w{width:min(1180px,calc(100% - 40px));margin:auto}
-header{position:fixed;inset:0 0 auto;z-index:20;transition:.4s}header.s{background:rgba(244,239,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;justify-content:space-between;align-items:center;height:72px}
-.logo{font:500 22px var(--serif);letter-spacing:.04em}.logo b{font-weight:600}.logo i{color:var(--brass)}
-.nav a.t{font:500 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--ink);padding:11px 18px;transition:.3s}.nav a.t:hover{background:var(--ink);color:var(--ivory)}
-.menu{display:none;gap:34px;font:500 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}.menu a:hover{color:var(--ink)}
-.hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 70px;position:relative}
-.hero:before{content:"";position:absolute;right:-8%;top:50%;width:min(620px,95vw);aspect-ratio:1;transform:translateY(-50%);border:1px solid var(--line);border-radius:50%;opacity:.8}
-.hero:after{content:"";position:absolute;right:2%;top:50%;width:min(420px,66vw);aspect-ratio:1;transform:translateY(-50%);border:1px solid var(--brass);border-radius:50%;opacity:.5}
-.hero .w{position:relative;z-index:2}
-.eb{font:500 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--brass);display:flex;gap:14px;align-items:center;margin-bottom:26px}.eb:before{content:"";width:34px;height:1px;background:var(--brass)}
-h1{font:500 clamp(46px,12vw,118px)/.96 var(--serif);letter-spacing:-.02em;max-width:12ch}h1 em{font-style:italic;color:var(--brass)}
-.lead{margin-top:28px;max-width:32ch;font-size:clamp(17px,4.4vw,21px);color:#3b3a36;line-height:1.55}
-.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;align-items:center}
-.b{display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 28px;background:var(--ink);color:var(--ivory);font:500 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;transition:.3s}.b:hover{background:var(--brass)}
-.b.o{background:none;color:var(--ink);border:1px solid var(--ink)}.b.o:hover{background:var(--ink);color:var(--ivory)}
-.note{font-size:13px;color:var(--mute);margin-top:18px}
-.num{border-top:1px solid var(--ink);display:grid;grid-template-columns:repeat(3,1fr);margin-top:70px}
-.num div{padding:22px 0}.num div+div{padding-left:16px;border-left:1px solid var(--line)}
-.num b{display:block;font:500 clamp(34px,9vw,60px)/1 var(--serif)}.num span{font-size:12px;color:var(--mute);letter-spacing:.04em}
-section{padding:96px 0}
-.lab{font:500 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:18px}
-h2{font:500 clamp(36px,8vw,70px)/1.02 var(--serif);letter-spacing:-.015em;max-width:16ch}h2 em{font-style:italic;color:var(--brass)}
-.ex{margin-top:54px;border-top:1px solid var(--ink)}
-.ex a{display:grid;grid-template-columns:54px 1fr 24px;gap:14px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line);transition:.35s}
-.ex a:hover{padding-left:12px;background:linear-gradient(90deg,rgba(169,130,74,.08),transparent)}
-.ex .n{font:italic 400 20px var(--serif);color:var(--brass)}.ex h3{font:500 clamp(26px,6.5vw,40px)/1.1 var(--serif)}.ex p{grid-column:2;color:var(--mute);font-size:15px;max-width:46ch;margin-top:6px}.ex .ar{color:var(--brass);font-size:22px;transition:.3s}.ex a:hover .ar{transform:translateX(6px)}
-.dark{background:var(--ink);color:var(--ivory)}.dark h2{color:var(--ivory)}.dark .lab{color:var(--brass2)}
-.steps{margin-top:54px;display:grid;gap:0}
-.st{padding:30px 0;border-top:1px solid rgba(244,239,228,.2);display:grid;grid-template-columns:70px 1fr;gap:10px}
-.st b{font:500 52px/1 var(--serif);color:var(--brass2)}.st h3{font:500 28px/1.15 var(--serif);margin-bottom:8px}.st p{color:#b9b4a6;max-width:40ch}
-.fee{display:grid;gap:0;margin-top:48px;border:1px solid var(--ink)}.fee div{padding:30px 26px;border-bottom:1px solid var(--line)}.fee div:last-child{border:0}
-.fee small{font:500 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}.fee b{display:block;font:500 54px/1.05 var(--serif);margin:8px 0}.fee p{color:#3b3a36;font-size:15px}
-.q{font:italic 400 clamp(26px,6vw,44px)/1.25 var(--serif);max-width:24ch}.who{margin-top:20px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-form{margin-top:40px;display:grid;gap:14px;max-width:560px}input,textarea,select{width:100%;background:none;border:0;border-bottom:1px solid var(--ink);padding:14px 0;font:400 17px var(--sans);color:var(--ink);outline:0;border-radius:0}input:focus,textarea:focus{border-color:var(--brass)}
-textarea{min-height:96px;resize:vertical}button.b{border:0;cursor:pointer;justify-content:center}
-footer{padding:50px 0 120px;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
-.fx{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
-.bar{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;background:var(--ivory);border-top:1px solid var(--ink)}
-.bar a{flex:1;height:58px;display:flex;align-items:center;justify-content:center;font:500 13px var(--sans);letter-spacing:.14em;text-transform:uppercase}.bar a:first-child{background:var(--ink);color:var(--ivory)}
-.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
-.scale{position:absolute;right:4%;top:46%;transform:translateY(-50%);width:min(250px,48vw);z-index:1;opacity:.28}
-.scale path,.scale line,.scale circle{fill:none;stroke:var(--brass);stroke-width:1.4;stroke-dasharray:600;stroke-dashoffset:600;animation:dr 3.2s .4s forwards cubic-bezier(.5,0,.2,1)}
-@keyframes dr{to{stroke-dashoffset:0}}
-.beam{transform-origin:125px 52px;animation:sw 7s 3s ease-in-out infinite}@keyframes sw{0%,100%{transform:rotate(0)}50%{transform:rotate(1.6deg)}}
-@media(min-width:900px){.scale{opacity:.95}.menu{display:flex}.bar{display:none}footer{padding-bottom:50px}.fee{grid-template-columns:repeat(3,1fr)}.fee div{border-bottom:0;border-right:1px solid var(--line)}.fee div:last-child{border:0}.steps{grid-template-columns:repeat(3,1fr);gap:36px}.st{grid-template-columns:1fr}.scale{right:9%;width:300px}}
-</style></head><body>
-<header id="h"><div class="w nav"><a class="logo" href="#"><b>Roussel</b> <i>&amp;</i> Associés</a><nav class="menu"><a href="#expertises">Expertises</a><a href="#methode">Méthode</a><a href="#honoraires">Honoraires</a></nav><a class="t" href="#rdv">Rendez-vous</a></div></header>
+<link rel="stylesheet" href="style.css"></head><body>
+<header id="h"><div class="w nav"><a class="logo" href="index.html"><b>Roussel</b> <i>&amp;</i> Associés</a><nav class="menu"><a href="expertises.html">Expertises</a><a href="cabinet.html">Le cabinet</a><a href="contact.html">Contact</a></nav><a class="t" href="contact.html">Rendez-vous</a></div></header><div class="strip"><a href="index.html" class=on>Accueil</a><a href="expertises.html">Expertises</a><a href="cabinet.html">Le cabinet</a><a href="contact.html">Contact</a></div>
 <main>
 <section class="hero"><svg class="scale" viewBox="0 0 250 300" aria-hidden="true"><line x1="125" y1="40" x2="125" y2="270"/><path d="M95 270h60M105 262h40"/><circle cx="125" cy="34" r="7"/><g class="beam"><path d="M30 62 Q125 44 220 62"/><path d="M30 62 L8 140 M30 62 L52 140 M8 140 Q30 168 52 140"/><path d="M220 62 L198 140 M220 62 L242 140 M198 140 Q220 168 242 140"/></g></svg>
 <div class="w"><div class="eb">Avocats · Lyon</div><h1>Une réponse <em>sous 24 h.</em> Une stratégie sous 3 jours.</h1>
 <p class="lead">Litige, contrat, séparation, licenciement : vous savez où vous en êtes dès le premier rendez-vous.</p>
-<div class="cta"><a class="b" href="#rdv">Prendre rendez-vous <span>→</span></a><a class="b o" href="tel:+33400000000">04 00 00 00 00</a></div>
+<div class="cta"><a class="b" href="contact.html">Prendre rendez-vous <span>→</span></a><a class="b o" href="tel:+33400000000">04 00 00 00 00</a></div>
 <p class="note">Premier échange de 30 minutes à 60 €, déduit de vos honoraires si vous nous confiez le dossier.</p>
 <div class="num"><div><b>22</b><span>ans de barreau</span></div><div><b>1 800</b><span>dossiers traités</span></div><div><b>24 h</b><span>pour vous répondre</span></div></div></div></section>
 <section id="expertises"><div class="w"><div class="lab rv">Expertises</div><h2 class="rv">Là où <em>un seul avocat</em> décide pour vous.</h2>
-<div class="ex rv"><a href="#rdv"><span class="n">01</span><h3>Droit des affaires</h3><span class="ar">→</span><p>Création, contrats, associés, cession. On sécurise avant que ça coûte.</p></a>
-<a href="#rdv"><span class="n">02</span><h3>Droit de la famille</h3><span class="ar">→</span><p>Séparation, garde, patrimoine. Calme, direct, jamais dans le drame.</p></a>
-<a href="#rdv"><span class="n">03</span><h3>Droit du travail</h3><span class="ar">→</span><p>Licenciement, rupture, prud'hommes, côté salarié comme côté employeur.</p></a>
-<a href="#rdv"><span class="n">04</span><h3>Litiges et contentieux</h3><span class="ar">→</span><p>Quand la négociation échoue, on plaide pour gagner.</p></a></div></div></section>
+<div class="ex rv"><a href="contact.html"><span class="n">01</span><h3>Droit des affaires</h3><span class="ar">→</span><p>Création, contrats, associés, cession. On sécurise avant que ça coûte.</p></a>
+<a href="contact.html"><span class="n">02</span><h3>Droit de la famille</h3><span class="ar">→</span><p>Séparation, garde, patrimoine. Calme, direct, jamais dans le drame.</p></a>
+<a href="contact.html"><span class="n">03</span><h3>Droit du travail</h3><span class="ar">→</span><p>Licenciement, rupture, prud'hommes, côté salarié comme côté employeur.</p></a>
+<a href="contact.html"><span class="n">04</span><h3>Litiges et contentieux</h3><span class="ar">→</span><p>Quand la négociation échoue, on plaide pour gagner.</p></a></div></div></section>
 <section id="methode" class="dark"><div class="w"><div class="lab rv">Méthode</div><h2 class="rv">Trois étapes. <em>Aucune surprise.</em></h2>
 <div class="steps"><div class="st rv"><b>1</b><div><h3>On écoute</h3><p>30 minutes pour poser les faits. Vous repartez avec un avis clair, même si vous ne nous choisissez pas.</p></div></div>
 <div class="st rv"><b>2</b><div><h3>On vous chiffre</h3><p>Une stratégie écrite et des honoraires annoncés avant de commencer. Pas de facture surprise.</p></div></div>
@@ -77,7 +27,6 @@ footer{padding:50px 0 120px;border-top:1px solid var(--line);color:var(--mute);f
 <form class="rv" onsubmit="event.preventDefault();this.innerHTML='<p style=&quot;font:500 30px/1.2 var(--serif)&quot;>Merci. On vous répond sous 24 h.</p>'"><input placeholder="Votre nom" required><input type="tel" placeholder="Téléphone" required><textarea placeholder="Votre situation en deux phrases"></textarea><button class="b">Être rappelé sous 24 h <span>→</span></button></form></div></section>
 </main>
 <footer><div class="w fx"><span>Cabinet Roussel &amp; Associés · 14 rue de la République, 69002 Lyon</span><span>Site de démonstration réalisé par VITRIA PRO · cabinet fictif</span></div></footer>
-<div class="bar"><a href="#rdv">Rendez-vous</a><a href="tel:+33400000000">Appeler</a></div>
-<script>const h=document.getElementById('h');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>40));
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));</script>
+<div class="bar"><a href="contact.html">Rendez-vous</a><a href="tel:+33400000000">Appeler</a></div>
+<script src="app.js"></script>
 </body></html>

@@ -2,48 +2,8 @@
 <title>Studio Kaze — Illustration et animation à Nantes</title>
 <meta name="description" content="Studio Kaze : mascottes, personnages, bandes dessinées et animations dessinées à la main pour les marques. Démonstration VITRIA PRO.">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#f7f3ea;--ink:#0d0d0f;--red:#e6262d;--yel:#ffd23f;--a:Anton,Impact,"Arial Narrow",sans-serif;--m:"Permanent Marker","Comic Sans MS",cursive;--s:Inter,Arial,sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--s);-webkit-font-smoothing:antialiased;overflow-x:hidden;background-image:radial-gradient(rgba(13,13,15,.09) 1px,transparent 1.3px);background-size:9px 9px}
-a{color:inherit;text-decoration:none}.w{width:min(1180px,calc(100% - 32px));margin:auto}
-header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:4px solid var(--ink)}
-.nav{display:flex;justify-content:space-between;align-items:center;height:64px}.logo{font:400 26px var(--a);letter-spacing:.04em;display:flex;align-items:center;gap:10px}.logo i{font-style:normal;background:var(--red);color:#fff;padding:0 7px;transform:rotate(-4deg)}
-.btn{display:inline-flex;align-items:center;gap:12px;height:54px;padding:0 26px;background:var(--red);color:#fff;font:400 20px var(--a);letter-spacing:.06em;text-transform:uppercase;border:4px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transition:.12s}.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--ink)}.btn.y{background:var(--yel);color:var(--ink)}.btn.s{height:44px;font-size:16px;padding:0 16px;box-shadow:4px 4px 0 var(--ink)}
-.hero{padding:26px 0 54px}
-.page{display:grid;gap:12px}
-.pn{border:4px solid var(--ink);background:#fff;position:relative;overflow:hidden}
-.pn.big{min-height:470px;background:var(--yel)}
-.speed{position:absolute;inset:-50%;background:repeating-conic-gradient(from 0deg at 50% 52%,var(--ink) 0 .6deg,transparent .6deg 6deg);opacity:.9;animation:rot 40s linear infinite;mask-image:radial-gradient(circle at 50% 52%,transparent 16%,#000 62%)}
-@keyframes rot{to{transform:rotate(360deg)}}
-.halft{position:absolute;inset:0;background-image:radial-gradient(var(--red) 2px,transparent 2.4px);background-size:12px 12px;opacity:.5;mask-image:linear-gradient(to top,#000,transparent 60%)}
-.hana{position:absolute;left:50%;bottom:-6px;width:min(330px,82%);transform:translateX(-50%);z-index:2;filter:drop-shadow(5px 5px 0 rgba(13,13,15,.9))}
-.tail{transform-origin:198px 262px;animation:fl 1.5s ease-in-out infinite alternate}@keyframes fl{from{transform:rotate(-5deg) skewY(-2deg)}to{transform:rotate(9deg) skewY(3deg)}}
-.hair{transform-origin:150px 70px;animation:hr 3s ease-in-out infinite alternate}@keyframes hr{to{transform:rotate(1.4deg)}}
-.eyes{transform-origin:150px 170px;animation:bk 4.2s infinite}@keyframes bk{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.08)}}
-.sfx{position:absolute;z-index:3;font:400 30px var(--m);color:var(--red);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;transform:rotate(-8deg);animation:pop 2.4s ease-in-out infinite}@keyframes pop{50%{transform:rotate(-4deg) scale(1.1)}}
-.title{background:var(--paper);padding:22px 20px 24px}
-h1{font:400 clamp(48px,13vw,120px)/.92 var(--a);text-transform:uppercase;letter-spacing:.005em}h1 span{color:var(--red)}h1 u{text-decoration:none;background:var(--ink);color:var(--paper);padding:0 .14em;display:inline-block;transform:rotate(-1.5deg)}
-.lead{margin:16px 0 22px;font-size:clamp(17px,4.4vw,21px);max-width:30ch;font-weight:500}
-.cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.cta small{font-weight:600}
-section{padding:64px 0}
-h2{font:400 clamp(40px,9.5vw,84px)/.95 var(--a);text-transform:uppercase;max-width:14ch}h2 span{color:var(--red)}
-.tag{display:inline-block;font:400 18px var(--m);background:var(--ink);color:var(--paper);padding:3px 12px;transform:rotate(-2deg);margin-bottom:12px}
-.grid{display:grid;gap:12px;margin-top:30px}
-.card{border:4px solid var(--ink);background:#fff;box-shadow:7px 7px 0 var(--ink);padding:0;transition:.15s;display:flex;flex-direction:column}.card:hover{transform:translate(-3px,-3px) rotate(-.5deg);box-shadow:11px 11px 0 var(--ink)}
-.card .art{height:150px;border-bottom:4px solid var(--ink);background:var(--yel);display:grid;place-items:center;position:relative;overflow:hidden}.card:nth-child(2) .art{background:#9fe0ff}.card:nth-child(3) .art{background:#ffb3c7}.card:nth-child(4) .art{background:#b7f0a2}
-.card .art:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(13,13,15,.35) 1.6px,transparent 2px);background-size:10px 10px;mask-image:linear-gradient(to bottom right,#000,transparent 70%)}
-.card .art b{position:relative;font:400 64px var(--a);letter-spacing:.04em;-webkit-text-stroke:3px var(--ink);color:#fff;paint-order:stroke fill;transform:rotate(-5deg)}
-.card h3{font:400 28px/1 var(--a);text-transform:uppercase;padding:16px 16px 6px}.card p{padding:0 16px 18px;color:#3d3d44;font-size:15px}
-.seq{display:grid;gap:12px;margin-top:30px}.fr{border:4px solid var(--ink);background:#fff;padding:20px;position:relative}.fr b{position:absolute;top:-4px;left:-4px;background:var(--ink);color:var(--paper);font:400 26px var(--a);padding:2px 14px}.fr h3{font:400 30px/1 var(--a);text-transform:uppercase;margin:24px 0 8px}.fr p{font-size:15px;color:#3d3d44}.fr:nth-child(2){background:var(--yel)}.fr:nth-child(3){background:#ffe3e6}
-.price{margin-top:30px;border:4px solid var(--ink);background:var(--ink);color:var(--paper);padding:32px 22px;box-shadow:8px 8px 0 var(--red);position:relative;overflow:hidden}.price .n{font:400 clamp(64px,18vw,130px)/1 var(--a);color:var(--yel)}.price p{max-width:34ch;color:#d6d2c8;margin:8px 0 22px}.price .btn{background:var(--yel);color:var(--ink)}
-.final{text-align:center}.final h2{margin:0 auto 26px;max-width:12ch}.final p{margin-top:16px;font-weight:600}
-footer{padding:34px 0 100px;border-top:4px solid var(--ink);font-size:13px;color:#4a4a52}.fx{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;border-top:4px solid var(--ink);background:var(--paper)}.bar a{flex:1;height:58px;display:flex;align-items:center;justify-content:center;font:400 19px var(--a);letter-spacing:.06em;text-transform:uppercase}.bar a:first-child{background:var(--red);color:#fff;border-right:4px solid var(--ink)}
-.rv{opacity:0;transform:translateY(24px) rotate(-1deg);transition:.6s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
-@media(min-width:900px){h1{font-size:clamp(48px,6.6vw,92px)}.page{grid-template-columns:1.1fr 1fr;grid-template-rows:1fr auto}.pn.big{grid-row:1/3;min-height:600px}.title{align-self:stretch}.grid{grid-template-columns:repeat(4,1fr)}.seq{grid-template-columns:repeat(3,1fr)}.bar{display:none}footer{padding-bottom:34px}}
-</style></head><body>
-<header><div class="w nav"><a class="logo" href="#">STUDIO <i>KAZE</i></a><a class="btn s" href="#devis">Mon dessin</a></div></header>
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="w nav"><a class="logo" href="index.html">STUDIO <i>KAZE</i></a><nav class="menu"><a href="realisations.html">Réalisations</a><a href="tarifs.html">Tarifs</a></nav><a class="btn s" href="tarifs.html#devis">Mon dessin</a></div></header><div class="strip"><a href="index.html" class=on>Accueil</a><a href="realisations.html">Réalisations</a><a href="tarifs.html">Tarifs</a></div>
 <main>
 <section class="hero"><div class="w"><div class="page">
 <div class="pn big"><div class="speed"></div><div class="halft"></div><span class="sfx" style="left:14px;top:18px;font-size:38px">WHOOSH !</span><span class="sfx" style="right:14px;top:64px;transform:rotate(7deg);font-size:26px">ZOOM</span>
@@ -59,16 +19,16 @@ footer{padding:34px 0 100px;border-top:4px solid var(--ink);font-size:13px;color
 <path d="M98 242Q150 272 202 242L206 268Q150 298 94 268Z" fill="#e6262d" stroke-width="5"/>
 <g class="tail"><path d="M198 258Q252 240 292 288Q258 280 232 296Q250 308 212 300Z" fill="#e6262d" stroke-width="5"/></g>
 </svg></div>
-<div class="pn title"><h1>Votre marque, <span>dessinée</span> <u>à la main.</u></h1><p class="lead">Une mascotte que tout le monde reconnaît. Des dessins qui font parler de vous.</p><div class="cta"><a class="btn" href="#devis">Je veux mon personnage</a><small>Premier croquis sous 5 jours</small></div></div>
+<div class="pn title"><h1>Votre marque, <span>dessinée</span> <u>à la main.</u></h1><p class="lead">Une mascotte que tout le monde reconnaît. Des dessins qui font parler de vous.</p><div class="cta"><a class="btn" href="tarifs.html#devis">Je veux mon personnage</a><small>Premier croquis sous 5 jours</small></div></div>
 </div></div></section>
 <section><div class="w"><span class="tag rv">Ce qu'on dessine</span><h2 class="rv">Un univers <span>à vous.</span></h2>
-<div class="grid rv"><a class="card" href="#devis"><div class="art"><b>01</b></div><h3>Mascotte</h3><p>Un personnage unique, décliné en poses et en expressions.</p></a><a class="card" href="#devis"><div class="art"><b>02</b></div><h3>Bande dessinée</h3><p>Votre histoire en planches, pour le web, le livre ou les réseaux.</p></a><a class="card" href="#devis"><div class="art"><b>03</b></div><h3>Animation</h3><p>Vos dessins qui bougent : 10 à 30 secondes pour une pub ou un logo.</p></a><a class="card" href="#devis"><div class="art"><b>04</b></div><h3>Illustration</h3><p>Affiches, couvertures, emballages. Un style, une signature.</p></a></div></div></section>
+<div class="grid rv"><a class="card" href="tarifs.html#devis"><div class="art"><b>01</b></div><h3>Mascotte</h3><p>Un personnage unique, décliné en poses et en expressions.</p></a><a class="card" href="tarifs.html#devis"><div class="art"><b>02</b></div><h3>Bande dessinée</h3><p>Votre histoire en planches, pour le web, le livre ou les réseaux.</p></a><a class="card" href="tarifs.html#devis"><div class="art"><b>03</b></div><h3>Animation</h3><p>Vos dessins qui bougent : 10 à 30 secondes pour une pub ou un logo.</p></a><a class="card" href="tarifs.html#devis"><div class="art"><b>04</b></div><h3>Illustration</h3><p>Affiches, couvertures, emballages. Un style, une signature.</p></a></div></div></section>
 <section style="padding-top:10px"><div class="w"><span class="tag rv">Comment ça marche</span><h2 class="rv">Trois cases. <span>C'est tout.</span></h2>
 <div class="seq rv"><div class="fr"><b>1</b><h3>Vous racontez</h3><p>Un appel de 20 minutes : votre marque, vos clients, ce que vous aimez.</p></div><div class="fr"><b>2</b><h3>On croque</h3><p>Trois croquis sous 5 jours. Vous choisissez, on affine.</p></div><div class="fr"><b>3</b><h3>On encre et on colorie</h3><p>Le dessin final, tous les formats, prêt à l'emploi.</p></div></div></div></section>
-<section style="padding-top:10px"><div class="w"><div class="price rv"><span class="tag" style="background:var(--yel);color:var(--ink)">Tarif clair</span><div class="n">dès 450 €</div><p>Mascotte originale, 3 croquis, 2 corrections, fichiers couleur et noir et blanc, droits d'usage commercial inclus.</p><a class="btn" href="#devis">Demander mon devis</a></div></div></section>
+<section style="padding-top:10px"><div class="w"><div class="price rv"><span class="tag" style="background:var(--yel);color:var(--ink)">Tarif clair</span><div class="n">dès 450 €</div><p>Mascotte originale, 3 croquis, 2 corrections, fichiers couleur et noir et blanc, droits d'usage commercial inclus.</p><a class="btn" href="tarifs.html#devis">Demander mon devis</a></div></div></section>
 <section class="final" id="devis"><div class="w"><h2 class="rv">À vous de jouer.</h2><a class="btn rv" href="mailto:contact@example.com">Je lance mon dessin</a><p class="rv">Réponse sous 24 h. Premier croquis offert si vous n'êtes pas convaincu.</p></div></section>
 </main>
 <footer><div class="w fx"><span>Studio Kaze · Nantes</span><span>Site de démonstration réalisé par VITRIA PRO · studio et personnage fictifs, dessinés pour cette démo</span></div></footer>
-<div class="bar"><a href="#devis">Mon dessin</a><a href="tel:+33200000000">Appeler</a></div>
-<script>const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.rv').forEach(e=>io.observe(e));</script>
+<div class="bar"><a href="tarifs.html#devis">Mon dessin</a><a href="tel:+33200000000">Appeler</a></div>
+<script src="app.js"></script>
 </body></html>
