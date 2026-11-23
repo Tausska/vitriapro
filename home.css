@@ -138,3 +138,4 @@
 .vp-ph .vp-p[data-pos="1"]{top:100px;transform:translateX(12%) rotate(5deg)}
 .vp-ph .vp-p[data-pos="2"]{top:120px;transform:translateX(120%) rotate(8deg) scale(.9)}
 .vp-ph .vp-p[data-pos="-2"]{top:120px;transform:translateX(-220%) rotate(-8deg) scale(.9)}}
+.header.glass:not(.solid){background:rgba(10,21,51,.55);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border-color:rgba(255,255,255,.12)}

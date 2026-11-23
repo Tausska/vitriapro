@@ -108,7 +108,7 @@ var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;function upd(){
 addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd()})();
 // Header + barre mobile
 var h=document.getElementById('header'),m=document.getElementById('mbar');
-function onScroll(){h.classList.toggle('solid',scrollY>innerHeight*.7);m.classList.toggle('show',scrollY>500)}
+function onScroll(){h.classList.toggle('solid',scrollY>innerHeight*.7);h.classList.toggle('glass',scrollY>8);m.classList.toggle('show',scrollY>500)}
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 </script>
 <script>
