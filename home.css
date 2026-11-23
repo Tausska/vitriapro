@@ -26,7 +26,7 @@
 .vp-p{position:absolute;width:210px;border-radius:30px;border:6px solid #0e1d45;box-shadow:0 30px 70px rgba(0,0,0,.55);background:#000;overflow:hidden}.vp-p img{width:100%;display:block}
 .vp-pa{left:50%;top:8px;transform:translateX(-50%);z-index:3}.vp-pb{left:50%;top:60px;transform:translateX(-175%) rotate(-6deg);z-index:2}.vp-pc{left:50%;top:60px;transform:translateX(75%) rotate(6deg);z-index:2}
 .vp-glow{position:absolute;left:50%;top:40%;width:520px;height:520px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(22,82,240,.45),transparent);z-index:1}
-.vp-st{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.14);position:relative;z-index:2}
+.vp-st{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.14);position:relative;z-index:2}
 .vp-st div{padding:22px 0 26px}.vp-st div+div{padding-left:18px;border-left:1px solid rgba(255,255,255,.14)}
 .vp-st b{display:block;font:600 clamp(28px,7vw,52px)/1 var(--vp-d);letter-spacing:-.03em}.vp-st span{display:block;margin-top:6px;font-size:12.5px;color:rgba(255,255,255,.62);line-height:1.35}
 @media(min-width:900px){.vp-hg{grid-template-columns:1.1fr .9fr;gap:20px}.vp-hb{padding:60px 0}.vp-row{flex-direction:row;align-items:center;gap:28px}.vp-sub{max-width:38ch}.vp-ph{height:640px;margin:0;overflow:visible}.vp-p{width:225px}.vp-pa{top:20px}.vp-pb{top:80px;transform:translateX(-112%) rotate(-5deg)}.vp-pc{top:100px;transform:translateX(12%) rotate(5deg)}.vp-glow{width:760px;height:760px}}
@@ -121,3 +121,4 @@
 @media(min-width:700px){.vp-cta{flex-direction:row;align-items:center}.vp-form{grid-template-columns:1fr 1fr;max-width:none}.vp-form .vp-btn{grid-column:1/-1}}
 .vp :focus-visible{outline:2px solid var(--vp-blue);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.vp-state .vp-wd{transition:none}}
+@media(max-width:640px){.vp-st{grid-template-columns:1fr 1fr}.vp-st div:nth-child(3){padding-left:0;border-left:0}.vp-st div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14)}}
