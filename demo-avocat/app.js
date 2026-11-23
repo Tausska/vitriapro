@@ -1,2 +1,0 @@
-const h=document.getElementById('h');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>40));
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
