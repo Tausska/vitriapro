@@ -43,11 +43,11 @@
 
 /* Avant / avec */
 .vp-bf{margin-top:56px;border-top:1px solid var(--vp-ink)}
-.vp-bf>div{display:grid;gap:10px;padding:26px 0;border-bottom:1px solid var(--vp-line)}
+.vp-bf>div{padding:26px 0;border-bottom:1px solid var(--vp-line)}
 .vp-bf small{font:600 11px/1 Inter,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--vp-muted);display:block;margin-bottom:8px}
 .vp-bf p{font-size:clamp(18px,4.6vw,24px);line-height:1.3;letter-spacing:-.01em;margin:0;max-width:30ch}.vp-bf .vp-on p{color:var(--vp-blue);font-weight:500}
-@media(min-width:800px){.vp-bf>div{grid-template-columns:1fr 1fr;gap:56px}.vp-bf>div small{display:none}.vp-bf>.vp-bf-h{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:14px 0}.vp-bf>.vp-bf-h small{display:block;margin:0}}
-.vp-bf>.vp-bf-h{display:none}
+
+
 
 /* Démos */
 .vp-dh{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
