@@ -7,7 +7,7 @@
     "directory": "./",
     "html_handling": "auto-trailing-slash",
     "binding": "ASSETS",
-    "run_worker_first": ["/t", "/", "/index", "/rendez-vous", "/artisans", "/coiffeurs", "/plomberie", "/restaurants", "/realisations", "/garantie", "/conditions", "/mentions-legales", "/recrutement-commercial", "/index.html", "/rendez-vous.html", "/artisans.html", "/coiffeurs.html", "/plomberie.html", "/restaurants.html", "/realisations.html", "/garantie.html", "/conditions.html", "/mentions-legales.html", "/recrutement-commercial.html", "/es", "/es/", "/es/*"]
+    "run_worker_first": ["/t", "/", "/index", "/rendez-vous", "/artisans", "/coiffeurs", "/plomberie", "/restaurants", "/realisations", "/garantie", "/conditions", "/mentions-legales", "/recrutement-commercial", "/index.html", "/rendez-vous.html", "/artisans.html", "/coiffeurs.html", "/plomberie.html", "/restaurants.html", "/realisations.html", "/garantie.html", "/conditions.html", "/mentions-legales.html", "/recrutement-commercial.html", "/es", "/es/*"]
   },
   "d1_databases": [
     { "binding": "DB", "database_name": "vitriapro-visits", "database_id": "71109453-3b97-43e1-af0d-23437aa137b2" }
