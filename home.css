@@ -89,7 +89,7 @@
 /* Avis */
 .vp-rv{margin-top:56px;display:grid;gap:0;border-top:1px solid var(--vp-ink)}
 .vp-rv figure{margin:0;padding:30px 0;border-bottom:1px solid var(--vp-line)}
-.vp-rv blockquote{font:italic 400 clamp(24px,4.6vw,38px)/1.2 var(--vp-s);margin:0 0 18px;max-width:30ch}
+.vp-rv blockquote{font-style:normal;font-weight:400;font-size:17px;line-height:1.55;margin:0 0 16px;max-width:none;color:var(--vp-ink)}
 .vp-rv figcaption{font-size:14px;color:var(--vp-muted);font-weight:600}
 @media(min-width:900px){.vp-rv{grid-template-columns:1fr 1fr;gap:0 64px}.vp-rv figure{border-bottom:0;padding:40px 0 0}}
 
