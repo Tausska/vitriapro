@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crear mi sitio en 15 minutos — VITRIA PRO</title>
+<meta name="description" content="Reserve una conversación con VITRIA PRO: llamada de 15 minutos.">
+<link rel="canonical" href="https://vitriapro.com/es/rendez-vous.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VITRIA PRO">
+<meta property="og:title" content="Pedir una cita — VITRIA PRO">
+<meta property="og:description" content="Reserve una conversación con VITRIA PRO: llamada de 15 minutos.">
+<meta property="og:url" content="https://vitriapro.com/es/rendez-vous.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../vitria.css">
+<style>
+.rv2{padding:130px 0 90px}
+.rv2g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px 72px;grid-template-areas:"intro cal" "hook cal" "rev cal" "steps cal" "inc cal" "test test";align-items:start}
+.rv2-intro{grid-area:intro}.rv2-cal{grid-area:cal}.rv2-process{grid-area:steps;max-width:520px}.rv2-process-title{font:600 25px/1.15 var(--display);margin:20px 0 0;color:var(--ink)}.rv2-hook{grid-area:hook;max-width:520px;margin:10px 0 0;font:500 19px/1.45 var(--display);letter-spacing:-.01em;color:var(--ink)}.rv2-hook small{font:400 12px var(--sans);color:var(--muted);white-space:nowrap}.rv2-inc{grid-area:inc;max-width:520px;margin-top:14px}
+.rv2-who{display:flex;align-items:center;gap:16px;margin-bottom:30px}
+.rv2-who img{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:50% 18%}
+.rv2-who b{display:block;font:600 18px var(--display);letter-spacing:-.01em}
+.rv2-who span{font-size:15px;color:var(--muted)}.rv2-st{display:block;font:normal 15px var(--sans);color:#F5B301;letter-spacing:2px;font-size:15px;margin-top:3px}
+.rv2 .st{color:#F5B301!important}.rv2-st small{font:500 14px var(--sans);color:var(--ink2);letter-spacing:0;margin-left:6px}
+.rv2 h1{font:600 clamp(36px,4.6vw,66px)/1.02 var(--display);letter-spacing:-.04em;margin:0 0 22px}
+.rv2-gar{margin:16px 0 0;font:600 20px var(--display);letter-spacing:-.02em;color:#0153E9}.rv2-lead{font-size:19px;line-height:1.55;color:var(--ink2);max-width:520px}
+.rv2-steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:22px;max-width:520px;counter-reset:s}
+.rv2-steps li{position:relative;padding-left:44px;font-size:16px;line-height:1.55;color:var(--ink2);counter-increment:s}
+.rv2-steps li:before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font:600 14px/28px var(--display);text-align:center}
+.rv2-steps b{display:block;color:var(--ink);font:600 17px var(--display);margin-bottom:2px}
+.rv2-cal-card{background:#fff;border:1px solid #e8ebf0;border-radius:24px;padding:26px;box-shadow:0 18px 55px rgba(10,21,51,.08);overflow:hidden}
+.rv2-cal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:2px 2px 18px}
+.rv2-cal-head h2{font:600 clamp(25px,2.6vw,34px)/1.08 var(--display);letter-spacing:-.035em;margin:8px 0 7px;color:var(--ink)}
+.rv2-cal-head p{font-size:15px;line-height:1.5;color:var(--muted);margin:0;max-width:390px}
+.rv2-cal-duration{flex:none;border:1px solid #e6eaf0;border-radius:999px;padding:8px 12px;font:600 13px var(--sans);color:var(--ink);background:#f8f9fb}
+.rv2-cal-trust{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.rv2-cal-trust span{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:999px;background:#f5f7fa;color:#465064;font:500 12px var(--sans)}
+.rv2-cal-trust i{width:7px;height:7px;border-radius:50%;background:#23966a;display:inline-block}
+.rv2 .calendar{margin-top:0;min-height:590px;border:1px solid #edf0f4;border-radius:16px;padding:8px;background:#fff;overflow:hidden}
+.rv2-cal-foot{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:15px 2px 0;font-size:12px;line-height:1.45;color:var(--muted)}
+.rv2-cal-contact-wrap{display:flex;flex-direction:column;gap:8px}.rv2-cal-contacts{display:flex;flex-wrap:wrap;gap:16px}.rv2-cal-address{display:flex;flex-wrap:wrap;gap:6px;color:var(--muted)}.rv2-cal-address b{color:var(--ink);font-weight:600}.rv2-cal-foot a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+@media(max-width:860px){.rv2{padding:96px 0 60px}.rv2g{grid-template-columns:1fr;grid-template-areas:"intro" "cal" "test" "hook" "rev" "steps" "inc";gap:26px}.rv2-who{margin-bottom:20px}.rv2-lead{font-size:17px}.rv2-steps{margin-top:8px}.rv2-cal-card{padding:18px;border-radius:20px}.rv2 .calendar{min-height:650px;padding:4px}.rv2-cal-head{padding-bottom:15px}.rv2-cal-foot{align-items:flex-start;flex-direction:column;gap:6px}}
+@media(max-width:600px){.rv2-test-grid{grid-template-columns:1fr}}\n.rv2-inc h2{font:600 20px var(--display);letter-spacing:-.02em;margin:0 0 12px}.rv2-inc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.rv2-inc li{position:relative;padding-left:26px;font-size:16px;line-height:1.5;color:var(--ink2)}.rv2-inc li:before{content:"";position:absolute;left:4px;top:8px;width:10px;height:6px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg)}.rv2-see{margin:18px 0 0;font-size:16px;color:var(--ink2)}.rv2-see a{text-decoration:underline}
+.rv2-results{grid-area:rev;margin:6px 0 0;max-width:520px;display:grid;gap:12px}.rv2-test{grid-area:test;margin:10px 0 0;display:grid;gap:14px}.rv2-test-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.rv2-experience{display:block;margin-top:5px;color:#0153E9;font:600 15px var(--sans)}
+.rv2-portfolio{margin-top:24px;overflow:hidden}.rv2-portfolio h3{font:600 20px var(--display);margin:0 0 13px}.rv2-portfolio-window{height:350px;display:block;position:relative;overflow-x:auto;overflow-y:hidden;touch-action:pan-x; -webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:none;
+  mask-image:none;}.rv2-portfolio-window::-webkit-scrollbar{display:none}.rv2-portfolio-track{display:flex;align-items:stretch;height:100%;gap:0;width:max-content;animation:rv2-drift 60s linear infinite;will-change:transform;touch-action:pan-x}.rv2-portfolio-window:hover .rv2-portfolio-track,.rv2-portfolio-window:focus-within .rv2-portfolio-track{animation-play-state:paused}.rv2-portfolio-card{width:190px;height:100%;flex:0 0 190px;margin-right:16px;border:1px solid #e8ebf0;border-radius:15px;overflow:hidden;background:#fff}.rv2-portfolio-card iframe{display:block;width:1050px;height:1600px;margin:0 -861px -1312px 0;transform:scale(.18);transform-origin:top left;border:0;background:#f3f5f8;pointer-events:none}.rv2-portfolio-card span{display:block;padding:11px 14px;font:600 14px var(--sans);color:var(--ink)}.rv2-portfolio-cta{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;margin:24px 0 4px;padding:28px 24px;background:#eef4ff;border-radius:18px}.rv2-process-guarantee{margin:22px 0 18px;color:#0153E9;font:700 16px/1.5 var(--sans)}.rv2-process .rv2-portfolio-cta-button{margin-top:0}.rv2-portfolio-cta-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 34px;border-radius:10px;background:#0153E9;color:#fff;text-decoration:none;font:700 16px var(--sans);box-shadow:0 8px 22px rgba(1,83,233,.2);transition:transform .2s,background .2s}.rv2-portfolio-cta-button:hover{background:#0046c7;transform:translateY(-1px)}@keyframes rv2-drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-33.333333%,0,0)}}@media(prefers-reduced-motion:reduce){.rv2-portfolio-track{animation-duration:60s}}.rv2-test figure{margin:0;padding:16px 18px;border:1px solid #e8ebf0;border-radius:16px;background:#fff}.rv2-test blockquote{margin:4px 0 8px;font-size:16px;line-height:1.45;color:var(--ink)}.rv2-test figcaption{font-size:14px;color:var(--muted)}.rv2-rv figure{margin:0;padding-left:14px;border-left:3px solid var(--accent)}.rv2-rv .st{color:#F5B301;letter-spacing:2px;font-size:14px}.rv2-rv blockquote{margin:2px 0 2px;font-size:16px;line-height:1.45;color:var(--ink)}.rv2-rv figcaption{font-size:14px;color:var(--muted)}
+/* Mise au propre */
+@media(max-width:600px){.rv2-test-grid{grid-template-columns:1fr!important}}
+.rv2-inc:empty{display:none}
+.rv2-who{margin-bottom:30px}
+.rv2 .rv2-process-title{margin:26px 0 18px!important}
+.rv2-steps{margin-top:16px}
+@media(max-width:860px){.rv2-who{margin-bottom:26px}.rv2 .rv2-process-title{margin:30px 0 18px!important}.rv2-steps{margin-top:14px}.rv2-test{margin-top:20px}}
+</style>
+<style>
+.topcall{position:fixed;top:0;left:0;right:0;z-index:60;height:36px;display:flex;align-items:center;justify-content:center;gap:10px;background:#050d24;color:#fff;font:500 13px/1 Inter,Arial,sans-serif;letter-spacing:.01em;padding:0 12px;white-space:nowrap}
+.header{top:36px!important}.topcall a{color:#fff;text-decoration:none;font-weight:600}.topcall a:first-of-type{border-bottom:1px solid rgba(255,255,255,.5)}.topcall i{opacity:.4;font-style:normal}
+@media(max-width:640px){.topcall{height:30px}.header{top:30px!important}}@media(max-width:420px){.topcall{font-size:12px;gap:7px}.topcall .tc-q{display:none}}
+body{padding-top:36px}</style>
+<link rel="alternate" hreflang="fr" href="https://vitriapro.com/rendez-vous.html"><link rel="alternate" hreflang="es" href="https://vitriapro.com/es/rendez-vous.html"></head>
+<body>
+<div class="topcall" id="topcall"><span class="tc-q">¿Una pregunta?</span><a href="tel:+595992666002">Llámenos: +595 992 666 002</a><i>·</i><a href="https://wa.me/595992666002?text=Hola%20VITRIA%20PRO%2C%20quiero%20hablar%20de%20mi%20proyecto.">WhatsApp</a><i>·</i><a href="../rendez-vous.html" hreflang="fr" lang="fr">Français</a></div>
+<header class="header solid" id="header">
+ <div class="wrap nav">
+  <a class="brand" href="index.html" aria-label="VITRIA PRO"><img src="../logo-vitria-pro.png" alt="VITRIA PRO"></a>
+  <nav class="menu">
+   <a href="index.html#secteurs">Sectores</a>
+   <a href="index.html#offres">Ofertas</a>
+   <a href="realisations.html">Trabajos realizados</a>
+   <a href="garantie.html">Garantía</a>
+  </nav>
+  <div class="nav-cta"><a class="wa" href="https://wa.me/595992666002?text=Hola%20VITRIA%20PRO%2C%20quiero%20hablar%20de%20mi%20proyecto."><svg class="wai" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Contactar</a><a class="btn" href="rendez-vous.html">Crear mi sitio</a></div>
+ </div>
+</header>
+<main>
+<section class="rv2"><div class="wrap rv2g">
+ <div class="rv2-intro">
+  <div class="rv2-who"><img src="../fondateur-alan.jpg" alt="Alan Laurençont, fundador de VITRIA PRO" width="88" height="88"><div><b>Alan Laurençont</b><span>Fundador de VITRIA PRO</span><strong class="rv2-experience">Más de 250 sitios realizados</strong><em class="rv2-st" aria-label="5 estrellas de 5">★★★★★ <small>Opiniones de nuestros clientes</small></em></div></div>
+  <h1>Un sitio que ayuda a sus clientes a <em>elegirlo.</em></h1>
+ <p class="rv2-hook">Durante la llamada, conocemos su actividad y vemos cómo destacarlos a usted y a su empresa.</p>
+  <p class="rv2-gar">14 días, satisfecho o reembolsado.</p>
+ </div>
+ <div class="rv2-cal">
+  <div class="rv2-cal-card">
+   <div class="rv2-cal-head">
+    <div><span class="eyebrow">Su próximo paso</span><h2>Elegir un horario.</h2><p>15 minutos para hacer un balance de su actividad y de su futuro sitio.</p></div>
+    <span class="rv2-cal-duration">15 min</span>
+   </div>
+   <div class="rv2-cal-trust"><span><i></i> Gratis</span><span>Sin compromiso</span></div>
+   <div class="calendar" id="calendar"><div id="my-cal-inline-vitriapro15" style="width:100%"></div></div>
+   <div class="rv2-cal-foot"><span>Los horarios se muestran en su zona horaria.</span><div class="rv2-cal-contact-wrap"><div class="rv2-cal-contacts"><a href="mailto:contact@vitriapro.com">¿Una pregunta? contact@vitriapro.com</a><a href="https://wa.me/595992666002?text=Hola%20VITRIA%20PRO%2C%20quiero%20hablar%20de%20mi%20proyecto.">WhatsApp</a><a href="tel:+595992666002">Teléfono: +595 992 666 002</a></div><div class="rv2-cal-address"><b>Dirección profesional</b><span>Luis Alberto de Herrera 463, Asunción, Paraguay</span></div></div></div>
+  </div>
+ </div>
+ <div class="rv2-test">
+   <div><span class="eyebrow">La opinión de nuestros clientes</span><h2 style="font:600 25px/1.15 var(--display);margin:8px 0 6px">Una imagen profesional. Una confianza inmediata.</h2><p style="font-size:15px;line-height:1.5;color:var(--muted);margin:0 0 14px">Confían en nosotros</p></div>
+   <div class="rv2-test-grid">
+    <figure><div class="st" aria-label="5 estrellas de 5">★★★★★</div><div style="color:var(--ink);letter-spacing:0;font-size:13px;font-weight:600">IMAGEN PROFESIONAL</div><blockquote>« El sitio presenta mucho mejor lo que hacemos. Es más claro para los visitantes y recibimos solicitudes que se ajustan más a nuestros servicios. »</blockquote><figcaption>Marc, Toulouse</figcaption></figure>
+    <figure><div class="st" aria-label="5 estrellas de 5">★★★★★</div><div style="color:var(--ink);letter-spacing:0;font-size:13px;font-weight:600">CLARIDAD Y CONFIANZA</div><blockquote>« El resultado es realmente limpio. Se encuentra fácilmente la información y los clientes saben dónde contactarnos. El sitio da una mejor imagen de nuestra empresa. »</blockquote><figcaption>Éric, París</figcaption></figure>
+   </div> 
+   <div class="rv2-portfolio">
+    <h3>Ejemplos de sitios realizados</h3>
+    <div class="rv2-portfolio-window" aria-label="Galería deslizante de sitios realizados por VITRIA PRO" tabindex="0">
+     <div class="rv2-portfolio-track">
+<a class="rv2-portfolio-card" href="../demo-plombier/index.html"><iframe src="../demo-plombier/index.html" title="Vista previa del sitio para plomero" loading="lazy" tabindex="-1"></iframe><span>Sitio para plomero</span></a>
+<a class="rv2-portfolio-card" href="../demo-restaurant/index.html"><iframe src="../demo-restaurant/index.html" title="Vista previa del sitio para restaurante" loading="lazy" tabindex="-1"></iframe><span>Sitio para restaurante</span></a>
+<a class="rv2-portfolio-card" href="../demo-coiffeur/index.html"><iframe src="../demo-coiffeur/index.html" title="Vista previa del sitio para peluquero" loading="lazy" tabindex="-1"></iframe><span>Sitio para peluquero</span></a>
+<a class="rv2-portfolio-card" href="../demo-avocat/index.html"><iframe src="../demo-avocat/index.html" title="Vista previa del sitio para abogado" loading="lazy" tabindex="-1"></iframe><span>Sitio para abogado</span></a>
+<a class="rv2-portfolio-card" href="../demo-animalerie/index.html"><iframe src="../demo-animalerie/index.html" title="Vista previa del sitio para tienda de mascotas" loading="lazy" tabindex="-1"></iframe><span>Sitio para tienda de mascotas</span></a>
+<a class="rv2-portfolio-card" href="../demo-studio-dessin/index.html"><iframe src="../demo-studio-dessin/index.html" title="Vista previa del sitio para estudio de dibujo" loading="lazy" tabindex="-1"></iframe><span>Sitio para estudio de dibujo</span></a>
+<a class="rv2-portfolio-card" href="../demo-plombier/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-plombier/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para plomero</span></a>
+<a class="rv2-portfolio-card" href="../demo-restaurant/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-restaurant/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para restaurante</span></a>
+<a class="rv2-portfolio-card" href="../demo-coiffeur/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-coiffeur/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para peluquero</span></a>
+<a class="rv2-portfolio-card" href="../demo-avocat/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-avocat/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para abogado</span></a>
+<a class="rv2-portfolio-card" href="../demo-animalerie/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-animalerie/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para tienda de mascotas</span></a>
+<a class="rv2-portfolio-card" href="../demo-studio-dessin/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-studio-dessin/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para estudio de dibujo</span></a>
+<a class="rv2-portfolio-card" href="../demo-plombier/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-plombier/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para plomero</span></a>
+<a class="rv2-portfolio-card" href="../demo-restaurant/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-restaurant/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para restaurante</span></a>
+<a class="rv2-portfolio-card" href="../demo-coiffeur/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-coiffeur/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para peluquero</span></a>
+<a class="rv2-portfolio-card" href="../demo-avocat/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-avocat/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para abogado</span></a>
+<a class="rv2-portfolio-card" href="../demo-animalerie/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-animalerie/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para tienda de mascotas</span></a>
+<a class="rv2-portfolio-card" href="../demo-studio-dessin/index.html" aria-hidden="true" tabindex="-1"><iframe src="../demo-studio-dessin/index.html" title="" loading="lazy" tabindex="-1"></iframe><span>Sitio para estudio de dibujo</span></a>
+     </div>
+    </div>
+   </div>
+  </div>
+ <div class="rv2-process">
+  <h3 class="rv2-process-title">¿Qué arriesga usted?</h3>
+  <ol class="rv2-steps">
+   <li><b>Identificamos lo que hace que sus clientes lo elijan.</b> Sus servicios, sus puntos fuertes, sus pruebas y las preguntas que frenan un primer contacto.</li>
+   <li><b>Usted recibe una propuesta precisa.</b> Las páginas, las funciones, el plazo y el precio se explican antes de cualquier compromiso.</li>
+   <li><b>Usted valida, nosotros entregamos.</b> Textos, diseño móvil, puesta en línea, dominio y alojamiento 3 años según la oferta. Entrega en 5 días o en 48 h con Express.</li>
+  </ol>
+  <p class="rv2-process-guarantee">14 días satisfecho o reembolsado después de su pedido.</p>
+  <a class="rv2-portfolio-cta-button" href="#calendar">Me lanzo</a>
+ </div>
+ <div class="rv2-inc">
+ </div>
+</div></section>
+</main>
+<footer>
+ <div class="wrap">
+  <div class="ft">
+   <div>
+    <img src="../logo-vitria-pro.png" alt="VITRIA PRO" style="height:64px;width:auto;filter:brightness(0) invert(1)">
+    <p>Agencia de sitios web para profesionales. Sitios que reciben sus reservas y sus solicitudes, entregados en 5 días o en 48 horas.</p>
+    <p><b>Alan Laurençont</b>, fundador. Especializado en sitios web para profesionales.</p>
+   </div>
+   <div><h4>Lo que hacemos</h4><a href="index.html#offres">Sitio web premium</a><a href="../demo-reservation.html">Reserva en línea</a><a href="index.html#offres">Entrega Express 48 h</a><a href="index.html#offres">Dominio y alojamiento</a><a href="index.html#offres">Textos redactados para usted</a></div>
+   <div><h4>Sectores</h4><a href="artisans.html">Artesanos</a><a href="restaurants.html">Restaurantes</a><a href="coiffeurs.html">Peluqueros</a><a href="plomberie.html">Plomería</a><a href="index.html#secteurs">Todos los sectores</a></div>
+   <div><h4>La agencia</h4><a href="realisations.html">Trabajos realizados</a><a href="garantie.html">Garantía de 14 días</a><a href="conditions.html">Condiciones de venta</a><a href="mentions-legales.html">Aviso legal</a><a href="rendez-vous.html">Crear mi sitio</a><a href="index.html#questions">Preguntas frecuentes</a><a href="recrutement-commercial.html">Reclutamiento</a></div>
+   <div><h4>Contacto</h4><a href="mailto:contact@vitriapro.com">contact@vitriapro.com</a><a class="ftwa" href="https://wa.me/595992666002?text=Hola%20VITRIA%20PRO%2C%20quiero%20hablar%20de%20mi%20proyecto."><svg class="wai" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a><span>Vitria Pro</span><span>Luis Alberto de Herrera 463, Asunción, Paraguay</span><span>+595 992 666 002</span><span>RUC 9418022-9</span></div>
+  </div>
+  <div class="fbot"><p class="fine" style="margin:0;max-width:80ch">© 2026 VITRIA PRO. Los sitios presentados por sector son demostraciones y las fotografías son ilustraciones. Alcance y condiciones precisados en el presupuesto. Plazos contados desde la recepción del pago y de los materiales necesarios.</p></div>
+ </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="#calendar">Crear mi sitio</a><a href="https://wa.me/595992666002?text=Hola%20VITRIA%20PRO%2C%20quiero%20hablar%20de%20mi%20proyecto.">Contactar</a></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const m=document.getElementById('mbar');function onScroll(){m.classList.toggle('show',scrollY>300)}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+</script>
+<script>
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "vitriapro15", { origin: "https://app.cal.com" });
+Cal.ns.vitriapro15("inline", { elementOrSelector: "#my-cal-inline-vitriapro15", calLink: "vitriapro/15min", config: { layout: "month_view", theme: "light" } });
+Cal.ns.vitriapro15("ui", { styles: { branding: { brandColor: "#14264b" } }, hideEventTypeDetails: false });
+</script>
+<script src="../track.js" defer></script>
+</body>
+</html>
