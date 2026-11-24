@@ -155,3 +155,5 @@
 }
 
 .vp-rv .vp-st{color:#F5B301;font-size:20px;letter-spacing:4px;line-height:1;margin:0 0 14px}
+
+.vp-st b.vp-stp{white-space:nowrap;font-size:clamp(17px,4.4vw,24px)}
