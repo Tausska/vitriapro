@@ -3,7 +3,7 @@ const EV = ["view", "cta"];
 const BOT = /bot|crawl|spider|slurp|preview|scan|headless|curl|python|go-http|monitor/i;
 // Langue du site : Paraguay = espagnol (/es/), ailleurs = français. Le visiteur peut changer avec le lien « Español / Français » ; son choix est gardé dans un cookie.
 const PAGES = new Set(["index", "rendez-vous", "artisans", "coiffeurs", "plomberie", "restaurants", "realisations", "garantie", "conditions", "mentions-legales", "recrutement-commercial"]);
-const ES_COUNTRIES = new Set(["PY"]);
+const ES_COUNTRIES = new Set(["PY", "AR"]);
 const ROBOT = /bot|crawl|spider|slurp|preview|facebookexternalhit|whatsapp|telegram/i;
 function pageOf(path) {
   let m = path.match(/^\/es(?:\/(?:([\w-]+?)(?:\.html)?)?)?\/?$/);
