@@ -12,9 +12,9 @@ Site commercial de VITRIA PRO, agence de création de sites vitrines pour TPE, P
 - `robots.txt`, `sitemap.xml` et `favicon.svg`.
 
 ## Offres
-- Essentiel : 990 € — site vitrine one-page.
-- Business : 1 490 € — jusqu'à 5 pages.
-- Premium : 2 490 € — jusqu'à 10 pages.
+- Essentiel : 490 € — site vitrine one-page.
+- Business : 990 € — jusqu'à 5 pages.
+- Premium : 1 490 € — jusqu'à 10 pages.
 
 Prix indicatifs. Le devis confirme le périmètre, la devise, le traitement fiscal, les délais, les frais tiers et les modalités de paiement. Ne pas afficher HT ou TTC tant que le régime applicable n'a pas été confirmé.
 
